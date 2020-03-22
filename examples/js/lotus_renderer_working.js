@@ -8,7 +8,7 @@ var r = 100,
   var scene = new THREE.Scene()
 
   var camera = new THREE.PerspectiveCamera(
-    29, // This variable controls size -- the lower the value the larger the rendering. Original value was 27.
+    20, // This variable controls size -- the lower the value the larger the rendering. Original value was 27.
     window.innerWidth / window.innerHeight,
     0.1,
     1000
@@ -394,12 +394,12 @@ function drawPetalRing (segmentCount, radius, depth, color_code, chartLines, div
 // -------------------------------- // 
 
 
-drawPetalRing (8, .65, .1, 0x00769d, 160, 20) //center petals
+drawPetalRing (8, .55, .1, 0x00769d, 160, 20) //center petals
 
 drawPetalRing (12, 1, .1, 0x0289b6, 240, 20)  //middle petals
 
-group.position.set( .1, -.07, .55);
-group.rotation.set(.2,.3,.4);
+group.position.set( 0, -.3, 0);
+group.rotation.set(0,-.3,.0);
 
   //animate and render
 
@@ -411,8 +411,8 @@ group.rotation.set(.2,.3,.4);
 
     requestAnimationFrame(animate)
     render()
-    group.rotation.x += 0.0001
-    group.rotation.y += 0.0002
+    group.rotation.x += 0.0000
+    group.rotation.y += 0.0001
     }
 
     else {
@@ -426,7 +426,7 @@ group.rotation.set(.2,.3,.4);
 
   function render () {
     dot += 0
-    renderer.setClearColor(0x0F426A, 1)
+    renderer.setClearColor(0x000000, 1)
     renderer.render(scene, camera)
   }
 
@@ -675,8 +675,8 @@ document.getElementById("nowplaying").innerHTML = `<span style="font-size: 18px;
 }
 
 //setTimeout(spacer, 1000);
-setTimeout(addTop8Songs, 200);
-setTimeout(addTopSongs, 1200);
+//setTimeout(addTop8Songs, 200);
+//setTimeout(addTopSongs, 1200);
 setTimeout(geometricLinks, 1500);
 setTimeout('document.getElementById("nowplaying").innerHTML = `<span style="font-size: 18px;font-family:Source Sans Pro; color: #FFF; margin-left:0px; text-align:right; margin-top:10px;"><strong>...and counting</strong></span>`'
 , 2000);
@@ -1356,9 +1356,8 @@ function hideAll() {
 
   //calls to action
 
-  document.getElementById( "info" ).addEventListener( 'mousemove', function(ev) {
-  ev.stopPropagation(); 
-        }, false );
+  /*document.getElementById( "info" ).addEventListener( 'mousemove', function(ev) {
+  ev.stopPropagatio*/
 
   document.getElementById( "suggest" ).addEventListener( 'click', function () {
           window.open("https://web.lotus.fm/add-your-song-to-the-lotus-400/", "_self")
