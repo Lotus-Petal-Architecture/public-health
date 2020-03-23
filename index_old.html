@@ -20,7 +20,9 @@
 		<link rel='stylesheet' id='storefront-fonts-css'  href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,300italic,400italic,700,900&#038;subset=latin%2Clatin-ext' type='text/css' media='all' />
 		<style>
 
-			body { margin: 0; background-color: #0F426A; font-family: Helvetica, sans serif;}
+
+
+			body { margin: 0; background-color: #000000; font-family: Helvetica, sans serif;}
 			canvas { width: 100%; height: 100%; }
 
 			a:active {
@@ -74,9 +76,9 @@
 			#info {
 	position: absolute;
 	color: #FFF;
-	top: 45%;
-	right:2%;
-	width: 934px;
+	top: 85%;
+	left:2%;
+	width: 1250px;
 	text-align: center;
 	z-index: 100;
 	font-weight: bold;
@@ -225,7 +227,7 @@
 			}
 
 </style>
-<!-- Global site tag (gtag.js) - Google Analytics -->
+<!-- Mobile Detect -->
 <script type="text/javascript">
 
 	if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
@@ -254,16 +256,33 @@
 			<noscript><div id ="alternate" style="display: block;"> Javascript not enabled! Please enable Javascript on your browser to view interactive content.
 			<br><br><a href="https://web.lotus.fm" target="self">Proceed to main Lotus.fm site</a>.</div>
 		<div id="main" style="display: none;"></noscript>
+			
 			<div id="main">
 		<div id="nav"><button class="icon" id="reload" style="background-image: url('examples/files/lotus_icon.png'); margin-left:0px; margin-right:3px;" alt="Reload Chart" title="Reload Chart"></button>
 		
 		<button class="icon" id="about" style="background-image: url('examples/files/info_icon.png');" alt="About this Visualization" title="About this Visualization"></a></button>
 		
 		<button class="icon" id="toggleControls" style="background-image: url('examples/files/minimize_icon.png');" alt="Show/Hide Controls" title="Show/Hide Controls"></button></div>
-		
+			
+			<div style="width:100%; position: absolute;
+	color: #FFF;
+	top: 75px;
+	left:20px;
+	text-align: left;
+	z-index: 100;
+	font-weight: bold;
+	display:block;
+	margin:0;">
+				<div id="nowplaying"></div>
+				<div id="thumb"></div>
+				<div id="rank"></div>
+				<div id="views"></div>
+		       	<div id="share"></div>
+		       	</div>
+
 		<div id="info">
 			<!--<strong>Genres: </strong>-->
-			<div id="genres">
+			<div id="genres" style="width:600px; float:left;">
 			<button id="rock">rock</button>
 			<button id="punk">punk</button>
 			<button id="hiphop">hip-hop</button>
@@ -272,14 +291,11 @@
 			<button id="folk">folk</button>
 			<button id="all">all</button>
 		</div>
-			<!--<button id="all">all</button>-->
-			<!--<button id="top8" style="background-color: #A002DC; border:0;">Top 8</button>-->
-			<!--<button id="top100" style="background-color: #87ceeb; border:0;">Top 100</button>-->
-			<!-- alt background-color: #86bed1; rock color ##7c2954; folk color #7a716d; button blues:#00769d  #0289b6  " -->
-			<br/><br/>
-				<div style="width:480px; float:left; text-align:left; 
+
+				<div style="width:500px; float:right; text-align:left; 
 				background-color: transparent; 
-				border:0;">
+				border:0;
+				margin-right:10px;">
 				<div id="message" style="width:100%; float:left; text-align:left; 
 				border-radius: 8px;
 				padding:18px;
@@ -290,34 +306,16 @@
 				background-color: #a5c6d1;
 				border:0;">
 				<span style="font-size: 15px;font-family:Source Sans Pro; font-weight: 900;">Top 255 World Locations for Coronavirus:</span>  
-				This graph shows infection rates and total number of cases to date. Highest values are the lines that are the tallest and closest to the center. Rotate the petal graph by grabbing the top or bottom edges. Use the mouse wheel to zoom in. <i>Last updated 3/16/2020.</i>
-				<!--<span style="font-size: 16px;font-family:Source Sans Pro; font-weight: 900;">Top 8 Songs</span> -->
-				<p style="text-align:right; font-size:14px; text-transform: uppercase; margin:0; margin-bottom:6px; margin-top:25px; padding:0;">
-					<button id="suggest" style="background-color: transparent; margin:0; margin-right:10px; padding: 0; "><a href="https://web.lotus.fm/add-your-song-to-the-lotus-400/" style="background-color:#CC2D6F; color:#FFF; border-radius:4px; padding:10px 12px; height:36px; border:1px solid #CC2D6F; letter-spacing:1px; box-shadow: 2px 2px 3px grey; text-align:right; font-size:14px; font-family:Arial; text-transform: uppercase; text-decoration:none; font-weight: normal;">Suggest a Song</a></button> 
-					<button id="enter" style="background-color: transparent; margin:0; padding: 0; "><a href="https://web.lotus.fm" style="border-color:#0F426A; border-radius:4px; border: solid 1px; padding:10px 12px; text-decoration:none; color:#0F426A; height:36px; text-align:right; font-size:14px; font-family:Arial; text-transform: uppercase;">Proceed to Site</a></button></p>
+				This graph shows infection rates and total number of cases to date. Highest values are the lines that are the tallest and closest to the center. Rotate the petal graph by grabbing the top or bottom edges. Use the mouse wheel to zoom in. <i>Last updated 3/22/2020.</i>
 				</div>
-				<div style="width:100%;">
-				<div id="nowplaying"></div>
-				<div id="thumb"></div>
-				<div id="rank"></div>
-				<div id="views"></div>
-		       	<div id="share"></div>
-		       	</div>
 		        </div>
-				<div style="width:355px; 
-				float:right; 				
-				border-radius: 8px;
-				padding:18px;
-				margin:0;
-				background-color: #a5c6d1;
-				border:0;
-				visibility: visible;" >
-			</div>
+
 		</div>
+
 		<script src="build/three.js"></script>
 		<script src="examples/js/controls/OrbitControls.js"></script>
 		<script src="examples/js/libs/stats.min.js"></script>
-		<script src="examples/js/lotus_renderer_working.js"></script>
+		<script src="examples/js/lotus_renderer.js"></script>
 	</div>
 	</body>
 </html>

@@ -1,1 +1,1513 @@
-var a=['NlJ6bGdFeVMtQkU=','VlRkNEpDSXFMN1U=','dUlQMGlJeEhMWTQ=','UGp3LXF6VDZxQnM=','Z0swNFhobFRMT00=','d2VXLVZuSU5sLUU=','UUFoTWFrZW50d0E=','SWdmSWgtTkJvQ3c=','Y3dIbWVGaWRMYkU=','cEdPTzdFRTRMaHc=','bktKZUIwM1RySmc=','V0ducW9aeDdfUVk=','WDlCV1JoOTJpZnM=','OU5yQzdwUnJhOW8=','WjlSc1ZWLXpmZ1k=','RUlwelBWQUhwVmc=','TFM3S0ZWWVVRVDQ=','dVMxUHlqYVI4V00=','V0ppOU1YZmwzekE=','eW50dkJybFpOZUE=','OFFjVENJc0ZKMlE=','UmVtTU5lN3o2dmc=','NGZyOGs2Ty1Ca28=','RWRfMTZDYmxnOXM=','R3Y3aVY0bjdjWE0=','dUw4RGlwZjVrWGM=','Q2xWTlUyLUMzclE=','dEFaa29fTVNaaGM=','SWJFNHluUWRfcVE=','X1A2M3FjY09kenM=','ekNsQ3NRblJqLWM=','dUE0Uk5XM0hrY1E=','UGFseGJ3Y285cE0=','aTk0ZUZZSEhBT1k=','aEJGOFlHRjE3clE=','YmJ0M3FoT2lIM00=','VmthdkVVQ3dtME0=','OVJ6NGtNQkQ4alU=','TEpidGNpdDhCeWc=','YlMyMnVaSERyNTQ=','RHVvdDAzZ3JOdjg=','WkVoV2ZyVk9XbEU=','VzhDckJHaGZTaUE=','eUhOQjRtMWRmS0U=','R0ZmTjVtRmpPRm8=','c2x1YTgwa0o4ekE=','QVhIaS1CMlZiVTA=','NllfQjN3ZFFMZ2c=','ZlBFb0k0M01NaHM=','dUpNbjRXR2FJT2M=','cmRkdTVUZ3JUbUU=','U0JyTUJxRmJXb2s=','czl0MlFINXpUQ1E=','NnU4bFVLdWFVeDg=','Xzg2TFFILWMxZDg=','SGNCN1pua01uQjg=','c2xxS3JBTm83VW8=','MG50MlluMU0wb1U=','eXlheVZJWHdnNzQ=','bUtaQmluZ3kyT0E=','YVZ3VnZ0UDVxSjQ=','czVFeXU5LWtjaFE=','Q3FwLWhMLUk5MEE=','T1YybHF1YVB4U1U=','U0JPSzlDQmpDSzg=','OXg2TXhzNUR5eEk=','R2RLNGpxbkROTjg=','TGVzSnRZQUc4ek0=','d19vdFhFVlBnT2s=','LS13NFVpOEFsemM=','cng0d29Od1ZTOGc=','NTBBRFdIMWQzRTg=','ZU5jU0ZucjM1MDg=','cDFubXNhUGgzMUU=','OUlqeE53SGt0dFU=','MWpZN2tkRUloYUE=','WXlwQUdxSUJyWDA=','aUYwSWhFcERjZXM=','RkFMMDFwVW5oR0k=','RFdlQjZoV29LeUk=','TEg3WFBvV1B6LTQ=','VGtJbG9WN09NQWs=','WUd2LU9TdlF3S1k=','RnhkbnFmeXZJa1k=','LWRKWEJDQlp3UWc=','NUFIejhIZURrM2M=','RENJNVhxVC1BWnM=','dDdQdjNlWkV5NGs=','dEcyRjcyVC1peFk=','OGRya0VfekxuTGs=','MGRlSEFUX0tPcUU=','UTcyRU5wSGNyRFE=','Q09JQ0phbDgzOE0=','cGZqeVYwcXRObGs=','c1NDYi1hMk1jUkk=','TTFoU2Rkemx4TDQ=','UlNmaWk4UkxtTk0=','VVgxQnZDUmc2Z3M=','Z2FoVjE1T2U5WHM=','cENnRVVCZjV5MTg=','anQwNjhWZG1md3c=','UVlEWFJvSHBGMHc=','LVJmcW83T1NpbXc=','QlZoNkpiM0RReEU=','UmE2MTZ2eVBCcDg=','NXhGUDRpa0dDTGs=','SG11R3E1d2VvWkE=','S3FYTl81R19rdW8=','U1ZpN2ZYV0txU2s=','ZkFjZEJteHUtNnM=','M2pXUXprb1BGVGc=','d3NGNFRWSHI0MkE=','eFJGVFlSWFMzYXc=','QXdrRFZNcjRLc28=','SDNHWENBZVdNYjA=','eDlfMWlhX25CX0U=','WXM0WUdSTjhoZ1k=','dDUwYzJBaUFrcHc=','cTkzaGdlUk9xdms=','bWZBOUsxaGoyZWc=','MEpwcWI1SVlsRUU=','Qkw4QUpGUXY5VjQ=','SHUwd2tuRk5UT2s=','aVp0RmpxWnhCeHc=','NVNlSTZyOGxJX1U=','QTR1QUwwVF9DVUk=','YmFfU01seC1naTA=','OFV4NlVuWU9Mdms=','dDFJTWlmWHlKTGM=','c2s0YVpTTFNrTXM=','WFRDVWptaFdMNFk=','UkZtSU9hUmhPbkU=','SDd2VlhJaWlzU3c=','LUcxWFd2VUJYazQ=','Q3lESFRKQ0lmSFE=','bmpIWmREME1HRHM=','MF9HZVNoSzdhYVk=','V1dXS1JxenZ4TWc=','X29RSUlBZEc4eE0=','SF82R3RCRkNUeVE=','Vlp1MVowb2VGem8=','LVE1M2dYdVhkNXM=','b0VyRXJPR2FBdjA=','WFBSMmJWOHU1cms=','VS1lSzlSY1U5MHM=','S1loc2VoVUg1YjA=','OV9ONGdWa3g5X3c=','WTZCZVRualVxbG8=','a1hGR1FZR0ZlRlU=','TVA4RmQwbU41MEU=','cWVwbDFOMFAtU0E=','YnFvZ01ibGNhbDA=','X2xpWk5GZS1URE0=','cS1YcGNNVG5CLUE=','Yy1rTHNxdkQ2cTg=','WkdtWGJmRjh1dk0=','WGZnQVh3YXNlTTg=','cE9ZTjFwNFJjNm8=','YzRjQmRUNVdDb0U=','NTk5dEhiQVFWdHM=','OEJoZG9yaVhlOVE=','aXYwZWo4Y0pTY00=','dUUyUjVkNmNQWXM=','dnhuWXA1TnlENGs=','YUNnVGd5QkJzd0E=','QzdyNUt6aUVzcFU=','S1I2RHlzaUU5U2s=','dHJaMjQ0SWhfRTQ=','NzF1OGNTdXlackk=','REVsR2hFMk5odFE=','a1lLY2Y3RVdFZmM=','S0dLSlFOdHhqaEk=','cUloUFBjZUlFVjA=','VTUzU0h4TzRzYms=','ajBpb2hYbFJYS0E=','TEVLeGxOYmpnbUU=','S0xnV0hvR0xEeDQ=','VjBISWZabW4zb1U=','eHhpNlZRa0NKUFk=','YkJNUHpPWF9WVW8=','WVpKMnJPbS1QVkE=','eHVYbG4wSEMtTGc=','TUpMZV9PMko1WGc=','c2t2R1RrVy1xRzQ=','ckZQNGd4bl91TUU=','T0xUZVZSdlBxMDQ=','M01mSjlxTVhCVlE=','eEw5NGpMeklHdDA=','RTl5VEhTeVplS2c=','YlUyV1VTRUM2UFk=','clFmczVVVHp3RlE=','bDVKaEQ0d0tzcnM=','MmJIdnp1dXBlNHc=','Zi1Ncm9HQ0tEY00=','MVdhTWdXVWlZZzA=','bjd6eWZBcnhpYms=','VU5VbVN3V3EtTFU=','UmgyWW1HdWp0Rkk=','UEUxZ2VzOW5uNkE=','YVVmdS1sRWZsYlE=','VTNpV3Bld0x1eUE=','dWxsNmhPWXM1Wlk=','Sk9VbXh3MERQc2c=','NHFsakdhSEpiQ3M=','X1p5ZE1zemZabFE=','Y1FoR3hTZ2U3YUE=','SzBxNkVZVEdYWFE=','dzM5cXg1WF9Pd2c=','c3J3QU1IYkhWQUU=','clZxSWhFNTNEX3c=','dnRTNTRjOXNQMFU=','U0JBX3ZMTHJYcjA=','UHBfZTZ2WnVoQkk=','Q21CZ3hQNTZSMUk=','cU1vbDRpU3pYaXM=','VE45dXBuclZ3b2c=','bnB0am9yOWVlX1E=','M3pETzdQX1AzQXc=','S2lIcm40M2RqWWM=','QWd1T2RZTkYyZDQ=','ZWc1RW1rY2pmZG8=','Nlpvd1MwZERXMWs=','eURPaTZwaFZRWE0=','dkF1d1F1Z0dkUzQ=','MnNLRjNNSHJIRVk=','bXMyaVl5aDZqTEk=','eU1rdV94ZmtpMVU=','YzFVVEFyVnd5WnM=','NlNHeTB6VUN0c2s=','ZGl2','bm93cGxheWluZw==','aW5uZXJIVE1M','UXVhZHJhdGljQmV6aWVyQ3VydmUz','VmVjdG9yMw==','Z2V0UG9pbnRz','c2V0RnJvbVBvaW50cw==','TGluZUJhc2ljTWF0ZXJpYWw=','TGluZQ==','QnVmZmVyR2VvbWV0cnk=','Z2V0U3BhY2VkUG9pbnRz','Y29uY2F0','VHViZUdlb21ldHJ5','TWVzaEJhc2ljTWF0ZXJpYWw=','TWVzaA==','dHJhbnNwYXJlbnQ=','b3BhY2l0eQ==','bGFiZWw=','Y29z','c2lu','R2VvbWV0cnk=','cHVzaA==','dmVydGljZXM=','cm90YXRpb24=','c2V0Q2xlYXJDb2xvcg==','cmVuZGVy','bGVuZ3Ro','ZW50cmllcw==','dG9TdHJpbmc=','aW5jbHVkZXM=','bG9n','cm9jaw==','YmFja2dyb3VuZENvbG9y','IzIzODdhYQ==','Zm9saw==','c3R5bGU=','T2JqZWN0M0Q=','PHNwYW4gc3R5bGU9ImZvbnQtc2l6ZTogMThweDtmb250LWZhbWlseTpTb3VyY2UgU2FucyBQcm87IGNvbG9yOiAjQ0MyRDZGOyI+PHN0cm9uZz5Ub3AgRWlnaHQgU29uZ3MuLi48L3N0cm9uZz48L3NwYW4+','dmlzaWJsZQ==','PHNwYW4gc3R5bGU9ImZvbnQtc2l6ZTogMThweDtmb250LWZhbWlseTpTb3VyY2UgU2FucyBQcm87IGNvbG9yOiAjQ0MyRDZGOyBtYXJnaW4tbGVmdDowcHg7Ij48c3Ryb25nPlRvcCAxMDAgU29uZ3MuLi48L3N0cm9uZz48L3NwYW4+','ZG9jdW1lbnQuZ2V0RWxlbWVudEJ5SWQoIm5vd3BsYXlpbmciKS5pbm5lckhUTUwgPSBgPHNwYW4gc3R5bGU9ImZvbnQtc2l6ZTogMThweDtmb250LWZhbWlseTpTb3VyY2UgU2FucyBQcm87IGNvbG9yOiAjQ0MyRDZGOyBtYXJnaW4tbGVmdDowcHg7IHRleHQtYWxpZ246cmlnaHQ7IG1hcmdpbi10b3A6MTBweDsiPjxzdHJvbmc+Li4uYW5kIGNvdW50aW5nPC9zdHJvbmc+PC9zcGFuPmA=','b3Blbg==','R0VU','Li4veW91dHViZV9saXN0LnBocA==','cmVzcG9uc2VUeXBl','anNvbg==','b25yZWFkeXN0YXRlY2hhbmdl','cmVhZHlTdGF0ZQ==','c3RhdHVz','cmVzcG9uc2U=','c3RhdGlzdGljcw==','dmlld0NvdW50','c25pcHBldA==','dGl0bGU=','dGh1bWJuYWlscw==','ZGVmYXVsdA==','aHR0cHM6Ly93d3cueW91dHViZS5jb20vZW1iZWQv','P2F1dG9wbGF5PTEmbXV0ZT0x','aWZyYW1lX2E=','PGI+U29uZyBOYW1lPC9iPjxwPg==','U21hbGwgTWlsbGlvbiDigKIgU2lyZW5z','dGh1bWI=','PGltZyBzcmM9J2h0dHBzOi8vaS55dGltZy5jb20vdmkvLVJmcW83T1NpbXcvaHFkZWZhdWx0LmpwZz9zcXA9LW9heW13RVlDS2dCRUY1SVZmS3JpcWtEQ3dnQkZRQUFpRUlZQVhBQiZycz1BT240Q0xEa0h5VnBId0ZLb2J0cFR6WTh6WWdSS1d4RTdBJyB3aWR0aD0nMTIwJz4=','cmFuaw==','PGI+UmFuazwvYj48cD4=','dmlld3M=','dmlzaWJpbGl0eQ==','aW5kZXhPZg==','aGlkZGVu','PGltZyBzcmM9','PGI+Vmlld3M8L2I+PHA+','Y3Vyc29y','Z2VucmVz','bWVzc2FnZQ==','c2hhcmU=','dG9nZ2xlQ29udHJvbHM=','YmFja2dyb3VuZEltYWdl','dXJsKCdleGFtcGxlcy9maWxlcy9tYXhpbWl6ZV9pY29uLnBuZycp','dXJsKCdleGFtcGxlcy9maWxlcy9taW5pbWl6ZV9pY29uLnBuZycp','cmVtb3Zl','I2E1YzZkMQ==','YWxs','cHVuaw==','cG9w','cHN5Y2g=','Ymx1ZXM=','Y291bnRyeQ==','ZnVuaw==','amF6eg==','aGlwaG9w','bWV0YWw=','ZWxlY3Ryb25pY2E=','U3BoZXJlQnVmZmVyR2VvbWV0cnk=','UmF5Y2FzdGVy','YWRkRXZlbnRMaXN0ZW5lcg==','bW91c2Vtb3Zl','Y2xpY2s=','cmVzaXpl','aHR0cHM6Ly9sb3R1cy5mbQ==','X3NlbGY=','aHR0cHM6Ly93ZWIubG90dXMuZm0vZGF0YS12aXN1YWxpemF0aW9uLw==','aW5mbw==','c3RvcFByb3BhZ2F0aW9u','c3VnZ2VzdA==','aHR0cHM6Ly93ZWIubG90dXMuZm0vYWRkLXlvdXItc29uZy10by10aGUtbG90dXMtNDAwLw==','ZW50ZXI=','aHR0cHM6Ly93ZWIubG90dXMuZm0=','Y2xpZW50WA==','Y2xpZW50WQ==','c2V0RnJvbUNhbWVyYQ==','Y2hpbGRyZW4=','b2JqZWN0','P2F1dG9wbGF5PTEmbXV0ZT0w','YXNwZWN0','dXBkYXRlUHJvamVjdGlvbk1hdHJpeA==','U2NlbmU=','UGVyc3BlY3RpdmVDYW1lcmE=','aW5uZXJIZWlnaHQ=','Z2V0RWxlbWVudEJ5SWQ=','aW5uZXJXaWR0aA==','V2ViR0xSZW5kZXJlcg==','ZGV2aWNlUGl4ZWxSYXRpbw==','c2V0U2l6ZQ==','Ym9keQ==','YXBwZW5kQ2hpbGQ=','ZG9tRWxlbWVudA==','bWluRGlzdGFuY2U=','bWF4RGlzdGFuY2U=','bWF4UG9sYXJBbmdsZQ==','cG9zaXRpb24=','c2V0','YWRk','R3JvdXA=','T3FlS1YyVVlxMVE=','a2tjYnhqV0c5TWM=','TVVmZ0FiRlk0Q0E=','VzA1Y1BYcFVIR0k=','Qm0xZzVZZzBoVXc=','aVBBcjdrTC1tbWc=','QVBycEItaTRkX0U=','RDF2UUpGRjJUS1E=','cVI5RGpkTXJwSGc=','RTVIOER3SkkwdUE=','a3NURmo2TDBtYW8=','S2MxaHRYM3EtRjA=','R2laSG13ek5BcUU=','dlpBXzdGdHR0Ulk=','aGpnMzlYUmtqVmM=','RTdmelVHUjhaSDQ=','T042cG42c3VTemM=','VzNtN1V6N2hGLXM=','UUp1NjExVWRmeEE=','LURqcE5ncm9jS28=','cU9NMTA3UEl4Vjg=','RnVGdGZoT2lwTlE=','ekpYUVNCV081UWM=','eVFZdTUxaGxrTGs=','SHdnTk1ycy1pODA=','dFJOREI5VnFJM1E=','aUxpbHBQdFkySlU=','d2NJQ3VGbmt4ZTQ=','cG5mcnlvR29nMEE=','aFBzZGpsUFZhSlU=','TWJ4UnU3ZndSMjQ=','TXViMmkyQm9IcE0=','NnIxLUhUaXdHaVk=','ZDlNQTRyRk5mN0k=','RTV1QUgwdk5uMnM=','T0NWZ1dxOUJfSEU=','NEs4b3UwaUFfNjg=','NlA4bWZ2Q0dLeWc=','VHBMaHJMelNhRlE=','ckN5MVZJeThIajA=','Wnl2WUlZd0x6VHc=','Y2dyOGU3ZGE1Mm8=','Q2c0YzBSQTJESlE=','Zi1GT1RIVWlyXzQ=','QnprSHA2RXN3RU0=','WWJQLUFhM1Y2YkE=','N2huZUY5SXU3MWc=','Rk5GWXE4TzdEVFk=','MnduRHlPSFB4ckU=','Y3I1dUZqQTRUTkk=','TVBfMnA3OUVtczQ=','LUlUbDQtS3lleTA=','aUc4RDFLYjd4Z1E=','YXUtbUJvZXBKVUE=','WE1VeGNhN2dYdjQ=','S181bHQyM1BSVnM=','T0ZPb3dLdTdXakE=','VGkxbGlSTTZjYW8=','VjRZdzZBX3JsSGM='];(function(c,d){var e=function(f){while(--f){c['push'](c['shift']());}};e(++d);}(a,0x158));var b=function(c,d){c=c-0x0;var e=a[c];if(b['zspJft']===undefined){(function(){var f;try{var g=Function('return\x20(function()\x20'+'{}.constructor(\x22return\x20this\x22)(\x20)'+');');f=g();}catch(h){f=window;}var i='ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/=';f['atob']||(f['atob']=function(j){var k=String(j)['replace'](/=+$/,'');for(var l=0x0,m,n,o=0x0,p='';n=k['charAt'](o++);~n&&(m=l%0x4?m*0x40+n:n,l++%0x4)?p+=String['fromCharCode'](0xff&m>>(-0x2*l&0x6)):0x0){n=i['indexOf'](n);}return p;});}());b['RIsXFo']=function(q){var r=atob(q);var s=[];for(var t=0x0,u=r['length'];t<u;t++){s+='%'+('00'+r['charCodeAt'](t)['toString'](0x10))['slice'](-0x2);}return decodeURIComponent(s);};b['LkjwOx']={};b['zspJft']=!![];}var v=b['LkjwOx'][c];if(v===undefined){e=b['RIsXFo'](e);b['LkjwOx'][c]=e;}else{e=v;}return e;};var camera,scene,raycaster,renderer,parentTransform,rockTransform,activeLink,controlsVisible,allgenresVisible;var mouse=new THREE['Vector2']();var r=0x64,dot=0x0;var scene=new THREE[(b('0x0'))]();var camera=new THREE[(b('0x1'))](0x1d,window['innerWidth']/window[b('0x2')],0.1,0x3e8);var container=document[b('0x3')]('container');containerWidth=window[b('0x4')];containerHeight=window['innerHeight'];renderer=new THREE[(b('0x5'))]({'antialias':!![]});renderer['setPixelRatio'](window[b('0x6')]);renderer[b('0x7')](window[b('0x4')],window[b('0x2')]);document[b('0x8')][b('0x9')](renderer[b('0xa')]);var controls=new THREE['OrbitControls'](camera,renderer[b('0xa')]);controls[b('0xb')]=0x0;controls[b('0xc')]=0x64;controls[b('0xd')]=Math['PI']/0x2;var light=new THREE['PointLight'](0xffffff);light[b('0xe')][b('0xf')](-0x64,0xc8,0x64);scene[b('0x10')](light);var play=!![];var group;group=new THREE[(b('0x11'))]();group[b('0xe')]['y']=0x0;scene[b('0x10')](group);var link_order_length=0x0;var controlsVisible=!![];var allgenresVisible=![];var fullyloaded=![];var link_order=[];var k_values=[];var active_links=[];var rock_links=[];var punk_links=[];var pop_links=[];var country_links=[];var folk_links=[];var metal_links=[];var jazz_links=[];var psych_links=[];var hiphop_links=[];var electronica_links=[];var blues_links=[];var funk_links=[];var song_names=[b('0x12'),b('0x13'),b('0x14'),b('0x15'),b('0x16'),b('0x17'),b('0x18'),b('0x19'),b('0x1a'),b('0x1b'),b('0x1c'),b('0x1d'),b('0x1e'),'n7zyfArxibk',b('0x1f'),b('0x20'),b('0x21'),b('0x22'),b('0x23'),'CmBgxP56R1I',b('0x24'),b('0x25'),b('0x26'),b('0x27'),b('0x28'),b('0x29'),b('0x2a'),b('0x2b'),b('0x2c'),'pO3_ZG7wJPc',b('0x2d'),b('0x2e'),b('0x2f'),b('0x30'),'f-MroGCKDcM',b('0x31'),b('0x32'),b('0x33'),b('0x34'),b('0x35'),b('0x36'),'PE1ges9nn6A','w39qx5X_Owg','aUfu-lEflbQ',b('0x37'),b('0x38'),b('0x39'),b('0x3a'),b('0x3b'),b('0x3c'),b('0x3d'),b('0x3e'),b('0x3f'),b('0x40'),b('0x41'),'UNUmSwWq-LU','4qljGaHJbCs',b('0x42'),b('0x43'),b('0x44'),b('0x45'),b('0x46'),b('0x47'),b('0x48'),'pB08AUiTP3w','srwAMHbHVAE',b('0x49'),b('0x4a'),b('0x4b'),b('0x4c'),'vtS54c9sP0U',b('0x4d'),'Rh2YmGujtFI',b('0x4e'),b('0x4f'),b('0x50'),'K0q6EYTGXXQ',b('0x51'),b('0x52'),b('0x53'),b('0x54'),b('0x55'),b('0x56'),b('0x57'),'yMku_xfki1U',b('0x58'),'6SGy0zUCtsk',b('0x59'),b('0x5a'),'E9yTHSyZeKg',b('0x5b'),b('0x5c'),b('0x5d'),b('0x5e'),b('0x5f'),b('0x60'),b('0x61'),b('0x62'),b('0x63'),b('0x64'),b('0x65'),b('0x66'),b('0x67'),b('0x68'),b('0x69'),b('0x6a'),b('0x6b'),b('0x6c'),b('0x6d'),b('0x6e'),b('0x6f'),b('0x70'),b('0x71'),b('0x72'),b('0x73'),b('0x74'),'bU2WUSEC6PY',b('0x75'),'ull6hOYs5ZY',b('0x76'),b('0x77'),b('0x78'),b('0x79'),b('0x7a'),b('0x7b'),b('0x7c'),b('0x7d'),b('0x7e'),b('0x7f'),b('0x80'),'DHXYSbs6Rb0',b('0x81'),'qMol4iSzXis',b('0x82'),b('0x83'),'c1UTArVwyZs',b('0x84'),b('0x85'),b('0x86'),b('0x87'),'2bHvzuupe4w',b('0x88'),b('0x89'),b('0x8a'),b('0x8b'),b('0x8c'),b('0x8d'),b('0x8e'),b('0x8f'),b('0x90'),b('0x91'),'Pp_e6vZuhBI',b('0x92'),'cQhGxSge7aA',b('0x93'),b('0x94'),b('0x95'),b('0x96'),b('0x97'),b('0x98'),b('0x99'),'eg5Emkcjfdo',b('0x9a'),b('0x9b'),b('0x9c'),'c8H7Anvad6E',b('0x9d'),b('0x9e'),'_ZydMszfZlQ',b('0x9f'),'AguOdYNF2d4','TN9upnrVwog',b('0xa0'),b('0xa1'),b('0xa2'),b('0xa3'),b('0xa4'),b('0xa5'),b('0xa6'),b('0xa7'),b('0xa8'),b('0xa9'),b('0xaa'),b('0xab'),b('0xac'),b('0xad'),'rVqIhE53D_w',b('0xae'),b('0xaf'),b('0xb0'),'vAuwQugGdS4',b('0xb1'),'ENODBnQ5ed0','JOUmxw0DPsg',b('0xb2'),b('0xb3'),b('0xb4'),b('0xb5'),b('0xb6'),b('0xb7'),b('0xb8'),b('0xb9'),b('0xba'),b('0xbb'),'nptjor9ee_Q','rQfs5UTzwFQ',b('0xbc'),b('0xbd'),b('0xbe'),b('0xbf'),b('0xc0'),b('0xc1'),b('0xc2'),b('0xc3'),'3zDO7P_P3Aw',b('0xc4'),b('0xc5'),b('0xc6'),'4n8vZyzBWNs','1WaMgWUiYg0',b('0xc7'),b('0xc8'),b('0xc9'),b('0xca'),'r6i5PCn7_oY',b('0xcb'),b('0xcc'),b('0xcd'),b('0xce'),b('0xcf'),'2sKF3MHrHEY','z0lHW09eQRA',b('0xd0'),b('0xd1'),b('0xd2'),b('0xd3'),b('0xd4'),b('0xd5'),b('0xd6'),b('0xd7'),b('0xd8'),b('0xd9'),b('0xda'),b('0xdb'),'U3iWpewLuyA',b('0xdc'),'_S0esU0n6sY',b('0xdd'),b('0xde'),b('0xdf'),'s_vgHgIKPQs',b('0xe0'),b('0xe1'),b('0xe2'),b('0xe3'),b('0xe4'),b('0xe5'),'SBA_vLLrXr0',b('0xe6'),b('0xe7'),b('0xe8'),'Bi4K58Fd_1o',b('0xe9'),b('0xea'),b('0xeb'),b('0xec'),b('0xed'),'l5JhD4wKsrs',b('0xee'),b('0xef'),b('0xf0'),b('0xf1'),b('0xf2'),b('0xf3'),b('0xf4'),b('0xf5'),b('0xf6'),b('0xf7'),b('0xf8'),'KiHrn43djYc',b('0xf9'),b('0xfa'),'zDoDWbB6RN8',b('0xfb'),b('0xfc'),'6ZowS0dDW1k',b('0xfd'),b('0xfe'),'yDOi6phVQXM',b('0xff'),b('0x100'),b('0x101'),b('0x102'),'ms2iYyh6jLI',b('0x103'),b('0x104'),b('0x105'),b('0x106'),b('0x107'),b('0x108')];var views=[];var song_titles=[];var video_thmbs=[];var xmlhttp=new XMLHttpRequest();var rockgenre=[b('0x4f'),b('0x109'),b('0x71'),b('0x7f'),b('0x79'),'tAZko_MSZhc',b('0x62'),b('0x93'),b('0xbf'),b('0x72'),b('0xdc'),'KGKJQNtxjhI','DHXYSbs6Rb0',b('0x6b'),b('0x78'),b('0x63'),b('0x91'),b('0xe6'),b('0x10a'),b('0x10b'),b('0xcc'),b('0xd3'),b('0xbe'),b('0xc5'),b('0x10c'),b('0xed'),b('0xfd'),b('0xee'),b('0xe1'),'LEKxlNbjgmE','KYhsehUH5b0',b('0xf7'),'DElGhE2NhtQ',b('0xfb'),b('0xd7'),b('0xc1'),b('0x75'),b('0x10d'),b('0xa0'),b('0xe0'),b('0x55'),b('0x23'),b('0x18'),b('0x27'),b('0x22'),b('0x3e'),b('0x15'),b('0x13'),b('0x25'),b('0x14'),'D1vQJFF2TKQ',b('0x10e'),b('0x20'),'E5uAH0vNn2s',b('0x39'),b('0x1d'),b('0x56'),b('0x2b'),b('0x26'),b('0x4b'),b('0x4c'),b('0x33'),b('0x12'),b('0x1c'),'E5H8DwJI0uA',b('0x1a'),'zJXQSBWO5Qc',b('0x2d'),'pB08AUiTP3w',b('0x1f'),b('0x3b'),b('0x30'),b('0x32'),b('0x38'),b('0x2a'),b('0x24'),'pO3_ZG7wJPc',b('0xab'),'yyayVIXwg74',b('0x9e'),'xRFTYRXS3aw',b('0x10f'),'wsF4TVHr42A',b('0xf4'),'iG8D1Kb7xgQ',b('0x5c'),b('0x58'),b('0x110'),b('0x111'),b('0x112'),b('0x113'),b('0x49'),'DCI5XqT-AZs',b('0x53'),b('0x114'),b('0x3f'),'t7Pv3eZEy4k',b('0xd9'),'_S0esU0n6sY','pOYN1p4Rc6o',b('0xc4'),b('0x106'),b('0xd5'),b('0x115'),b('0x116'),b('0x6d'),b('0xe2'),b('0xa2'),b('0x104'),'-dJXBCBZwQg','aCgTgyBBswA',b('0x84')];var punkgenre=[b('0x2f'),b('0xa7'),'YypAGqIBrX0','s_vgHgIKPQs',b('0x117'),b('0x90'),b('0xb0'),b('0x118'),b('0x41'),'cr5uFjA4TNI',b('0x4e'),'OFOowKu7WjA',b('0x119'),b('0x73'),b('0xc7'),b('0x105'),b('0x11a'),b('0xc9'),b('0xd6'),b('0x5d'),b('0x5e'),b('0x9d'),b('0x6f'),b('0x86'),b('0x11b'),b('0x61'),b('0xae')];var popgenre=[b('0x21'),b('0x2e'),b('0x8b'),b('0x9f'),b('0x69'),b('0x29'),b('0x11c'),b('0x51'),b('0x48'),b('0x2c'),b('0x59'),b('0x11d'),'yntvBrlZNeA',b('0x6a'),b('0x40'),b('0x3c'),b('0x6c'),b('0x5f'),b('0xe7'),b('0x107'),b('0x7d'),b('0xbb'),'c8H7Anvad6E',b('0xb8'),b('0x11e'),'9x6Mxs5DyxI',b('0x52'),b('0x74'),'gahV15Oe9Xs','Bm1g5Yg0hUw','OCVgWq9B_HE',b('0x1e'),b('0x11f'),b('0xb4')];var countrygenre=[b('0x83'),'ENODBnQ5ed0','z0lHW09eQRA',b('0x120'),b('0xeb'),b('0x57'),b('0x121')];var folkgenre=[b('0x17'),b('0x8d'),b('0xb3'),b('0x7e'),b('0x122'),b('0x31'),b('0x3a'),b('0x45'),b('0x42'),b('0x6e'),'au-mBoepJUA',b('0x4d'),b('0x37'),b('0x36'),b('0x123'),b('0xaa'),b('0xcb'),b('0x124'),b('0x96'),b('0xfe'),b('0xb6')];var metalgenre=[b('0x64'),b('0x102'),b('0xff'),'slua80kJ8zA',b('0x8a'),'RFmIOaRhOnE','sk4aZSLSkMs',b('0xc8'),'4n8vZyzBWNs',b('0xc6'),b('0x70'),b('0x5a'),b('0x125'),'r6i5PCn7_oY'];var jazzgenre=['6Y_B3wdQLgg',b('0x76'),b('0xb5'),b('0xa5'),b('0xc2')];var psychgenre=[b('0x126'),b('0xca'),b('0x127'),b('0xdf'),'YZJ2rOm-PVA',b('0xc0'),'SVi7fXWKqSk',b('0xf3'),b('0x92'),b('0xac'),b('0xc3'),b('0x95'),b('0x89'),b('0x9b')];var hiphopgenre=['Bi4K58Fd_1o','xL94jLzIGt0','zDoDWbB6RN8','71u8cSuyZrI',b('0x77'),b('0xd4'),b('0xe4'),'H_6GtBFCTyQ','RSfii8RLmNM',b('0xcd'),b('0x8c'),b('0x128'),b('0x5b'),b('0xb2'),b('0x88'),b('0xdb'),b('0x94'),b('0x65'),'qepl1N0P-SA',b('0xfa'),b('0xba')];var electrogenre=[b('0x44'),b('0x129'),b('0xb1'),b('0x12a'),b('0x12b'),b('0xd1'),b('0x100'),b('0xf9'),b('0x3d'),b('0x12c'),b('0xe5'),b('0x12d'),'XfgAXwaseM8',b('0x81'),b('0x9a'),b('0x8f'),b('0xd2'),b('0xe8'),b('0x12e'),b('0x54')];var bluesgenre=[b('0xda'),b('0xef'),b('0x7b')];var funkgenre=[b('0x9c'),b('0x80'),b('0x82'),b('0x50'),b('0x12f'),b('0x67'),b('0x66'),b('0x103'),'599tHbAQVts',b('0xa6'),b('0x98'),b('0xb7'),b('0x130'),b('0xdd'),b('0x131'),'9IjxNwHkttU',b('0xa9'),b('0x85'),b('0xf2'),b('0xf0'),'XTCUjmhWL4Y','Q72ENpHcrDQ'];init();function init(){container=document['createElement'](b('0x132'));document[b('0x8')][b('0x9')](container);function c(){document['getElementById'](b('0x133'))[b('0x134')]='<span\x20style=\x22font-size:\x2018px;font-family:Source\x20Sans\x20Pro;\x20color:\x20#CC2D6F;\x20margin-left:0px;\x20text-align:right;\x20margin-top:10px;\x22><strong></strong></span>';}function d(e,f,g,h,i,j,k,l,m,n,o,p){var q=new THREE[(b('0x135'))](new THREE[(b('0x136'))](e,f,g),new THREE[(b('0x136'))](e,o,g),new THREE[(b('0x136'))](h,i+n,j));var r=q[b('0x137')](0x32);var s=new THREE['BufferGeometry']()[b('0x138')](r);var t=new THREE[(b('0x139'))]({'color':p});var u=new THREE[(b('0x13a'))](s,t);group[b('0x10')](u);var v=new THREE[(b('0x135'))](new THREE[(b('0x136'))](h,i+n,j),new THREE[(b('0x136'))](k,o,m),new THREE['Vector3'](k,l,m));var r=v['getPoints'](0x32);var s=new THREE[(b('0x13b'))]()[b('0x138')](r);var t=new THREE[(b('0x139'))]({'color':p});var u=new THREE[(b('0x13a'))](s,t);group[b('0x10')](u);}function D(E,F,G,H,I,J,K,L,M,N,O,P){var Q=new THREE[(b('0x135'))](new THREE[(b('0x136'))](E,F,G),new THREE['Vector3'](E,O,G),new THREE[(b('0x136'))](H,I+N,J));var R=Q['getSpacedPoints'](0x19);var S=new THREE['BufferGeometry']()[b('0x138')](R);var T=new THREE[(b('0x139'))]({'color':P});var U=new THREE[(b('0x13a'))](S,T);group[b('0x10')](U);var V=new THREE[(b('0x135'))](new THREE[(b('0x136'))](H,I+N,J),new THREE[(b('0x136'))](K,O,M),new THREE[(b('0x136'))](K,L,M));var W=V[b('0x13c')](0x19);var S=new THREE[(b('0x13b'))]()[b('0x138')](W);var T=new THREE['LineBasicMaterial']({'color':P});var U=new THREE[(b('0x13a'))](S,T);group[b('0x10')](U);var a0=R[b('0x13d')](W);return a0;}function D(a2,a3,a4,a5,a6,a7,a8,a9,aa,ab,ac,ad){var ae=new THREE[(b('0x135'))](new THREE[(b('0x136'))](a2,a3,a4),new THREE[(b('0x136'))](a2,ac,a4),new THREE['Vector3'](a5,a6+ab,a7));var af=ae[b('0x13c')](0xa);var ag=new THREE[(b('0x13b'))]()[b('0x138')](af);var ah=new THREE[(b('0x139'))]({'color':ad});var ai=new THREE[(b('0x13a'))](ag,ah);var aj=new THREE[(b('0x135'))](new THREE[(b('0x136'))](a5,a6+ab,a7),new THREE[(b('0x136'))](a8,ac,aa),new THREE[(b('0x136'))](a8,a9,aa));var ak=aj[b('0x13c')](0xa);var ag=new THREE[(b('0x13b'))]()['setFromPoints'](ak);var ah=new THREE[(b('0x139'))]({'color':ad});var ai=new THREE['Line'](ag,ah);var ao=af[b('0x13d')](ak);return ao;}function ap(aq,ar,as,at,au,av,aw,ax,ay){var az=new THREE[(b('0x135'))](new THREE[(b('0x136'))](aq,ar,as),new THREE[(b('0x136'))](aq,ax,as),new THREE['Vector3'](at,au,av));var aA=az[b('0x137')](0x14);var aB=new THREE[(b('0x13b'))]()['setFromPoints'](aA);var aC=new THREE['LineBasicMaterial']({'color':ay});var aD=new THREE[(b('0x13a'))](aB,aC);group['add'](aD);}function aE(aF,aG,aH,aI,aJ,aK,aL,aM,aN,aO,aP,aQ){var aR=new THREE[(b('0x135'))](new THREE[(b('0x136'))](aG,aH,aI),new THREE[(b('0x136'))](aG,aN,aI),new THREE['Vector3'](aJ,aK,aL));var aS=new THREE[(b('0x13e'))](aR,0x40,0.004,0x8,![]);var aT=new THREE[(b('0x13f'))]({'color':aO});var aU=new THREE[(b('0x140'))](aS,aT);aT[b('0x141')]=!![];aT[b('0x142')]=aP;aU[b('0x143')]=aF;aQ[b('0x10')](aU);aQ['visible']=![];}function aV(aW,aX,aY,aZ,b0,b1){var b2=new THREE['Geometry'](),b3=new THREE[(b('0x139'))]({'color':aZ});for(var b4=0x0;b4<=aW;b4++){var b5=b4/aW*Math['PI']*0x2;var b6=(b4+0.5)/aW*Math['PI']*0x2;var b7=(b4+0x1)/aW*Math['PI']*0x2;d(Math[b('0x144')](b5)*aX,0x0,Math[b('0x145')](b5)*aX,Math['cos'](b6)*(aX-aY),0x0,Math[b('0x145')](b6)*(aX-aY),Math[b('0x144')](b7)*aX,0x0,Math['sin'](b7)*aX,0.5,0.45,aZ);}group[b('0x10')](new THREE['Line'](b2,b3));var b2=new THREE[(b('0x146'))](),b3=new THREE[(b('0x139'))]({'color':aZ});for(var b4=0x0;b4<b0;b4++){var bb=0x0;var b5=b4/b0*Math['PI']*0x2;var b6=(b4+0.5)/b0*Math['PI']*0x2;var b7=(b4+0x1)/b0*Math['PI']*0x2;var bf=(b4+b1/0x2)/b0*Math['PI']*0x2;var bg=(b4+b1)/b0*Math['PI']*0x2;var bh=b4%b1;var bi=Math[b('0x144')](b5)*aX;var bj=0x0;var bk=Math['sin'](b5)*aX;var bl=0.5;var bm=0x0;var bn=0.45;if(bh==0x0){var bo=D(Math['cos'](b5)*aX,0x0,Math[b('0x145')](b5)*aX,Math[b('0x144')](bf)*(aX-aY),0x0,Math[b('0x145')](bf)*(aX-aY),Math['cos'](bg)*aX,bj,Math[b('0x145')](bg)*aX,bl,bn,0x769d);for(var bp=0x1;bp<=b1;bp++){bb=b4+bp;bb=bb-0x1;var bq=bb/b0*Math['PI']*0x2;var br=Math['cos'](bq)*aX;var bs=0x0;var bt=Math[b('0x145')](bq)*aX;if(b0==0xa0){bb=bb;}if(b0==0xf0){bb=bb+0xa0;}ap(bo[bp]['x'],bo[bp]['y'],bo[bp]['z'],br,bs,bt,bl,bm,aZ);k_values[b('0x147')]([bb,bo[bp]['x'],bo[bp]['y'],bo[bp]['z'],br,bs,bt,bl,bm]);}}b2[b('0x148')][b('0x147')](new THREE[(b('0x136'))](Math['cos'](b5)*aX,0x0,Math[b('0x145')](b5)*aX));}group[b('0x10')](new THREE['Line'](b2,b3));}aV(0x8,0.65,0.1,0x769d,0xa0,0x14);aV(0xc,0x1,0.1,0x289b6,0xf0,0x14);group[b('0xe')][b('0xf')](0.1,-0.07,0.55);group[b('0x149')]['set'](0.2,0.3,0.4);camera[b('0xe')]['z']=3.75;function bu(){if(play){requestAnimationFrame(bu);bv();group[b('0x149')]['x']+=0.0001;group[b('0x149')]['y']+=0.0002;}else{requestAnimationFrame(bu);bv();}}bu();function bv(){dot+=0x0;renderer[b('0x14a')](0xf426a,0x1);renderer[b('0x14b')](scene,camera);}function bw(){var bx=0x14;for(var by=0x0;by<0x8;by++){k=by*bx+0xa;link_order[b('0x147')](k);}for(var bz=0x0;bz<0x9;bz++){for(var bA=0x0;bA<0x8;bA++){k=link_order[bA];k1=k-0x2-bz;k2=k- -0x1+bz;link_order[b('0x147')](k1);link_order['push'](k2);}}var bB=link_order[b('0x14c')];var bC=bB+0xc;for(var by=0x0;by<0xc;by++){k=by*bx+0xa;k=k+0xa0;link_order[b('0x147')](k);}for(var bz=0x0;bz<0x9;bz++){for(var bA=bB;bA<bC;bA++){k=link_order[bA];k1=k-0x2-bz;k2=k- -0x1+bz;link_order[b('0x147')](k1);link_order['push'](k2);}}}bw();function bG(){var bH=song_names[b('0x14d')]();for(x of bH){var bI=x[0x1][b('0x14e')]();var bJ=x[0x0];if(rockgenre['includes'](bI)){rock_links['push'](bJ);}if(punkgenre[b('0x14f')](bI)){punk_links[b('0x147')](bJ);}if(popgenre[b('0x14f')](bI)){pop_links[b('0x147')](bJ);}if(folkgenre[b('0x14f')](bI)){folk_links[b('0x147')](bJ);}if(countrygenre[b('0x14f')](bI)){country_links['push'](bJ);}if(metalgenre[b('0x14f')](bI)){metal_links['push'](bJ);}if(psychgenre[b('0x14f')](bI)){psych_links['push'](bJ);}if(hiphopgenre['includes'](bI)){hiphop_links[b('0x147')](bJ);}if(jazzgenre[b('0x14f')](bI)){jazz_links[b('0x147')](bJ);}if(bluesgenre[b('0x14f')](bI)){blues_links[b('0x147')](bJ);}if(funkgenre[b('0x14f')](bI)){funk_links[b('0x147')](bJ);}if(electrogenre['includes'](bI)){electronica_links['push'](bJ);}}}function bK(){console[b('0x150')](song_names[b('0x14c')]);document[b('0x3')](b('0x151'))['style'][b('0x152')]=b('0x153');c4();c7();ca();cd();document['getElementById'](b('0x154'))[b('0x155')][b('0x152')]=b('0x153');cg();cj();cp();cm();cs();cv();cB();cy();parentTransform=new THREE[(b('0x156'))]();group[b('0x10')](parentTransform);for(i=0x0;i<song_names['length'];i++){var bL=link_order[i];var bM=0xffffff;aE(bL,k_values[bL][0x1],k_values[bL][0x2],k_values[bL][0x3],k_values[bL][0x4],k_values[bL][0x5],k_values[bL][0x6],k_values[bL][0x7],k_values[bL][0x8],bM,0x0,parentTransform);}}function bN(){bG();bK();}function bO(){document[b('0x3')]('nowplaying')[b('0x134')]=b('0x157');top8Transform=new THREE[(b('0x156'))]();group[b('0x10')](top8Transform);for(i=0x0;i<0x8;i++){var bP=link_order[i];var bQ=0xcc2d6f;aE(bP,k_values[bP][0x1],k_values[bP][0x2],k_values[bP][0x3],k_values[bP][0x4],k_values[bP][0x5],k_values[bP][0x6],k_values[bP][0x7],k_values[bP][0x8],bQ,0.8,top8Transform);}top8Transform[b('0x158')]=!![];}function bR(){topTransform=new THREE['Object3D']();group[b('0x10')](topTransform);for(i=0x0;i<0x64;i++){var bS=link_order[i];var bT=0xcc2d6f;aE(bS,k_values[bS][0x1],k_values[bS][0x2],k_values[bS][0x3],k_values[bS][0x4],k_values[bS][0x5],k_values[bS][0x6],k_values[bS][0x7],k_values[bS][0x8],bT,0.5,topTransform);}topTransform[b('0x158')]=!![];document[b('0x3')](b('0x133'))[b('0x134')]=b('0x159');}setTimeout(bO,0xc8);setTimeout(bR,0x4b0);setTimeout(bN,0x5dc);setTimeout(b('0x15a'),0x7d0);setTimeout(c,0x157c);setTimeout(c3,0x189c);function bU(){var bV=new XMLHttpRequest();bV[b('0x15b')](b('0x15c'),b('0x15d'),!![]);bV[b('0x15e')]=b('0x15f');bV['send']();bV[b('0x160')]=function(){if(this[b('0x161')]==0x4&&this[b('0x162')]==0xc8){var bW=this[b('0x163')];console[b('0x150')](bW[b('0x14c')]);song_names[b('0x14c')]=0x0;if(bW[b('0x14c')]>0x0){for(var bX=0x0;bX<bW[b('0x14c')];bX++){var bY=bW[bX];var bZ=bY['id'];var c0=bY[b('0x164')][b('0x165')];var c1=bY[b('0x166')][b('0x167')];views['push']([c0]);song_names['push']([bZ]);song_titles[b('0x147')]([c1]);video_thmbs[video_thmbs['length']]=bY[b('0x166')][b('0x168')][b('0x169')]['url'];}fullyloaded=!![];}}};}bU();var c2=b('0x16a')+b('0xb3')+b('0x16b');window[b('0x15b')](c2,b('0x16c'));function c3(){document[b('0x3')](b('0x133'))['innerHTML']=b('0x16d')+b('0x16e');document['getElementById'](b('0x16f'))['innerHTML']=b('0x170');document[b('0x3')](b('0x171'))[b('0x134')]=b('0x172')+0x9a;document[b('0x3')](b('0x173'))[b('0x134')]='<b>Views</b><p>'+0xcb3;document[b('0x3')](b('0x16f'))[b('0x155')]['visibility']=b('0x158');document[b('0x3')](b('0x173'))[b('0x155')]['visibility']=b('0x158');document[b('0x3')]('rank')[b('0x155')][b('0x174')]='visible';document[b('0x3')](b('0x133'))[b('0x155')][b('0x174')]=b('0x158');}function c4(){rockTransform=new THREE[(b('0x156'))]();group[b('0x10')](rockTransform);for(i=0x0;i<link_order[b('0x14c')];i++){if(rock_links[b('0x14f')](i)){var c5=link_order[i];var c6=0xe45e9d;aE(c5,k_values[c5][0x1],k_values[c5][0x2],k_values[c5][0x3],k_values[c5][0x4],k_values[c5][0x5],k_values[c5][0x6],k_values[c5][0x7],k_values[c5][0x8],c6,0.4,rockTransform);}}rockTransform[b('0x158')]=!![];}function c7(){punkTransform=new THREE['Object3D']();group['add'](punkTransform);for(i=0x0;i<link_order[b('0x14c')];i++){if(punk_links[b('0x14f')](i)){var c8=link_order[i];var c9=0x8bfa05;aE(c8,k_values[c8][0x1],k_values[c8][0x2],k_values[c8][0x3],k_values[c8][0x4],k_values[c8][0x5],k_values[c8][0x6],k_values[c8][0x7],k_values[c8][0x8],c9,0.2,punkTransform);}}}function ca(){popTransform=new THREE[(b('0x156'))]();group[b('0x10')](popTransform);for(i=0x0;i<link_order[b('0x14c')];i++){if(pop_links[b('0x14f')](i)){var cb=link_order[i];var cc=0xffffff;aE(cb,k_values[cb][0x1],k_values[cb][0x2],k_values[cb][0x3],k_values[cb][0x4],k_values[cb][0x5],k_values[cb][0x6],k_values[cb][0x7],k_values[cb][0x8],cc,0.2,popTransform);}}}function cd(){countryTransform=new THREE['Object3D']();group['add'](countryTransform);for(i=0x0;i<link_order[b('0x14c')];i++){if(country_links[b('0x14f')](i)){var ce=link_order[i];var cf=0xff5733;aE(ce,k_values[ce][0x1],k_values[ce][0x2],k_values[ce][0x3],k_values[ce][0x4],k_values[ce][0x5],k_values[ce][0x6],k_values[ce][0x7],k_values[ce][0x8],cf,0.5,countryTransform);}}}function cg(){folkTransform=new THREE['Object3D']();group[b('0x10')](folkTransform);for(i=0x0;i<link_order[b('0x14c')];i++){if(folk_links[b('0x14f')](i)){var ch=link_order[i];var ci=0xffca85;aE(ch,k_values[ch][0x1],k_values[ch][0x2],k_values[ch][0x3],k_values[ch][0x4],k_values[ch][0x5],k_values[ch][0x6],k_values[ch][0x7],k_values[ch][0x8],ci,0.3,folkTransform);}}folkTransform[b('0x158')]=!![];}function cj(){metalTransform=new THREE[(b('0x156'))]();group[b('0x10')](metalTransform);for(i=0x0;i<link_order[b('0x14c')];i++){if(metal_links[b('0x14f')](i)){var ck=link_order[i];var cl=0xff0000;aE(ck,k_values[ck][0x1],k_values[ck][0x2],k_values[ck][0x3],k_values[ck][0x4],k_values[ck][0x5],k_values[ck][0x6],k_values[ck][0x7],k_values[ck][0x8],cl,0.4,metalTransform);}}}function cm(){psychTransform=new THREE[(b('0x156'))]();group[b('0x10')](psychTransform);for(i=0x0;i<link_order[b('0x14c')];i++){if(psych_links[b('0x14f')](i)){var cn=link_order[i];var co=0xfc24e8;aE(cn,k_values[cn][0x1],k_values[cn][0x2],k_values[cn][0x3],k_values[cn][0x4],k_values[cn][0x5],k_values[cn][0x6],k_values[cn][0x7],k_values[cn][0x8],co,0.3,psychTransform);}}}function cp(){jazzTransform=new THREE[(b('0x156'))]();group['add'](jazzTransform);for(i=0x0;i<link_order[b('0x14c')];i++){if(jazz_links['includes'](i)){var cq=link_order[i];var cr=0x19028;aE(cq,k_values[cq][0x1],k_values[cq][0x2],k_values[cq][0x3],k_values[cq][0x4],k_values[cq][0x5],k_values[cq][0x6],k_values[cq][0x7],k_values[cq][0x8],cr,0.6,jazzTransform);}}}function cs(){hiphopTransform=new THREE['Object3D']();group[b('0x10')](hiphopTransform);for(i=0x0;i<link_order[b('0x14c')];i++){if(hiphop_links[b('0x14f')](i)){var ct=link_order[i];var cu=0xffff00;aE(ct,k_values[ct][0x1],k_values[ct][0x2],k_values[ct][0x3],k_values[ct][0x4],k_values[ct][0x5],k_values[ct][0x6],k_values[ct][0x7],k_values[ct][0x8],cu,0.5,hiphopTransform);}}}function cv(){electronicaTransform=new THREE[(b('0x156'))]();group[b('0x10')](electronicaTransform);for(i=0x0;i<link_order[b('0x14c')];i++){if(electronica_links[b('0x14f')](i)){var cw=link_order[i];var cx=0x24fcd8;aE(cw,k_values[cw][0x1],k_values[cw][0x2],k_values[cw][0x3],k_values[cw][0x4],k_values[cw][0x5],k_values[cw][0x6],k_values[cw][0x7],k_values[cw][0x8],cx,0.2,electronicaTransform);}}}function cy(){funkTransform=new THREE[(b('0x156'))]();group[b('0x10')](funkTransform);for(i=0x0;i<link_order['length'];i++){if(funk_links['includes'](i)){var cz=link_order[i];var cA=0xa002dc;aE(cz,k_values[cz][0x1],k_values[cz][0x2],k_values[cz][0x3],k_values[cz][0x4],k_values[cz][0x5],k_values[cz][0x6],k_values[cz][0x7],k_values[cz][0x8],cA,0.4,funkTransform);}}}function cB(){bluesTransform=new THREE['Object3D']();group[b('0x10')](bluesTransform);for(i=0x0;i<link_order[b('0x14c')];i++){if(blues_links[b('0x14f')](i)){var cC=link_order[i];var cD=0x5cfe;aE(cC,k_values[cC][0x1],k_values[cC][0x2],k_values[cC][0x3],k_values[cC][0x4],k_values[cC][0x5],k_values[cC][0x6],k_values[cC][0x7],k_values[cC][0x8],cD,0.6,bluesTransform);}}}function cE(cF){l=link_order[b('0x175')](cF);var cG=song_titles[l];document[b('0x3')](b('0x133'))[b('0x134')]='<b>Song\x20Name</b><p>'+cG;if(fullyloaded==![]){document[b('0x3')](b('0x133'))[b('0x155')][b('0x174')]=b('0x176');}else{document[b('0x3')]('nowplaying')[b('0x155')][b('0x174')]=b('0x158');}}function cH(cI){l=link_order['indexOf'](cI);document[b('0x3')](b('0x16f'))[b('0x134')]=b('0x177')+video_thmbs[l]+'>';if(fullyloaded==![]){document[b('0x3')]('thumb')[b('0x155')][b('0x174')]=b('0x176');}else{document['getElementById'](b('0x16f'))[b('0x155')][b('0x174')]='visible';}}function cJ(cK){l=link_order[b('0x175')](cK);var cL=views[l];document[b('0x3')](b('0x171'))[b('0x134')]=b('0x172')+(l+0x1);document[b('0x3')]('views')['innerHTML']=b('0x178')+cL;if(fullyloaded==![]){document[b('0x3')](b('0x171'))['style'][b('0x174')]=b('0x176');document[b('0x3')](b('0x173'))[b('0x155')][b('0x174')]='hidden';}else{document[b('0x3')](b('0x171'))[b('0x155')]['visibility']=b('0x158');document[b('0x3')](b('0x173'))['style'][b('0x174')]=b('0x158');}}function cM(){document[b('0x8')][b('0x155')][b('0x179')]='pointer';}function cN(){document[b('0x3')](b('0x17a'))['style'][b('0x174')]=b('0x176');document['getElementById'](b('0x17b'))[b('0x155')][b('0x174')]='hidden';document[b('0x3')](b('0x133'))[b('0x155')][b('0x174')]=b('0x176');document[b('0x3')](b('0x16f'))[b('0x155')][b('0x174')]=b('0x176');document[b('0x3')](b('0x173'))[b('0x155')][b('0x174')]='hidden';document[b('0x3')]('rank')['style'][b('0x174')]=b('0x176');document[b('0x3')](b('0x17c'))[b('0x155')][b('0x174')]='hidden';document[b('0x3')](b('0x17d'))['style'][b('0x17e')]=b('0x17f');}function cO(){document[b('0x3')](b('0x17a'))[b('0x155')][b('0x174')]=b('0x158');document[b('0x3')](b('0x17b'))[b('0x155')][b('0x174')]=b('0x158');document[b('0x3')](b('0x17c'))[b('0x155')][b('0x174')]=b('0x158');document[b('0x3')](b('0x17d'))[b('0x155')]['backgroundImage']=b('0x180');}function cP(){if(controlsVisible==!![]){controlsVisible=![];cN();}else{controlsVisible=!![];cO();}}function cQ(){group[b('0x181')](activeLink);}function cR(cS,cT){if(cS[b('0x158')]==!![]){cS[b('0x158')]=![];document[b('0x3')](cT)[b('0x155')]['backgroundColor']=b('0x182');}else{cS[b('0x158')]=!![];document['getElementById'](cT)['style'][b('0x152')]=b('0x153');}}function cU(){if(allgenresVisible==!![]){allgenresVisible=![];document[b('0x3')](b('0x183'))[b('0x155')][b('0x152')]='#a5c6d1';cW();}else{allgenresVisible=!![];document[b('0x3')]('all')['style'][b('0x152')]=b('0x153');cV();}}function cV(){rockTransform[b('0x158')]=!![];document[b('0x3')](b('0x151'))[b('0x155')][b('0x152')]=b('0x153');punkTransform[b('0x158')]=!![];document[b('0x3')](b('0x184'))[b('0x155')][b('0x152')]=b('0x153');popTransform[b('0x158')]=!![];document[b('0x3')](b('0x185'))[b('0x155')][b('0x152')]=b('0x153');folkTransform['visible']=!![];document['getElementById'](b('0x154'))[b('0x155')][b('0x152')]='#2387aa';metalTransform['visible']=!![];document[b('0x3')]('metal')[b('0x155')][b('0x152')]=b('0x153');psychTransform[b('0x158')]=!![];document[b('0x3')](b('0x186'))[b('0x155')][b('0x152')]=b('0x153');bluesTransform[b('0x158')]=!![];document[b('0x3')](b('0x187'))[b('0x155')][b('0x152')]='#2387aa';countryTransform[b('0x158')]=!![];document['getElementById'](b('0x188'))[b('0x155')][b('0x152')]=b('0x153');funkTransform[b('0x158')]=!![];document[b('0x3')](b('0x189'))['style'][b('0x152')]=b('0x153');electronicaTransform[b('0x158')]=!![];document['getElementById']('electronica')[b('0x155')][b('0x152')]=b('0x153');jazzTransform[b('0x158')]=!![];document[b('0x3')](b('0x18a'))[b('0x155')][b('0x152')]=b('0x153');hiphopTransform[b('0x158')]=!![];document['getElementById'](b('0x18b'))[b('0x155')][b('0x152')]=b('0x153');}function cW(){rockTransform[b('0x158')]=![];document[b('0x3')](b('0x151'))[b('0x155')][b('0x152')]='#a5c6d1';punkTransform[b('0x158')]=![];document[b('0x3')](b('0x184'))[b('0x155')][b('0x152')]=b('0x182');popTransform[b('0x158')]=![];document['getElementById'](b('0x185'))[b('0x155')][b('0x152')]=b('0x182');folkTransform[b('0x158')]=![];document[b('0x3')](b('0x154'))[b('0x155')]['backgroundColor']=b('0x182');metalTransform['visible']=![];document['getElementById'](b('0x18c'))[b('0x155')][b('0x152')]=b('0x182');psychTransform['visible']=![];document[b('0x3')](b('0x186'))[b('0x155')]['backgroundColor']=b('0x182');bluesTransform[b('0x158')]=![];document[b('0x3')](b('0x187'))[b('0x155')][b('0x152')]=b('0x182');countryTransform[b('0x158')]=![];document[b('0x3')](b('0x188'))['style'][b('0x152')]=b('0x182');funkTransform[b('0x158')]=![];document['getElementById'](b('0x189'))[b('0x155')]['backgroundColor']=b('0x182');electronicaTransform['visible']=![];document[b('0x3')](b('0x18d'))[b('0x155')][b('0x152')]=b('0x182');jazzTransform['visible']=![];document[b('0x3')]('jazz')[b('0x155')][b('0x152')]=b('0x182');hiphopTransform[b('0x158')]=![];document[b('0x3')](b('0x18b'))[b('0x155')][b('0x152')]=b('0x182');}var cX=new THREE[(b('0x18e'))](0.01);var cY=new THREE['MeshBasicMaterial']({'color':0x45a7c5});activeLink=new THREE['Object3D']();group[b('0x10')](activeLink);raycaster=new THREE[(b('0x18f'))]();document[b('0x190')](b('0x191'),d0,![]);window[b('0x190')](b('0x192'),d7,![]);window['addEventListener'](b('0x193'),de,![]);document[b('0x3')]('reload')['addEventListener'](b('0x192'),function(){window['open'](b('0x194'),b('0x195'));},![]);document[b('0x3')]('about')[b('0x190')](b('0x192'),function(){window[b('0x15b')](b('0x196'),'_self');},![]);document[b('0x3')]('toggleControls')['addEventListener'](b('0x192'),function(){cP();},![]);document[b('0x3')](b('0x197'))[b('0x190')](b('0x191'),function(cZ){cZ[b('0x198')]();},![]);document[b('0x3')](b('0x199'))['addEventListener']('click',function(){window[b('0x15b')](b('0x19a'),'_self');},![]);document[b('0x3')](b('0x19b'))[b('0x190')](b('0x192'),function(){window[b('0x15b')](b('0x19c'),b('0x195'));},![]);document[b('0x3')](b('0x151'))[b('0x190')](b('0x192'),function(){cR(rockTransform,b('0x151'));},![]);document[b('0x3')]('punk')[b('0x190')]('click',function(){cR(punkTransform,b('0x184'));},![]);document['getElementById'](b('0x185'))['addEventListener']('click',function(){cR(popTransform,b('0x185'));},![]);document[b('0x3')](b('0x154'))[b('0x190')](b('0x192'),function(){cR(folkTransform,b('0x154'));},![]);document[b('0x3')](b('0x18b'))[b('0x190')]('click',function(){cR(hiphopTransform,b('0x18b'));},![]);document[b('0x3')](b('0x188'))[b('0x190')](b('0x192'),function(){cR(countryTransform,b('0x188'));},![]);document[b('0x3')](b('0x18d'))[b('0x190')](b('0x192'),function(){cR(electronicaTransform,b('0x18d'));},![]);document[b('0x3')](b('0x18c'))['addEventListener'](b('0x192'),function(){cR(metalTransform,b('0x18c'));},![]);document[b('0x3')]('psych')[b('0x190')](b('0x192'),function(){cR(psychTransform,b('0x186'));},![]);document[b('0x3')](b('0x18a'))[b('0x190')]('click',function(){cR(jazzTransform,b('0x18a'));},![]);document[b('0x3')](b('0x189'))['addEventListener'](b('0x192'),function(){cR(funkTransform,b('0x189'));},![]);document[b('0x3')](b('0x187'))[b('0x190')](b('0x192'),function(){cR(bluesTransform,'blues');},![]);document[b('0x3')]('all')[b('0x190')]('click',function(){cU();},![]);function d0(d1){d1['preventDefault']();mouse['x']=d1[b('0x19d')]/window[b('0x4')]*0x2-0x1;mouse['y']=-(d1[b('0x19e')]/window[b('0x2')])*0x2+0x1;raycaster[b('0x19f')](mouse,camera);var d2=raycaster['intersectObjects'](parentTransform[b('0x1a0')],!![]);if(d2[b('0x14c')]>0x0){group[b('0x181')](activeLink);activeLink=new THREE[(b('0x156'))]();group[b('0x10')](activeLink);for(var d3=0x0;d3<d2[b('0x14c')];d3++){var d4=d2[d3],d5=d4['object'];k=d5[b('0x143')];var d6=0xcc2d6f;aE(k,k_values[k][0x1],k_values[k][0x2],k_values[k][0x3],k_values[k][0x4],k_values[k][0x5],k_values[k][0x6],k_values[k][0x7],k_values[k][0x8],d6,0.8,activeLink);activeLink[b('0x158')]=!![];cM();cH(k);cJ(k);cE(k);}}else{group[b('0x181')](activeLink);document[b('0x8')]['style'][b('0x179')]=b('0x169');}}function d7(d8){d8['preventDefault']();mouse['x']=d8[b('0x19d')]/window['innerWidth']*0x2-0x1;mouse['y']=-(d8[b('0x19e')]/window[b('0x2')])*0x2+0x1;raycaster[b('0x19f')](mouse,camera);var d9=raycaster['intersectObjects'](parentTransform[b('0x1a0')],!![]);for(var da=0x0;da<d9[b('0x14c')];da++){var db=d9[da],dc=db[b('0x1a1')];k=dc[b('0x143')];l=link_order[b('0x175')](k);var c2=b('0x16a')+song_names[l]+b('0x1a2');window[b('0x15b')](c2,b('0x16c'));}}function de(){camera[b('0x1a3')]=window[b('0x4')]/window[b('0x2')];camera[b('0x1a4')]();renderer[b('0x7')](window[b('0x4')],window[b('0x2')]);}}
+//Copyright 2020 by Lotus.fm LLC
+
+var camera, scene, raycaster, renderer, parentTransform, rockTransform, activeLink, controlsVisible, allgenresVisible
+var mouse = new THREE.Vector2()
+var r = 100,
+  dot = 0
+
+  var scene = new THREE.Scene()
+
+  var camera = new THREE.PerspectiveCamera(
+    20, // This variable controls size -- the lower the value the larger the rendering. Original value was 27.
+    window.innerWidth / window.innerHeight,
+    0.1,
+    1000
+  )
+
+  var container = document.getElementById('container')
+
+  containerWidth = window.innerWidth
+  containerHeight = window.innerHeight
+
+  renderer = new THREE.WebGLRenderer({ antialias: true })
+  renderer.setPixelRatio(window.devicePixelRatio)
+  renderer.setSize(window.innerWidth, window.innerHeight)
+  document.body.appendChild(renderer.domElement)
+
+  var controls = new THREE.OrbitControls(camera, renderer.domElement)
+  controls.minDistance = 0
+  controls.maxDistance = 100
+  controls.maxPolarAngle = Math.PI / 2
+  //controls.addEventListener( 'change', () => renderer.render( scene, camera ) );
+
+  var light = new THREE.PointLight(0xffffff)
+  light.position.set(-100, 200, 100)
+  scene.add(light)
+
+  var play = true;
+
+  var group
+  group = new THREE.Group()
+  group.position.y = 0
+  scene.add(group)
+
+  var link_order_length = 0
+  var controlsVisible = true
+  var allgenresVisible = false
+  var fullyloaded = false
+
+
+// sample arrays for testing purposes
+
+
+  var link_order = [] // list of all link values in the module, with k values assigned to each index position
+  var k_values = [] // list of all k values generated for corresponding module chart lines
+  var active_links = [] //index values of all active links
+  var rock_links = [] //index values of genre links
+  var punk_links = [] //index values of genre links
+  var pop_links = [] //index values of genre links
+  var country_links = [] //index values of genre links
+  var folk_links = [] //index values of genre links
+  var metal_links = [] //index values of genre links
+  var jazz_links = [] //index values of genre links
+  var psych_links = [] //index values of genre links
+  var hiphop_links = [] //index values of genre links
+  var electronica_links = [] //index values of genre links
+  var blues_links = [] //index values of genre links
+  var funk_links = [] //index values of genre links
+  var song_names = ["OqeKV2UYq1Q", "kkcbxjWG9Mc", "MUfgAbFY4CA", "W05cPXpUHGI", "Bm1g5Yg0hUw", "iPAr7kL-mmg", "APrpB-i4d_E", "D1vQJFF2TKQ", "qR9DjdMrpHg", "E5H8DwJI0uA", "ksTFj6L0mao", "Kc1htX3q-F0", "GiZHmwzNAqE", "n7zyfArxibk", "vZA_7FtttRY", "hjg39XRkjVc", "E7fzUGR8ZH4", "ON6pn6suSzc", "W3m7Uz7hF-s", "CmBgxP56R1I", "QJu611UdfxA", "-DjpNgrocKo", "qOM107PIxV8", "FuFtfhOipNQ", "zJXQSBWO5Qc", "yQYu51hlkLk", "HwgNMrs-i80", "tRNDB9VqI3Q", "iLilpPtY2JU", "pO3_ZG7wJPc", "wcICuFnkxe4", "pnfryoGog0A", "hPsdjlPVaJU", "MbxRu7fwR24", "f-MroGCKDcM", "Mub2i2BoHpM", "6r1-HTiwGiY", "d9MA4rFNf7I", "E5uAH0vNn2s", "OCVgWq9B_HE", "4K8ou0iA_68", "PE1ges9nn6A", "w39qx5X_Owg", "aUfu-lEflbQ", "6P8mfvCGKyg", "TpLhrLzSaFQ", "rCy1VIy8Hj0", "ZyvYIYwLzTw", "cgr8e7da52o", "Cg4c0RA2DJQ", "f-FOTHUir_4", "BzkHp6EswEM", "YbP-Aa3V6bA", "7hneF9Iu71g", "FNFYq8O7DTY", "UNUmSwWq-LU", "4qljGaHJbCs", "2wnDyOHPxrE", "cr5uFjA4TNI", "MP_2p79Ems4", "-ITl4-Kyey0", "iG8D1Kb7xgQ", "au-mBoepJUA", "XMUxca7gXv4", "pB08AUiTP3w", "srwAMHbHVAE", "K_5lt23PRVs", "OFOowKu7WjA", "Ti1liRM6cao", "V4Yw6A_rlHc", "vtS54c9sP0U", "6RzlgEyS-BE", "Rh2YmGujtFI", "VTd4JCIqL7U", "uIP0iIxHLY4", "Pjw-qzT6qBs", "K0q6EYTGXXQ", "gK04XhlTLOM", "weW-VnINl-E", "QAhMakentwA", "IgfIh-NBoCw", "cwHmeFidLbE", "pGOO7EE4Lhw", "nKJeB03TrJg", "yMku_xfki1U", "WGnqoZx7_QY", "6SGy0zUCtsk", "X9BWRh92ifs", "9NrC7pRra9o", "E9yTHSyZeKg", "Z9RsVV-zfgY", "EIpzPVAHpVg", "LS7KFVYUQT4", "uS1PyjaR8WM", "WJi9MXfl3zA", "yntvBrlZNeA", "8QcTCIsFJ2Q", "RemMNe7z6vg", "4fr8k6O-Bko", "Ed_16Cblg9s", "Gv7iV4n7cXM", "uL8Dipf5kXc", "ClVNU2-C3rQ", "tAZko_MSZhc", "IbE4ynQd_qQ", "_P63qccOdzs", "zClCsQnRj-c", "uA4RNW3HkcQ", "Palxbwco9pM", "i94eFYHHAOY", "hBF8YGF17rQ", "bbt3qhOiH3M", "VkavEUCwm0M", "9Rz4kMBD8jU", "LJbtcit8Byg", "bS22uZHDr54", "bU2WUSEC6PY", "Duot03grNv8", "ull6hOYs5ZY", "ZEhWfrVOWlE", "W8CrBGhfSiA", "yHNB4m1dfKE", "GFfN5mFjOFo", "slua80kJ8zA", "AXHi-B2VbU0", "6Y_B3wdQLgg", "fPEoI43MMhs", "uJMn4WGaIOc", "rddu5TgrTmE", "SBrMBqFbWok", "DHXYSbs6Rb0", "s9t2QH5zTCQ", "qMol4iSzXis", "6u8lUKuaUx8", "_86LQH-c1d8", "c1UTArVwyZs", "HcB7ZnkMnB8", "slqKrANo7Uo", "0nt2Yn1M0oU", "yyayVIXwg74", "2bHvzuupe4w", "mKZBingy2OA", "aVwVvtP5qJ4", "s5Eyu9-kchQ", "Cqp-hL-I90A", "OV2lquaPxSU", "SBOK9CBjCK8", "9x6Mxs5DyxI", "GdK4jqnDNN8", "LesJtYAG8zM", "w_otXEVPgOk", "Pp_e6vZuhBI", "--w4Ui8Alzc", "cQhGxSge7aA", "rx4woNwVS8g", "50ADWH1d3E8", "eNcSFnr3508", "p1nmsaPh31E", "9IjxNwHkttU", "1jY7kdEIhaA", "YypAGqIBrX0", "eg5Emkcjfdo", "iF0IhEpDces", "FAL01pUnhGI", "DWeB6hWoKyI", "c8H7Anvad6E", "LH7XPoWPz-4", "TkIloV7OMAk", "_ZydMszfZlQ", "YGv-OSvQwKY", "AguOdYNF2d4", "TN9upnrVwog", "FxdnqfyvIkY", "-dJXBCBZwQg", "5AHz8HeDk3c", "DCI5XqT-AZs", "t7Pv3eZEy4k", "tG2F72T-ixY", "8drkE_zLnLk", "0deHAT_KOqE", "Q72ENpHcrDQ", "COICJal838M", "pfjyV0qtNlk", "sSCb-a2McRI", "M1hSddzlxL4", "RSfii8RLmNM", "rVqIhE53D_w", "UX1BvCRg6gs", "gahV15Oe9Xs", "pCgEUBf5y18", "vAuwQugGdS4", "jt068Vdmfww", "ENODBnQ5ed0", "JOUmxw0DPsg", "QYDXRoHpF0w", "-Rfqo7OSimw", "BVh6Jb3DQxE", "Ra616vyPBp8", "5xFP4ikGCLk", "HmuGq5weoZA", "KqXN_5G_kuo", "SVi7fXWKqSk", "fAcdBmxu-6s", "3jWQzkoPFTg", "nptjor9ee_Q", "rQfs5UTzwFQ", "wsF4TVHr42A", "xRFTYRXS3aw", "AwkDVMr4Kso", "H3GXCAeWMb0", "x9_1ia_nB_E", "Ys4YGRN8hgY", "t50c2AiAkpw", "q93hgeROqvk", "3zDO7P_P3Aw", "mfA9K1hj2eg", "0Jpqb5IYlEE", "BL8AJFQv9V4", "4n8vZyzBWNs", "1WaMgWUiYg0", "Hu0wknFNTOk", "iZtFjqZxBxw", "5SeI6r8lI_U", "A4uAL0T_CUI", "r6i5PCn7_oY", "ba_SMlx-gi0", "8Ux6UnYOLvk", "t1IMifXyJLc", "sk4aZSLSkMs", "XTCUjmhWL4Y", "2sKF3MHrHEY", "z0lHW09eQRA", "RFmIOaRhOnE", "H7vVXIiisSw", "-G1XWvUBXk4", "CyDHTJCIfHQ", "njHZdD0MGDs", "0_GeShK7aaY", "WWWKRqzvxMg", "_oQIIAdG8xM", "H_6GtBFCTyQ", "VZu1Z0oeFzo", "-Q53gXuXd5s", "oErErOGaAv0", "U3iWpewLuyA", "XPR2bV8u5rk", "_S0esU0n6sY", "U-eK9RcU90s", "KYhsehUH5b0", "9_N4gVkx9_w", "s_vgHgIKPQs", "Y6BeTnjUqlo", "kXFGQYGFeFU", "MP8Fd0mN50E", "qepl1N0P-SA", "bqogMblcal0", "_liZNFe-TDM", "SBA_vLLrXr0", "q-XpcMTnB-A", "c-kLsqvD6q8", "ZGmXbfF8uvM", "Bi4K58Fd_1o", "XfgAXwaseM8", "pOYN1p4Rc6o", "c4cBdT5WCoE", "599tHbAQVts", "8BhdoriXe9Q", "l5JhD4wKsrs", "iv0ej8cJScM", "uE2R5d6cPYs", "vxnYp5NyD4k", "aCgTgyBBswA", "C7r5KziEspU", "KR6DysiE9Sk", "trZ244Ih_E4", "71u8cSuyZrI", "DElGhE2NhtQ", "kYKcf7EWEfc", "KGKJQNtxjhI", "KiHrn43djYc", "qIhPPceIEV0", "U53SHxO4sbk", "zDoDWbB6RN8", "j0iohXlRXKA", "LEKxlNbjgmE", "6ZowS0dDW1k", "KLgWHoGLDx4", "V0HIfZmn3oU", "yDOi6phVQXM", "xxi6VQkCJPY", "bBMPzOX_VUo", "YZJ2rOm-PVA", "xuXln0HC-Lg", "ms2iYyh6jLI", "MJLe_O2J5Xg", "skvGTkW-qG4", "rFP4gxn_uME", "OLTeVRvPq04", "3MfJ9qMXBVQ", "xL94jLzIGt0"] //list of youtube videos. uses the same index ranking as link_order
+  var views = [] //popularity of youtube videas. uses same index ranking as link_order
+  var song_titles = []
+  var video_thmbs = []
+  var xmlhttp = new XMLHttpRequest()
+
+  //These song IDs are periodically queried from the Lotus YouTube genre playlists.  
+
+  var rockgenre = ["uIP0iIxHLY4","E9yTHSyZeKg","VkavEUCwm0M","rddu5TgrTmE","GFfN5mFjOFo","tAZko_MSZhc","RemMNe7z6vg","rx4woNwVS8g","H3GXCAeWMb0","9Rz4kMBD8jU","XPR2bV8u5rk","KGKJQNtxjhI","vi7aVsmH_eo","zYwCmcB0XMw","PUMkxH03V5c","jyqWjl7GkCE","-vm8uWFgBRc","RoLTPcD1S4Q","OkITsv3Nk6M","DHXYSbs6Rb0","zClCsQnRj-c","yHNB4m1dfKE","4fr8k6O-Bko","w_otXEVPgOk","q-XpcMTnB-A","bU2WUSEC6PY","rQfs5UTzwFQ","8Ux6UnYOLvk","CyDHTJCIfHQ","AwkDVMr4Kso","0Jpqb5IYlEE","l5JhD4wKsrs","8BhdoriXe9Q","KLgWHoGLDx4","iv0ej8cJScM","kXFGQYGFeFU","LEKxlNbjgmE","KYhsehUH5b0","kYKcf7EWEfc","DElGhE2NhtQ","j0iohXlRXKA","_oQIIAdG8xM","Ys4YGRN8hgY","Duot03grNv8","2bHvzuupe4w","FxdnqfyvIkY","Y6BeTnjUqlo","cwHmeFidLbE","W3m7Uz7hF-s","APrpB-i4d_E","FuFtfhOipNQ","ON6pn6suSzc","BzkHp6EswEM","W05cPXpUHGI","kkcbxjWG9Mc","-DjpNgrocKo","MUfgAbFY4CA","D1vQJFF2TKQ","f-MroGCKDcM","hjg39XRkjVc","E5uAH0vNn2s","rCy1VIy8Hj0","Kc1htX3q-F0","pGOO7EE4Lhw","tRNDB9VqI3Q","qOM107PIxV8","Ti1liRM6cao","V4Yw6A_rlHc","d9MA4rFNf7I","OqeKV2UYq1Q","ksTFj6L0mao","E5H8DwJI0uA","qR9DjdMrpHg","zJXQSBWO5Qc","wcICuFnkxe4","pB08AUiTP3w","vZA_7FtttRY","cgr8e7da52o","MbxRu7fwR24","6r1-HTiwGiY","TpLhrLzSaFQ","HwgNMrs-i80","QJu611UdfxA","pO3_ZG7wJPc","sSCb-a2McRI","yyayVIXwg74","TkIloV7OMAk","xRFTYRXS3aw","1WaMgWUiYg0","wsF4TVHr42A","trZ244Ih_E4","iG8D1Kb7xgQ","EIpzPVAHpVg","WGnqoZx7_QY","n7zyfArxibk","UNUmSwWq-LU","Rh2YmGujtFI","PE1ges9nn6A","K_5lt23PRVs","DCI5XqT-AZs","QAhMakentwA","aUfu-lEflbQ","YbP-Aa3V6bA","t7Pv3eZEy4k","VZu1Z0oeFzo","_S0esU0n6sY","pOYN1p4Rc6o","mfA9K1hj2eg","OLTeVRvPq04","0_GeShK7aaY","U3iWpewLuyA","ull6hOYs5ZY","Palxbwco9pM","MP8Fd0mN50E","5AHz8HeDk3c","skvGTkW-qG4","-dJXBCBZwQg","aCgTgyBBswA","HcB7ZnkMnB8"]  
+  var punkgenre = ["hPsdjlPVaJU","0deHAT_KOqE","YypAGqIBrX0","s_vgHgIKPQs","JOUmxw0DPsg","LesJtYAG8zM","pCgEUBf5y18","4qljGaHJbCs","FNFYq8O7DTY","cr5uFjA4TNI","VTd4JCIqL7U","OFOowKu7WjA","_ZydMszfZlQ","LJbtcit8Byg","Hu0wknFNTOk","rFP4gxn_uME","cQhGxSge7aA","5SeI6r8lI_U","WWWKRqzvxMg","LS7KFVYUQT4","uS1PyjaR8WM","LH7XPoWPz-4","hBF8YGF17rQ","0nt2Yn1M0oU","K0q6EYTGXXQ","8QcTCIsFJ2Q","UX1BvCRg6gs"]
+  var popgenre = ["E7fzUGR8ZH4","pnfryoGog0A","Cqp-hL-I90A","YGv-OSvQwKY","IbE4ynQd_qQ","yQYu51hlkLk","w39qx5X_Owg","gK04XhlTLOM","XMUxca7gXv4","iLilpPtY2JU","X9BWRh92ifs","srwAMHbHVAE","yntvBrlZNeA","_P63qccOdzs","7hneF9Iu71g","Cg4c0RA2DJQ","uA4RNW3HkcQ","WJi9MXfl3zA","c-kLsqvD6q8","3MfJ9qMXBVQ","fPEoI43MMhs","3jWQzkoPFTg","c8H7Anvad6E","KqXN_5G_kuo","rVqIhE53D_w","9x6Mxs5DyxI","weW-VnINl-E","bS22uZHDr54","gahV15Oe9Xs","Bm1g5Yg0hUw","OCVgWq9B_HE","GiZHmwzNAqE","vtS54c9sP0U","BVh6Jb3DQxE"]
+  var countrygenre = ["_86LQH-c1d8","ENODBnQ5ed0","z0lHW09eQRA","SBA_vLLrXr0","c4cBdT5WCoE","nKJeB03TrJg","Pp_e6vZuhBI"]
+  var folkgenre = ["iPAr7kL-mmg","SBOK9CBjCK8","-Rfqo7OSimw","uJMn4WGaIOc","CmBgxP56R1I","Mub2i2BoHpM","ZyvYIYwLzTw","-ITl4-Kyey0","2wnDyOHPxrE","i94eFYHHAOY","au-mBoepJUA","6RzlgEyS-BE","6P8mfvCGKyg","4K8ou0iA_68","qMol4iSzXis","pfjyV0qtNlk","ba_SMlx-gi0","TN9upnrVwog","p1nmsaPh31E","V0HIfZmn3oU","5xFP4ikGCLk"]
+  var metalgenre = ["Ed_16Cblg9s","xuXln0HC-Lg","xxi6VQkCJPY","slua80kJ8zA","s5Eyu9-kchQ","RFmIOaRhOnE","sk4aZSLSkMs","iZtFjqZxBxw","4n8vZyzBWNs","BL8AJFQv9V4","bbt3qhOiH3M","9NrC7pRra9o","nptjor9ee_Q","r6i5PCn7_oY"]
+  var jazzgenre = ["6Y_B3wdQLgg","ZEhWfrVOWlE","Ra616vyPBp8","tG2F72T-ixY","t50c2AiAkpw"]
+  var psychgenre = ["3zDO7P_P3Aw","A4uAL0T_CUI","KiHrn43djYc","9_N4gVkx9_w","YZJ2rOm-PVA","x9_1ia_nB_E","SVi7fXWKqSk","KR6DysiE9Sk","--w4Ui8Alzc","M1hSddzlxL4","q93hgeROqvk","eNcSFnr3508","aVwVvtP5qJ4","FAL01pUnhGI"]
+  var hiphopgenre = ["Bi4K58Fd_1o","xL94jLzIGt0","zDoDWbB6RN8","71u8cSuyZrI","W8CrBGhfSiA","njHZdD0MGDs","bqogMblcal0","H_6GtBFCTyQ","RSfii8RLmNM","t1IMifXyJLc","OV2lquaPxSU","AguOdYNF2d4","Z9RsVV-zfgY","QYDXRoHpF0w","mKZBingy2OA","oErErOGaAv0","50ADWH1d3E8","Gv7iV4n7cXM","qepl1N0P-SA","U53SHxO4sbk","fAcdBmxu-6s","F3tP0JjUjJU"]   
+  var electrogenre = ["MP_2p79Ems4","eg5Emkcjfdo","jt068Vdmfww","6ZowS0dDW1k","yDOi6phVQXM","H7vVXIiisSw","bBMPzOX_VUo","qIhPPceIEV0","f-FOTHUir_4","vAuwQugGdS4","_liZNFe-TDM","2sKF3MHrHEY","XfgAXwaseM8","s9t2QH5zTCQ","iF0IhEpDces","GdK4jqnDNN8","-G1XWvUBXk4","ZGmXbfF8uvM","ms2iYyh6jLI","IgfIh-NBoCw"]
+  var bluesgenre = ["-Q53gXuXd5s","uE2R5d6cPYs","AXHi-B2VbU0"]
+  var funkgenre = ["DWeB6hWoKyI","SBrMBqFbWok","6u8lUKuaUx8","Pjw-qzT6qBs","yMku_xfki1U","ClVNU2-C3rQ","uL8Dipf5kXc","MJLe_O2J5Xg","599tHbAQVts","8drkE_zLnLk","1jY7kdEIhaA","HmuGq5weoZA","c1UTArVwyZs","U-eK9RcU90s","6SGy0zUCtsk","9IjxNwHkttU","COICJal838M","slqKrANo7Uo","C7r5KziEspU","vxnYp5NyD4k","XTCUjmhWL4Y","Q72ENpHcrDQ"]
+// -------------------------------------------- //
+
+
+init()
+function init () {
+  container = document.createElement('div')
+  document.body.appendChild(container)
+
+function spacer () {
+          //top8Transform.visible = false 
+          //topTransform.visible = false
+          document.getElementById("nowplaying").innerHTML = `<span style="font-size: 18px;font-family:Source Sans Pro; color: #FFF; margin-left:0px; text-align:right; margin-top:10px;"><strong></strong></span>`
+  }
+
+//Petal Constructor - draws outline of petal
+function drawPetal (
+    x,
+    y,
+    z,
+    x0,
+    y0,
+    z0,
+    x1,
+    y1,
+    z1,
+    petalheight,
+    ctrlpt,
+    color_code
+  ) {
+    var curve = new THREE.QuadraticBezierCurve3(
+      new THREE.Vector3(x, y, z),
+      new THREE.Vector3(x, ctrlpt, z),
+      new THREE.Vector3(x0, y0 + petalheight, z0)
+    )
+
+    var points = curve.getPoints(50)
+    var geometry = new THREE.BufferGeometry().setFromPoints(points)
+    var material = new THREE.LineBasicMaterial({ color: color_code })
+    var curveObject = new THREE.Line(geometry, material)
+    group.add(curveObject)
+
+    var curve2 = new THREE.QuadraticBezierCurve3(
+      new THREE.Vector3(x0, y0 + petalheight, z0),
+      new THREE.Vector3(x1, ctrlpt, z1),
+      new THREE.Vector3(x1, y1, z1)
+    )
+
+    var points = curve2.getPoints(50)
+    var geometry = new THREE.BufferGeometry().setFromPoints(points)
+    var material = new THREE.LineBasicMaterial({ color: color_code })
+
+    var curveObject = new THREE.Line(geometry, material)
+    group.add(curveObject)
+  }
+
+
+  //Chart Position Arc - returns points for top of chart lines
+  function chartTop (
+    x,
+    y,
+    z,
+    x0,
+    y0,
+    z0,
+    x1,
+    y1,
+    z1,
+    petalheight,
+    ctrlpt,
+    color_code
+  ) {
+    var curve = new THREE.QuadraticBezierCurve3(
+      new THREE.Vector3(x, y, z),
+      new THREE.Vector3(x, ctrlpt, z),
+      new THREE.Vector3(x0, y0 + petalheight, z0)
+    )
+
+    var points1 = curve.getSpacedPoints(25)
+    var geometry = new THREE.BufferGeometry().setFromPoints(points1)
+    var material = new THREE.LineBasicMaterial({ color: color_code })
+    var curveObject = new THREE.Line(geometry, material)
+    group.add(curveObject)
+
+    var curve2 = new THREE.QuadraticBezierCurve3(
+      new THREE.Vector3(x0, y0 + petalheight, z0),
+      new THREE.Vector3(x1, ctrlpt, z1),
+      new THREE.Vector3(x1, y1, z1)
+    )
+
+    var points2 = curve2.getSpacedPoints(25)
+    var geometry = new THREE.BufferGeometry().setFromPoints(points2)
+    var material = new THREE.LineBasicMaterial({ color: color_code })
+    var curveObject = new THREE.Line(geometry, material)
+    group.add(curveObject)
+
+    var points = points1.concat(points2)
+    return points
+  }
+
+  
+  //Chart Position Arc - returns points for top of chart lines
+  function chartTop (
+    x,
+    y,
+    z,
+    x0,
+    y0,
+    z0,
+    x1,
+    y1,
+    z1,
+    petalheight,
+    ctrlpt,
+    color_code
+  ) {
+    var curve = new THREE.QuadraticBezierCurve3(
+      new THREE.Vector3(x, y, z),
+      new THREE.Vector3(x, ctrlpt, z),
+      new THREE.Vector3(x0, y0 + petalheight, z0)
+    )
+
+    var points1 = curve.getSpacedPoints(10)
+    var geometry = new THREE.BufferGeometry().setFromPoints(points1)
+    var material = new THREE.LineBasicMaterial({ color: color_code })
+    var curveObject = new THREE.Line(geometry, material)
+    //group.add(curveObject)
+
+    var curve2 = new THREE.QuadraticBezierCurve3(
+      new THREE.Vector3(x0, y0 + petalheight, z0),
+      new THREE.Vector3(x1, ctrlpt, z1),
+      new THREE.Vector3(x1, y1, z1)
+    )
+
+    var points2 = curve2.getSpacedPoints(10)
+    var geometry = new THREE.BufferGeometry().setFromPoints(points2)
+    var material = new THREE.LineBasicMaterial({ color: color_code })
+    var curveObject = new THREE.Line(geometry, material)
+    //group.add(curveObject)
+
+    var points = points1.concat(points2)
+    return points
+  }
+
+
+  //Chart Position - draws chart lines within petal arc
+  function chartPosition (x, y, z, x0, y0, z0, petalheight, ctrlpt, color_code) {
+    var cPcurve = new THREE.QuadraticBezierCurve3(
+      new THREE.Vector3(x, y, z),
+      new THREE.Vector3(x, ctrlpt, z),
+      new THREE.Vector3(x0, y0, z0)
+    )
+
+    var points = cPcurve.getPoints(20)
+    var geometry = new THREE.BufferGeometry().setFromPoints(points)
+    var material = new THREE.LineBasicMaterial({ color: color_code })
+    var curveObject = new THREE.Line(geometry, material)
+    //curves.push(curveObject);
+    group.add(curveObject)
+  }
+
+
+//Invisible Spaghetti - add TubeGeometry objects that sheath chart lines representing active geometric links.
+function invisibleSpaghetti (k, x, y, z, x0, y0, z0, petalheight, ctrlpt, color_code, opacity, category) {
+    var link_curve = new THREE.QuadraticBezierCurve3(
+      new THREE.Vector3(x, y, z),
+      new THREE.Vector3(x, ctrlpt, z),
+      new THREE.Vector3(x0, y0, z0)
+    )
+
+    var geometry = new THREE.TubeGeometry(link_curve, 64, 0.004, 8, false)
+    var material = new THREE.MeshBasicMaterial({ color: color_code })
+    var object = new THREE.Mesh(geometry, material)
+    //object.visible = true
+    material.transparent = true
+    material.opacity = opacity
+    object.label = k
+    category.add(object)
+    category.visible = false
+  }
+
+
+//Draw Petals - draws ring of lotus petals
+function drawPetalRing (segmentCount, radius, depth, color_code, chartLines, divisor){
+  var geometry = new THREE.Geometry(),
+  material = new THREE.LineBasicMaterial({ color: color_code })
+
+  for (var i = 0; i <= segmentCount; i++) {
+    var theta = (i / segmentCount) * Math.PI * 2
+    var iota = ((i + 0.5) / segmentCount) * Math.PI * 2
+    var kappa = ((i + 1) / segmentCount) * Math.PI * 2
+    drawPetal(
+      Math.cos(theta) * radius,
+      0,
+      Math.sin(theta) * radius,
+      Math.cos(iota) * (radius - depth),
+      0,
+      Math.sin(iota) * (radius - depth),
+      Math.cos(kappa) * radius,
+      0,
+      Math.sin(kappa) * radius,
+      0.5,
+      0.45,
+      color_code
+    )
+  }
+  group.add(new THREE.Line(geometry, material))
+
+
+  //Draws Chart Lines 
+  var geometry = new THREE.Geometry(),
+    material = new THREE.LineBasicMaterial({ color: color_code })
+
+  for (var i = 0; i < chartLines; i++) {
+    var k = 0
+    var theta = (i / chartLines) * Math.PI * 2
+    var iota = ((i + 0.5) / chartLines) * Math.PI * 2
+    var kappa = ((i + 1) / chartLines) * Math.PI * 2
+    var iota0 = ((i + divisor / 2) / chartLines) * Math.PI * 2
+    var kappa0 = ((i + divisor) / chartLines) * Math.PI * 2
+    var modulus = i % divisor
+
+    var base_x = Math.cos(theta) * radius
+    var base_y = 0
+    var base_z = Math.sin(theta) * radius
+    var petalheight = 0.5
+    var ctrlpt = 0 //ctrl pt for chart lines (within petal)
+    var arcpt = 0.45 //ctrl pt for petal arc (outline)
+
+    if (modulus == 0) {
+
+//this resets chart line variables for each new petal drawn
+
+      var chartPoint = chartTop(
+        Math.cos(theta) * radius,
+        0,
+        Math.sin(theta) * radius,
+        Math.cos(iota0) * (radius - depth),
+        0,
+        Math.sin(iota0) * (radius - depth),
+        Math.cos(kappa0) * radius,
+        base_y,
+        Math.sin(kappa0) * radius,
+        petalheight,
+        arcpt,
+        0x00769d
+      )
+
+      for (var j = 1; j <= divisor; j++) {
+        k = i + j
+        k=k-1
+        var theta0 = (k / chartLines) * Math.PI * 2
+        var base_xk = Math.cos(theta0) * radius
+        var base_yk = 0
+        var base_zk = Math.sin(theta0) * radius
+        if (chartLines==160) {  //this ensures that each k value is unique within the lotus flower
+          k=k;
+          }
+        if (chartLines==240) {
+          k=k+160;
+          }
+        //if (chartLines==800) {
+          //k=k+1300;
+          //}
+        
+
+        chartPosition(
+          chartPoint[j].x,
+          chartPoint[j].y,
+          chartPoint[j].z,
+          base_xk,
+          base_yk,
+          base_zk,
+          petalheight,
+          ctrlpt,
+          color_code
+        )
+
+
+        k_values.push([    //k values each define a unique curve in 3D space. They are not associated with a specific petal ring.
+          k,
+          chartPoint[j].x,
+          chartPoint[j].y,
+          chartPoint[j].z,
+          base_xk,
+          base_yk,
+          base_zk,
+          petalheight,
+          ctrlpt,
+        ])
+      }
+    }
+
+
+ 
+
+    geometry.vertices.push(
+      new THREE.Vector3(Math.cos(theta) * radius, 0, Math.sin(theta) * radius)
+    )
+  }
+
+
+  group.add(new THREE.Line(geometry, material));
+
+}
+  
+
+// -------------------------------- // 
+
+
+drawPetalRing (8, .55, .1, 0x00769d, 160, 20) //center petals
+
+drawPetalRing (12, 1, .1, 0x0289b6, 240, 20)  //middle petals
+
+group.position.set( 0, -.3, 0);
+group.rotation.set(0,-.3,.0);
+
+  //animate and render
+
+  camera.position.z = 3.75  //this value was originally 3.75, and can be tweaked as needed
+
+  function animate () {
+
+    if (play) {
+
+    requestAnimationFrame(animate)
+    render()
+    group.rotation.x += 0.0000
+    group.rotation.y += 0.0001
+    }
+
+    else {
+
+    requestAnimationFrame(animate)
+    render()
+    }
+  }
+
+  animate()
+
+  function render () {
+    dot += 0
+    renderer.setClearColor(0x000000, 1)
+    renderer.render(scene, camera)
+  }
+
+
+function assignLinks () //this assigns k values to the ranked link ids, so that the highest values occur at the highest chart points for each concentric ring.
+
+
+  {
+  var interval = 20;
+
+  for (var i = 0; i < 8; i++) { //link ids for the innermost petal ring
+    k = (i * interval )+ 10;
+    link_order.push(k);
+  }
+  for (var h = 0; h < 9; h++) {
+    for (var j = 0; j < 8; j++) {
+      k = link_order[j];
+      k1 = k - 2 - h;
+      k2 = k - (-1) + h;
+      link_order.push(k1);
+      link_order.push(k2);
+    }
+  }
+
+  var start = link_order.length;
+  var stop= start + 12
+
+  for (var i = 0; i < 12; i++) {  //link ids for the middle petal ring
+    k = (i * interval )+ 10;
+    k = k + 160;
+    link_order.push(k);
+  }
+  for (var h = 0; h < 9; h++) {
+    for (var j = start; j < stop; j++) {
+      k = link_order[j];
+      k1 = k - 2 - h;
+      k2 = k - (-1) + h;
+      link_order.push(k1);
+      link_order.push(k2);
+    }
+  }
+
+}
+
+assignLinks();
+
+
+function getActiveLinks()  //sorts for a given set of values from the data obtained above
+{
+
+    var f = song_names.entries(); 
+
+    for (x of f) {
+      var song_value = x[1].toString();
+      var song_index = x[0];
+      
+      if (rockgenre.includes(song_value))
+      {
+        
+        rock_links.push(song_index);
+      }
+
+      if (punkgenre.includes(song_value)){
+        
+        punk_links.push(song_index);
+      }
+
+      if (popgenre.includes(song_value)){
+        
+        pop_links.push(song_index);
+      }
+
+      if (folkgenre.includes(song_value))
+      {
+        
+        folk_links.push(song_index);
+      }
+
+      if (countrygenre.includes(song_value)){
+        
+        country_links.push(song_index);
+      }
+
+      if (metalgenre.includes(song_value)){
+        
+        metal_links.push(song_index);
+      }
+
+      if (psychgenre.includes(song_value))
+      {
+        
+        psych_links.push(song_index);
+      }
+
+      if (hiphopgenre.includes(song_value)){
+        
+        hiphop_links.push(song_index);
+      }
+
+      if (jazzgenre.includes(song_value)){
+        
+        jazz_links.push(song_index);
+      }
+
+      if (bluesgenre.includes(song_value))
+      {
+        
+        blues_links.push(song_index);
+      }
+
+      if (funkgenre.includes(song_value)){
+        
+        funk_links.push(song_index);
+      }
+
+      if (electrogenre.includes(song_value)){
+        
+        electronica_links.push(song_index);
+      }
+    }
+}
+
+
+
+function addLinks() {  // adds links for selected values
+
+document.getElementById("rock").style.backgroundColor = "#2387aa"
+addrockLinks()
+
+addpunkLinks()
+
+addpopLinks()
+
+addcountryLinks()
+
+document.getElementById("folk").style.backgroundColor = "#2387aa"
+addfolkLinks()
+
+addmetalLinks()
+
+addjazzLinks()
+
+addpsychLinks()
+
+addhiphopLinks()
+
+addelectronicaLinks()
+
+addbluesLinks()
+
+addfunkLinks()
+
+parentTransform = new THREE.Object3D()
+group.add(parentTransform)
+
+for (i = 0; i < 304; i++) {  //this value should match entries.length
+
+      var k = link_order[i];
+      var color_code = 0xffffff;
+
+      invisibleSpaghetti(
+        k,
+        k_values[k][1],
+        k_values[k][2],
+        k_values[k][3],
+        k_values[k][4],
+        k_values[k][5],
+        k_values[k][6],
+        k_values[k][7],
+        k_values[k][8],
+        color_code,
+        0,
+        parentTransform  //complete set of navigation links
+      )
+  }
+
+}
+
+
+function geometricLinks () {
+
+  getActiveLinks();
+  addLinks();
+}
+
+// generates clickable and color-coded links sorted by genre and popularity
+
+function addTop8Songs() {  // adds links for selected values
+
+document.getElementById("nowplaying").innerHTML = `<span style="font-size: 18px;font-family:Source Sans Pro; color: #FFF;"><strong>Top Eight Songs...</strong></span>`
+top8Transform = new THREE.Object3D()
+group.add(top8Transform) 
+
+for (i = 0; i < 8; i++) {
+
+      var k = link_order[i];
+      var color_code = 0xCC2D6F;
+
+      invisibleSpaghetti(
+        k,
+        k_values[k][1],
+        k_values[k][2],
+        k_values[k][3],
+        k_values[k][4],
+        k_values[k][5],
+        k_values[k][6],
+        k_values[k][7],
+        k_values[k][8],
+        color_code,
+        .8,
+        top8Transform
+      )
+  }
+top8Transform.visible = true
+
+}
+
+function addTopSongs() {  // adds links for selected values
+
+topTransform = new THREE.Object3D()
+group.add(topTransform) 
+
+for (i = 0; i < 100; i++) {
+
+      var k = link_order[i];
+      var color_code = 0xCC2D6F;
+
+      invisibleSpaghetti(
+        k,
+        k_values[k][1],
+        k_values[k][2],
+        k_values[k][3],
+        k_values[k][4],
+        k_values[k][5],
+        k_values[k][6],
+        k_values[k][7],
+        k_values[k][8],
+        color_code,
+        .5,
+        topTransform
+      )
+  }
+topTransform.visible = true
+
+document.getElementById("nowplaying").innerHTML = `<span style="font-size: 18px;font-family:Source Sans Pro; color: #FFF; margin-left:0px;"><strong>Top 100 Songs...</strong></span>`
+}
+
+//setTimeout(spacer, 1000);
+//setTimeout(addTop8Songs, 200);
+//setTimeout(addTopSongs, 1200);
+setTimeout(geometricLinks, 1500);
+setTimeout('document.getElementById("nowplaying").innerHTML = `<span style="font-size: 18px;font-family:Source Sans Pro; color: #FFF; margin-left:0px; text-align:right; margin-top:10px;"></span>`'
+, 2000);
+setTimeout(spacer,5500);
+setTimeout(showDetails,6300);
+
+
+
+
+function getData() //processes JSON data and returns arrays for 5 main variables
+  {
+  var xmlhttp = new XMLHttpRequest();
+  //xmlhttp.addEventListener("load", getActiveLinks);
+  //xmlhttp.addEventListener("load", addLinks);
+
+  xmlhttp.open("GET", "../youtube_list.php", true);
+  xmlhttp.responseType = 'json';
+  xmlhttp.send(); 
+
+  xmlhttp.onreadystatechange = function() {
+  if (this.readyState == 4 && this.status == 200) {
+    var entries = this.response;
+    //console.log(entries.length);
+    song_names.length = 0;
+    if(entries.length > 0) {
+    for (var i = 0; i < entries.length; i++) {
+    //console.log (song_names.length) // current actual number of songs being ranked
+      var song = entries[i];
+      var song_name = song.id;
+      var popularity = song.statistics.viewCount;
+      var song_title = song.snippet.title;
+  //console.log(popularity);
+  //console.log(song_title);
+      views.push([popularity]);
+      song_names.push([song_name]);
+      song_titles.push([song_title]);
+      video_thmbs[video_thmbs.length] = song.snippet.thumbnails.default.url;
+  //console.log (video_thmbs)
+  //video_titles[video_titles.length] = song.snippet.title;
+     }
+     fullyloaded = true;
+     }
+  }
+  }
+}
+
+getData();
+
+
+
+
+
+var URL = "https://www.youtube.com/embed/" + "-Rfqo7OSimw" + "?autoplay=1&mute=1"
+window.open(URL, 'iframe_a')
+
+function showDetails()
+
+{
+document.getElementById("nowplaying").innerHTML = "<b>Song Name</b><p>" + "Small Million \u2022 Sirens";
+document.getElementById("thumb").innerHTML = "<img src='https://i.ytimg.com/vi/-Rfqo7OSimw/hqdefault.jpg?sqp=-oaymwEYCKgBEF5IVfKriqkDCwgBFQAAiEIYAXAB&rs=AOn4CLDkHyVpHwFKobtpTzY8zYgRKWxE7A' width='120'>";  
+document.getElementById("rank").innerHTML = "<b>Rank</b><p>" + 154;
+document.getElementById("views").innerHTML = "<b>Views</b><p>" + 3251;
+document.getElementById("thumb").style.visibility  = "visible";
+document.getElementById("views").style.visibility  = "visible";
+document.getElementById("rank").style.visibility  = "visible";
+document.getElementById("nowplaying").style.visibility  = "visible";
+}
+
+//showDetails()
+
+function addrockLinks() {  //adds links for selected values
+
+rockTransform = new THREE.Object3D()
+group.add(rockTransform)
+
+for (i = 0; i < link_order.length; i++) {
+
+    if (rock_links.includes(i)) {
+
+      var k = link_order[i];
+      var color_code = 0xe45e9d;
+
+       invisibleSpaghetti(
+        k,
+        k_values[k][1],
+        k_values[k][2],
+        k_values[k][3],
+        k_values[k][4],
+        k_values[k][5],
+        k_values[k][6],
+        k_values[k][7],
+        k_values[k][8],
+        color_code,
+        .4,
+        rockTransform
+      )
+    }
+  }
+rockTransform.visible=true
+
+}
+
+
+function addpunkLinks() {  //adds links for selected values
+
+punkTransform = new THREE.Object3D()
+group.add(punkTransform) 
+
+for (i = 0; i < link_order.length; i++) {
+
+    if (punk_links.includes(i)) {
+
+      var k = link_order[i];
+      var color_code = 0x8BFA05;
+
+       invisibleSpaghetti(
+        k,
+        k_values[k][1],
+        k_values[k][2],
+        k_values[k][3],
+        k_values[k][4],
+        k_values[k][5],
+        k_values[k][6],
+        k_values[k][7],
+        k_values[k][8],
+        color_code,
+        .2,
+        punkTransform
+      )
+    }
+  }
+}
+
+
+function addpopLinks() {  //adds links for selected values
+
+popTransform = new THREE.Object3D()
+group.add(popTransform) 
+
+for (i = 0; i < link_order.length; i++) {
+
+    if (pop_links.includes(i)) {
+
+      var k = link_order[i];
+      var color_code = 0xffffff;
+
+       invisibleSpaghetti(
+        k,
+        k_values[k][1],
+        k_values[k][2],
+        k_values[k][3],
+        k_values[k][4],
+        k_values[k][5],
+        k_values[k][6],
+        k_values[k][7],
+        k_values[k][8],
+        color_code,
+        .2,
+        popTransform
+      )
+    }
+  }
+}
+
+
+function addcountryLinks() {  //adds links for selected values
+
+countryTransform = new THREE.Object3D()
+group.add(countryTransform) 
+
+for (i = 0; i < link_order.length; i++) {
+
+    if (country_links.includes(i)) {
+
+      var k = link_order[i];
+      var color_code = 0xFF5733;
+
+       invisibleSpaghetti(
+        k,
+        k_values[k][1],
+        k_values[k][2],
+        k_values[k][3],
+        k_values[k][4],
+        k_values[k][5],
+        k_values[k][6],
+        k_values[k][7],
+        k_values[k][8],
+        color_code,
+        .5,
+        countryTransform
+      )
+    }
+  }
+}
+
+
+function addfolkLinks() {  //adds links for selected values
+
+folkTransform = new THREE.Object3D()
+group.add(folkTransform) 
+
+for (i = 0; i < link_order.length; i++) {
+
+    if (folk_links.includes(i)) {
+
+      var k = link_order[i];
+      var color_code = 0xffca85;
+
+       invisibleSpaghetti(
+        k,
+        k_values[k][1],
+        k_values[k][2],
+        k_values[k][3],
+        k_values[k][4],
+        k_values[k][5],
+        k_values[k][6],
+        k_values[k][7],
+        k_values[k][8],
+        color_code,
+        .3,
+        folkTransform
+      )
+    }
+  }
+folkTransform.visible=true
+}
+
+
+function addmetalLinks() {  //adds links for selected values
+
+metalTransform = new THREE.Object3D()
+group.add(metalTransform) 
+
+for (i = 0; i < link_order.length; i++) {
+
+    if (metal_links.includes(i)) {
+
+      var k = link_order[i];
+      var color_code = 0xFF0000;
+
+       invisibleSpaghetti(
+        k,
+        k_values[k][1],
+        k_values[k][2],
+        k_values[k][3],
+        k_values[k][4],
+        k_values[k][5],
+        k_values[k][6],
+        k_values[k][7],
+        k_values[k][8],
+        color_code,
+        .4,
+        metalTransform
+      )
+    }
+  }
+}
+
+
+function addpsychLinks() {  //adds links for selected values
+
+psychTransform = new THREE.Object3D()
+group.add(psychTransform) 
+
+for (i = 0; i < link_order.length; i++) {
+
+    if (psych_links.includes(i)) {
+
+      var k = link_order[i];
+      var color_code = 0xFC24E8;
+
+       invisibleSpaghetti(
+        k,
+        k_values[k][1],
+        k_values[k][2],
+        k_values[k][3],
+        k_values[k][4],
+        k_values[k][5],
+        k_values[k][6],
+        k_values[k][7],
+        k_values[k][8],
+        color_code,
+        .3,
+        psychTransform
+      )
+    }
+  }
+}
+
+
+function addjazzLinks() {  //adds links for selected values
+
+jazzTransform = new THREE.Object3D()
+group.add(jazzTransform) 
+
+for (i = 0; i < link_order.length; i++) {
+
+    if (jazz_links.includes(i)) {
+
+      var k = link_order[i];
+      var color_code = 0x019028;
+
+       invisibleSpaghetti(
+        k,
+        k_values[k][1],
+        k_values[k][2],
+        k_values[k][3],
+        k_values[k][4],
+        k_values[k][5],
+        k_values[k][6],
+        k_values[k][7],
+        k_values[k][8],
+        color_code,
+        .6,
+        jazzTransform
+      )
+    }
+  }
+}
+
+
+function addhiphopLinks() {  //adds links for selected values
+
+hiphopTransform = new THREE.Object3D()
+group.add(hiphopTransform) 
+
+for (i = 0; i < link_order.length; i++) {
+
+    if (hiphop_links.includes(i)) {
+
+      var k = link_order[i];
+      var color_code = 0xFFFF00;
+
+       invisibleSpaghetti(
+        k,
+        k_values[k][1],
+        k_values[k][2],
+        k_values[k][3],
+        k_values[k][4],
+        k_values[k][5],
+        k_values[k][6],
+        k_values[k][7],
+        k_values[k][8],
+        color_code,
+        .5,
+        hiphopTransform
+      )
+    }
+  }
+}
+
+
+function addelectronicaLinks() {  //adds links for selected values
+
+electronicaTransform = new THREE.Object3D()
+group.add(electronicaTransform) 
+
+for (i = 0; i < link_order.length; i++) {
+
+    if (electronica_links.includes(i)) {
+
+      var k = link_order[i];
+      var color_code = 0x24FCD8;
+
+       invisibleSpaghetti(
+        k,
+        k_values[k][1],
+        k_values[k][2],
+        k_values[k][3],
+        k_values[k][4],
+        k_values[k][5],
+        k_values[k][6],
+        k_values[k][7],
+        k_values[k][8],
+        color_code,
+        .2,
+        electronicaTransform
+      )
+    }
+  }
+}
+
+
+function addfunkLinks() {  //adds links for selected values
+
+funkTransform = new THREE.Object3D()
+group.add(funkTransform) 
+
+for (i = 0; i < link_order.length; i++) {
+
+    if (funk_links.includes(i)) {
+
+      var k = link_order[i];
+      var color_code = 0xA002DC;
+
+       invisibleSpaghetti(
+        k,
+        k_values[k][1],
+        k_values[k][2],
+        k_values[k][3],
+        k_values[k][4],
+        k_values[k][5],
+        k_values[k][6],
+        k_values[k][7],
+        k_values[k][8],
+        color_code,
+        .4,
+        funkTransform
+      )
+    }
+  }
+}
+
+
+function addbluesLinks() {  //adds links for selected values
+
+bluesTransform = new THREE.Object3D()
+group.add(bluesTransform) 
+
+for (i = 0; i < link_order.length; i++) {
+
+    if (blues_links.includes(i)) {
+
+      var k = link_order[i];
+      var color_code = 0x005CFE;
+
+       invisibleSpaghetti(
+        k,
+        k_values[k][1],
+        k_values[k][2],
+        k_values[k][3],
+        k_values[k][4],
+        k_values[k][5],
+        k_values[k][6],
+        k_values[k][7],
+        k_values[k][8],
+        color_code,
+        .6,
+        bluesTransform
+      )
+    }
+  }
+}
+
+
+  // --- indicator panel code
+
+function nowPlaying(k) {
+  l = link_order.indexOf(k)
+  var song_title= song_titles[l]; 
+  document.getElementById("nowplaying").innerHTML = "<b>Song Name</b><p>" + song_title;
+  if (fullyloaded == false)
+          {
+            document.getElementById("nowplaying").style.visibility  = "hidden";
+          }
+  else
+          {
+            document.getElementById("nowplaying").style.visibility  = "visible";
+          }
+}
+
+function showThumb(k) {
+  l = link_order.indexOf(k) 
+  document.getElementById("thumb").innerHTML = "<img src=" + video_thmbs[l] + ">";
+  if (fullyloaded == false)
+          {
+            document.getElementById("thumb").style.visibility  = "hidden";
+          }
+  else
+          {
+            document.getElementById("thumb").style.visibility  = "visible";
+          }
+}
+
+function showRank(k) {
+  l = link_order.indexOf(k)
+  var songViews= views[l]; 
+  document.getElementById("rank").innerHTML = "<b>Rank</b><p>" + (l+1);
+  document.getElementById("views").innerHTML = "<b>Views</b><p>" + songViews;
+  if (fullyloaded == false)
+          {
+            document.getElementById("rank").style.visibility  = "hidden";
+            document.getElementById("views").style.visibility  = "hidden";
+          }
+    else
+          {
+            document.getElementById("rank").style.visibility  = "visible";
+            document.getElementById("views").style.visibility  = "visible";
+          }
+}
+
+function showPointer() {
+  document.body.style.cursor = "pointer";
+}
+
+function hideControls() {
+  document.getElementById("genres").style.visibility  = "hidden";
+  document.getElementById("message").style.visibility  = "hidden";
+  document.getElementById("nowplaying").style.visibility  = "hidden";
+  document.getElementById("thumb").style.visibility  = "hidden";
+  document.getElementById("views").style.visibility  = "hidden";
+  document.getElementById("rank").style.visibility  = "hidden";
+  document.getElementById("share").style.visibility  = "hidden";
+  document.getElementById("toggleControls").style.backgroundImage  = "url('examples/files/maximize_icon.png')";
+
+}
+
+function showControls() {
+  document.getElementById("genres").style.visibility  = "visible";
+  document.getElementById("message").style.visibility  = "visible";
+  document.getElementById("share").style.visibility  = "visible";
+  document.getElementById("toggleControls").style.backgroundImage  = "url('examples/files/minimize_icon.png')";
+}
+
+function toggleControls() {
+
+  if (controlsVisible == true) {
+    controlsVisible = false;
+    hideControls();
+  }
+  else 
+    {
+      controlsVisible = true;
+      showControls();
+  }
+}
+
+function hideLink()
+{
+  group.remove(activeLink)
+}
+
+
+function toggleLinks(linkobject,id) {
+
+  if (linkobject.visible == true) {
+    linkobject.visible = false;
+    document.getElementById(id).style.backgroundColor = "#a5c6d1";
+  }
+  else 
+    {
+      linkobject.visible = true;
+    document.getElementById(id).style.backgroundColor = "#2387aa";
+  }
+}
+
+function allVisible() {
+
+  if (allgenresVisible == true) {
+    allgenresVisible = false;
+    document.getElementById("all").style.backgroundColor = "#a5c6d1";
+    hideAll();
+  }
+  else 
+    {
+      allgenresVisible = true;
+      document.getElementById("all").style.backgroundColor = "#2387aa";
+      showAll();
+  }
+}
+
+function showAll() {
+
+    rockTransform.visible = true;
+    document.getElementById("rock").style.backgroundColor  = "#2387aa";
+
+    punkTransform.visible = true;
+    document.getElementById("punk").style.backgroundColor  = "#2387aa";
+
+    popTransform.visible = true;
+    document.getElementById("pop").style.backgroundColor  = "#2387aa";
+
+    folkTransform.visible = true;
+    document.getElementById("folk").style.backgroundColor  = "#2387aa";
+
+    metalTransform.visible = true;
+    document.getElementById("metal").style.backgroundColor  = "#2387aa";
+
+    psychTransform.visible = true;
+    document.getElementById("psych").style.backgroundColor  = "#2387aa";
+
+    bluesTransform.visible = true;
+    document.getElementById("blues").style.backgroundColor  = "#2387aa";
+
+    countryTransform.visible = true;
+    document.getElementById("country").style.backgroundColor  = "#2387aa";
+
+    funkTransform.visible = true;
+    document.getElementById("funk").style.backgroundColor = "#2387aa";
+
+    electronicaTransform.visible = true;
+    document.getElementById("electronica").style.backgroundColor  = "#2387aa";
+
+    jazzTransform.visible = true;
+    document.getElementById("jazz").style.backgroundColor  = "#2387aa";
+
+    hiphopTransform.visible = true;
+    document.getElementById("hiphop").style.backgroundColor =  "#2387aa";
+
+}
+
+function hideAll() {
+
+    rockTransform.visible = false;
+    document.getElementById("rock").style.backgroundColor = "#a5c6d1";
+
+    punkTransform.visible = false;
+    document.getElementById("punk").style.backgroundColor = "#a5c6d1";
+
+    popTransform.visible = false;
+    document.getElementById("pop").style.backgroundColor = "#a5c6d1";
+
+    folkTransform.visible = false;
+    document.getElementById("folk").style.backgroundColor = "#a5c6d1";
+
+    metalTransform.visible = false;
+    document.getElementById("metal").style.backgroundColor = "#a5c6d1";
+
+    psychTransform.visible = false;
+    document.getElementById("psych").style.backgroundColor = "#a5c6d1";
+
+    bluesTransform.visible = false;
+    document.getElementById("blues").style.backgroundColor = "#a5c6d1";
+
+    countryTransform.visible = false;
+    document.getElementById("country").style.backgroundColor = "#a5c6d1";
+
+    funkTransform.visible = false;
+    document.getElementById("funk").style.backgroundColor = "#a5c6d1";
+
+    electronicaTransform.visible = false;
+    document.getElementById("electronica").style.backgroundColor = "#a5c6d1";
+
+    jazzTransform.visible = false;
+    document.getElementById("jazz").style.backgroundColor = "#a5c6d1";
+
+    hiphopTransform.visible = false;
+    document.getElementById("hiphop").style.backgroundColor = "#a5c6d1";
+
+}
+
+
+  // --- raycaster code
+
+
+  var geometry = new THREE.SphereBufferGeometry(0.01)
+  var material = new THREE.MeshBasicMaterial({ color: 0x45a7c5 })
+
+  activeLink = new THREE.Object3D()
+  group.add(activeLink)
+
+  raycaster = new THREE.Raycaster()
+
+  document.addEventListener('mousemove', onDocumentMouseMove, false)
+  window.addEventListener('click', onMouseClick, false)
+  window.addEventListener('resize', onWindowResize, false)
+
+  
+  // BUTTONS
+
+
+  //top icons
+
+  document.getElementById( "reload" ).addEventListener( 'click', function () {
+        window.open("https://lotus.fm", "_self")
+        //document.write(video_thmbs);
+        }, false );
+
+  document.getElementById( "about" ).addEventListener( 'click', function () {
+          window.open("https://web.lotus.fm/data-visualization/", "_self")
+        }, false );
+
+  document.getElementById( "toggleControls" ).addEventListener( 'click', function () {
+          toggleControls();
+        }, false );
+
+
+  //calls to action
+
+  /*document.getElementById( "info" ).addEventListener( 'mousemove', function(ev) {
+  ev.stopPropagatio*/
+
+  document.getElementById( "suggest" ).addEventListener( 'click', function () {
+          window.open("https://web.lotus.fm/add-your-song-to-the-lotus-400/", "_self")
+        }, false );
+
+  document.getElementById( "enter" ).addEventListener( 'click', function () {
+
+          window.open("https://web.lotus.fm", "_self")
+        }, false );
+
+
+  //genre buttons
+
+  document.getElementById( "rock" ).addEventListener( 'click', function () {
+          toggleLinks(rockTransform,"rock");
+        }, false );
+
+
+  document.getElementById( "punk" ).addEventListener( 'click', function () {
+          toggleLinks(punkTransform,"punk");
+        }, false );
+  
+  document.getElementById( "pop").addEventListener( 'click', function () {
+          toggleLinks(popTransform,"pop");
+        }, false );
+
+  document.getElementById( "folk" ).addEventListener( 'click', function () {
+          toggleLinks(folkTransform,"folk");
+        }, false );
+  
+  document.getElementById( "hiphop" ).addEventListener( 'click', function () {
+          toggleLinks(hiphopTransform,"hiphop");
+        }, false );
+  
+  document.getElementById( "country" ).addEventListener( 'click', function () {
+          toggleLinks(countryTransform,"country");
+        }, false );
+
+  document.getElementById( "electronica" ).addEventListener( 'click', function () {
+          toggleLinks(electronicaTransform,"electronica");
+        }, false );
+  
+  document.getElementById( "metal" ).addEventListener( 'click', function () {
+          toggleLinks(metalTransform,"metal");
+        }, false );
+  
+  document.getElementById( "psych" ).addEventListener( 'click', function () {
+          toggleLinks(psychTransform,"psych");
+        }, false );
+
+  document.getElementById( "jazz" ).addEventListener( 'click', function () {
+          toggleLinks(jazzTransform,"jazz");
+        }, false );
+  
+  document.getElementById( "funk" ).addEventListener( 'click', function () {
+          toggleLinks(funkTransform,"funk");
+        }, false );
+  
+  document.getElementById( "blues" ).addEventListener( 'click', function () {
+          toggleLinks(bluesTransform,"blues");
+        }, false );
+
+    document.getElementById( "all" ).addEventListener( 'click', function () {
+          allVisible();
+        }, false );
+
+  /*document.getElementById( "top100" ).addEventListener( 'click', function () {
+          toggleLinks(topTransform);
+        }, false );*/
+
+
+  
+  function onDocumentMouseMove (event) {
+    event.preventDefault()
+    mouse.x = (event.clientX / window.innerWidth) * 2 - 1
+    mouse.y = -(event.clientY / window.innerHeight) * 2 + 1
+    raycaster.setFromCamera(mouse, camera)
+    var intersects = raycaster.intersectObjects(parentTransform.children, true)
+    if (intersects.length > 0) {
+      group.remove(activeLink)
+      activeLink = new THREE.Object3D()
+      group.add(activeLink)
+      for (var i = 0; i < intersects.length; i++) 
+      {
+          var intersection = intersects[i],
+          obj = intersection.object
+          k = obj.label
+          var color_code = 0xCC2D6F; 
+          invisibleSpaghetti (
+            k,
+            k_values[k][1],
+            k_values[k][2],
+            k_values[k][3],
+            k_values[k][4],
+            k_values[k][5],
+            k_values[k][6],
+            k_values[k][7],
+            k_values[k][8],
+            color_code,
+            .8,
+            activeLink
+      )
+          activeLink.visible = true;
+          showPointer();
+          showThumb(k);
+          showRank(k);
+          nowPlaying(k);
+      }      
+    } 
+    else {
+      //activeLink.visible = false;
+      group.remove(activeLink)
+      document.body.style.cursor = "default";
+    }
+  }
+
+
+  function onMouseClick (event) {
+    event.preventDefault()
+    mouse.x = (event.clientX / window.innerWidth) * 2 - 1
+    mouse.y = -(event.clientY / window.innerHeight) * 2 + 1
+    raycaster.setFromCamera(mouse, camera)
+    var intersects = raycaster.intersectObjects(parentTransform.children, true)
+    for (var i = 0; i < intersects.length; i++) {
+      var intersection = intersects[i],
+      obj = intersection.object
+      k = obj.label
+      l = link_order.indexOf(k)   //connects the k value -- position on lotus petal graph -- to ID for link value
+      var URL = "https://www.youtube.com/embed/" + song_names[l] + "?autoplay=1&mute=0"
+      window.open(URL, 'iframe_a')
+    }
+  }
+
+
+  function onWindowResize () {
+    camera.aspect = window.innerWidth / window.innerHeight
+    camera.updateProjectionMatrix()
+    renderer.setSize(window.innerWidth, window.innerHeight)
+  }
+
+}
+
+
+
+/*/  ---- reference code ----- //  
+
+Site Colors:  
+#656565  - medium grey
+#87ceeb - cerulean
+#CC2D6F - hot pink
+button down style="background-color: #0289b6; filter: saturate(85%);"
+
+//  ---- reference code ----- /*/  
