@@ -53,6 +53,11 @@ var r = 100,
   var link_order = [] // list of all link values in the module, with k values assigned to each index position
   var k_values = [] // list of all k values generated for corresponding module chart lines
   var active_links = [] //index values of all active links
+  var countries = [] // values of countries from chart
+  var day_one = [] //number of cases on first day tracked
+  var day_ten = [] //number of cases on day 10
+
+
   var rock_links = [] //index values of genre links
   var punk_links = [] //index values of genre links
   var pop_links = [] //index values of genre links
