@@ -622,10 +622,6 @@ getData();*/
 function showDetails()
 
 {
-document.getElementById("nowplaying").innerHTML = "<b>Song Name</b><p>" + "Small Million \u2022 Sirens";
-document.getElementById("thumb").innerHTML = "<img src='https://i.ytimg.com/vi/-Rfqo7OSimw/hqdefault.jpg?sqp=-oaymwEYCKgBEF5IVfKriqkDCwgBFQAAiEIYAXAB&rs=AOn4CLDkHyVpHwFKobtpTzY8zYgRKWxE7A' width='120'>";  
-document.getElementById("rank").innerHTML = "<b>Rank</b><p>" + 154;
-document.getElementById("views").innerHTML = "<b>Views</b><p>" + 3251;
 document.getElementById("thumb").style.visibility  = "visible";
 document.getElementById("views").style.visibility  = "visible";
 document.getElementById("rank").style.visibility  = "visible";
@@ -671,45 +667,19 @@ for (i = 0; i < link_order.length; i++) {
 function nowPlaying(k) {
   l = link_order.indexOf(k)
   var song_title= song_titles[l]; 
-  document.getElementById("nowplaying").innerHTML = "<b>Song Name</b><p>" + song_title;
-  if (fullyloaded == false)
-          {
-            document.getElementById("nowplaying").style.visibility  = "hidden";
-          }
-  else
-          {
-            document.getElementById("nowplaying").style.visibility  = "visible";
-          }
+  document.getElementById("nowplaying").innerHTML = "<b>Country</b><p>" + country_names[l];
 }
 
 function showThumb(k) {
   l = link_order.indexOf(k) 
   document.getElementById("thumb").innerHTML = "<img src=" + video_thmbs[l] + ">";
-  if (fullyloaded == false)
-          {
-            document.getElementById("thumb").style.visibility  = "hidden";
-          }
-  else
-          {
-            document.getElementById("thumb").style.visibility  = "visible";
-          }
 }
 
 function showRank(k) {
   l = link_order.indexOf(k)
   var songViews= views[l]; 
   document.getElementById("rank").innerHTML = "<b>Rank</b><p>" + (l+1);
-  document.getElementById("views").innerHTML = "<b>Views</b><p>" + songViews;
-  if (fullyloaded == false)
-          {
-            document.getElementById("rank").style.visibility  = "hidden";
-            document.getElementById("views").style.visibility  = "hidden";
-          }
-    else
-          {
-            document.getElementById("rank").style.visibility  = "visible";
-            document.getElementById("views").style.visibility  = "visible";
-          }
+  document.getElementById("views").innerHTML = "<b>Confirmed Cases</b><p>" + day_ten[l];
 }
 
 function showPointer() {
