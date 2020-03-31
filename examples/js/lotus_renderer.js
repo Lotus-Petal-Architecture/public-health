@@ -59,14 +59,14 @@ var r = 100,
   var day_one = [1000, 100, 73, 29, 2] //number of cases on first day tracked
   var day_ten = [1500, 950, 250, 72, 32] //number of cases on day 10
 
-  var views = [] //popularity of youtube videas. uses same index ranking as link_order
+  var views = [] //popularity of youtube videos. uses same index ranking as link_order
   var song_titles = []
   var video_thmbs = []
   var xmlhttp = new XMLHttpRequest()
 
   //These song IDs are periodically queried from the Lotus YouTube genre playlists.  
 
-  var countrygenre = ["_86LQH-c1d8","ENODBnQ5ed0","z0lHW09eQRA","SBA_vLLrXr0","c4cBdT5WCoE","nKJeB03TrJg","Pp_e6vZuhBI"]
+  var growthtrend = ["USA","Canada","France"]
   // -------------------------------------------- //
 
 
@@ -415,7 +415,6 @@ group.rotation.set(0,-.3,.0);
 
 function assignLinks () //this assigns k values to the ranked link ids, so that the highest values occur at the highest chart points for each concentric ring.
 
-
   {
   var interval = 20;
 
@@ -465,7 +464,7 @@ function getActiveLinks()  //sorts for a given set of values from the data obtai
       var song_value = x[1].toString();
       var song_index = x[0];
     
-      if (countrygenre.includes(song_value)){
+      if (growthtrend.includes(song_value)){
         
         country_links.push(song_index);
       }
@@ -508,43 +507,12 @@ for (i = 0; i < 300; i++) {  //this value should match entries.length
 
 
 function geometricLinks () {
-
   getActiveLinks();
   addLinks();
 }
 
-
-/*function addTop8Songs() {  // adds links for selected values
-
-document.getElementById("nowplaying").innerHTML = `<span style="font-size: 18px;font-family:Source Sans Pro; color: #FFF;"><strong>Top Eight Songs...</strong></span>`
-top8Transform = new THREE.Object3D()
-group.add(top8Transform) 
-
-for (i = 0; i < 8; i++) {
-
-      var k = link_order[i];
-      var color_code = 0xCC2D6F;
-
-      invisibleSpaghetti(
-        k,
-        k_values[k][1],
-        k_values[k][2],
-        k_values[k][3],
-        k_values[k][4],
-        k_values[k][5],
-        k_values[k][6],
-        k_values[k][7],
-        k_values[k][8],
-        color_code,
-        .8,
-        top8Transform
-      )
-  }
-top8Transform.visible = true
-}
-
-function addTopSongs() {  // adds links for selected values
-
+/*function addTopSongs() 
+{  // adds links for selected values
 topTransform = new THREE.Object3D()
 group.add(topTransform) 
 
@@ -870,7 +838,7 @@ function hideAll() {
       )
           activeLink.visible = true;
           showPointer();
-          showThumb(k);
+          //howThumb(k);
           showRank(k);
           nowPlaying(k);
       }      
