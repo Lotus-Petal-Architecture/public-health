@@ -75,11 +75,6 @@ function init () {
   container = document.createElement('div')
   document.body.appendChild(container)
 
-function spacer () {
-          //top8Transform.visible = false 
-          //topTransform.visible = false
-          document.getElementById("nowplaying").innerHTML = `<span style="font-size: 18px;font-family:Source Sans Pro; color: #FFF; margin-left:0px; text-align:right; margin-top:10px;"><strong></strong></span>`
-  }
 
 //Petal Constructor - draws outline of petal
 function drawPetal (
