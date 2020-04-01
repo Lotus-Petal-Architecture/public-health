@@ -547,11 +547,11 @@ function getActiveLinks()  //sorts for a given set of values from the data obtai
 
 function addLinks() {  // adds links for selected values
 
-document.getElementById("highest_button").style.backgroundColor = "#2387aa"
-document.getElementById("high_button").style.backgroundColor = "#2387aa"
-document.getElementById("medium_button").style.backgroundColor = "#2387aa"
-document.getElementById("low_button").style.backgroundColor = "#2387aa"
-document.getElementById("lowest_button").style.backgroundColor = "#2387aa"
+document.getElementById("highest_button").style.backgroundColor = "#ffa796"
+document.getElementById("high_button").style.backgroundColor = "#ffa796"
+document.getElementById("medium_button").style.backgroundColor = "#ffa796"
+/*document.getElementById("low_button").style.backgroundColor = "#2387aa"
+document.getElementById("lowest_button").style.backgroundColor = "#2387aa"*/
 
 addhighestlinks()
 highestTransform.visible = true;
@@ -563,10 +563,10 @@ addmediumlinks()
 mediumTransform.visible = true;
 
 addlowlinks()
-lowTransform.visible = true;
+lowTransform.visible = false;
 
 addlowestlinks()
-lowestTransform.visible = true;
+lowestTransform.visible = false;
 
 
 
@@ -632,48 +632,6 @@ topTransform.visible = true
 
 geometricLinks();
 showDetails();
-
-
-/*function getData() //processes JSON data and returns arrays for 5 main variables
-  {
-  var xmlhttp = new XMLHttpRequest();
-  //xmlhttp.addEventListener("load", getActiveLinks);
-  //xmlhttp.addEventListener("load", addLinks);
-
-  xmlhttp.open("GET", "../youtube_list.php", true);
-  xmlhttp.responseType = 'json';
-  xmlhttp.send(); 
-
-  xmlhttp.onreadystatechange = function() {
-  if (this.readyState == 4 && this.status == 200) {
-    var entries = this.response;
-    //console.log(entries.length);
-    country_names.length = 0;
-    if(entries.length > 0) {
-    for (var i = 0; i < entries.length; i++) {
-    //console.log (country_names.length) // current actual number of songs being ranked
-      var song = entries[i];
-      var song_name = song.id;
-      var popularity = song.statistics.viewCount;
-      var song_title = song.snippet.title;
-  //console.log(popularity);
-  //console.log(song_title);
-      views.push([popularity]);
-      country_names.push([song_name]);
-      song_titles.push([song_title]);
-      video_thmbs[video_thmbs.length] = song.snippet.thumbnails.default.url;
-  //console.log (video_thmbs)
-  //video_titles[video_titles.length] = song.snippet.title;
-     }
-     fullyloaded = true;
-     }
-  }
-  }
-}
-
-getData();*/
-
-
 
 
 
@@ -804,7 +762,7 @@ for (i = 0; i < link_order.length; i++) {
         k_values[k][7],
         k_values[k][8],
         color_code,
-        .3,
+        .4,
         lowTransform
       )
     }
@@ -835,7 +793,7 @@ for (i = 0; i < link_order.length; i++) {
         k_values[k][7],
         k_values[k][8],
         color_code,
-        .2,
+        .3,
         lowestTransform
       )
     }
@@ -914,7 +872,7 @@ function toggleLinks(linkobject,id) {
   else 
     {
       linkobject.visible = true;
-    document.getElementById(id).style.backgroundColor = "#2387aa";
+    document.getElementById(id).style.backgroundColor = "#ffa796";
   }
 }
 
@@ -940,11 +898,12 @@ function showAll() {
     mediumTransform.visible = true;
     lowTransform.visible = true;
     lowestTransform.visible = true;
-    document.getElementById("highest_button").style.backgroundColor  = "#2387aa";
-    document.getElementById("high_button").style.backgroundColor  = "#2387aa";
-    document.getElementById("medium_button").style.backgroundColor  = "#2387aa";
-    document.getElementById("low_button").style.backgroundColor  = "#2387aa";
-    document.getElementById("lowest_button").style.backgroundColor  = "#2387aa";
+    document.getElementById("highest_button").style.backgroundColor  = "#ffa796";
+    document.getElementById("high_button").style.backgroundColor  = "#ffa796";
+    document.getElementById("medium_button").style.backgroundColor  = "#ffa796";
+    document.getElementById("low_button").style.backgroundColor  = "#ffa796";
+    document.getElementById("lowest_button").style.backgroundColor  = "#ffa796";
+    document.getElementById("all").innerHTML = "Hide All"; 
 
 }
 
@@ -957,10 +916,11 @@ function hideAll() {
     lowTransform.visible =  false;
     lowestTransform.visible =  false;
     document.getElementById("highest_button").style.backgroundColor = "#a5c6d1";
-        document.getElementById("high_button").style.backgroundColor  = "#a5c6d1";
+    document.getElementById("high_button").style.backgroundColor  = "#a5c6d1";
     document.getElementById("medium_button").style.backgroundColor  = "#a5c6d1";
     document.getElementById("low_button").style.backgroundColor  = "#a5c6d1";
     document.getElementById("lowest_button").style.backgroundColor  = "#a5c6d1";
+    document.getElementById("all").innerHTML = "Show All"; 
 
 }
 
