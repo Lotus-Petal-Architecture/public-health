@@ -8,7 +8,7 @@ var r = 100,
   var scene = new THREE.Scene()
 
   var camera = new THREE.PerspectiveCamera(
-    20, // This variable controls size -- the lower the value the larger the rendering. Original value was 27.
+    22, // This variable controls size -- the lower the value the larger the rendering. Original value was 27.
     window.innerWidth / window.innerHeight,
     0.1,
     1000
@@ -854,7 +854,7 @@ function nowPlaying(k) {
 
 function showThumb(k) {
   l = link_order.indexOf(k) 
-  document.getElementById("thumb").innerHTML = "<b>Percent Growth</b><p>" + growthrates[l] + "%";
+  document.getElementById("thumb").innerHTML = "<b>Percent Growth</b><p>" + growthrates[l] + " %";
 }
 
 function showRank(k) {
@@ -1006,12 +1006,12 @@ function hideAll() {
   ev.stopPropagatio*/
 
   document.getElementById( "suggest" ).addEventListener( 'click', function () {
-          window.open("https://web.lotus.fm/add-your-song-to-the-lotus-400/", "_self")
+          window.open("https://www.who.int/", "_self")
         }, false );
 
   document.getElementById( "enter" ).addEventListener( 'click', function () {
 
-          window.open("https://web.lotus.fm", "_self")
+          window.open("https://github.com/CSSEGISandData/COVID-19/tree/master/csse_covid_19_data/csse_covid_19_time_series", "_self")
         }, false );
 
 
