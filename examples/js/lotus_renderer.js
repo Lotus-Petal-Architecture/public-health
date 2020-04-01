@@ -466,7 +466,6 @@ assignLinks();
 
 function getActiveLinks()  //sorts for a given set of values from the data obtained above
 {
-
     var f = country_names.entries(); 
 
     for (x of f) {
@@ -482,6 +481,23 @@ function getActiveLinks()  //sorts for a given set of values from the data obtai
         
         high.push(song_index);
       }
+
+      if (growthtrend250to500.includes(song_value)){
+        
+        medium.push(song_index);
+      }
+
+      if (growthtrend100to250.includes(song_value)){
+        
+        low.push(song_index);
+      }
+
+      if (growthtrend0to100.includes(song_value)){
+        
+        lowest.push(song_index);
+      }
+
+
     }
 }
 
@@ -534,8 +550,20 @@ function addLinks() {  // adds links for selected values
 document.getElementById("country").style.backgroundColor = "#2387aa"
 
 addhighestlinks()
-
 highestTransform.visible = true;
+
+addhighlinks()
+highTransform.visible = true;
+
+addmediumlinks()
+mediumTransform.visible = true;
+
+addlowlinks()
+lowTransform.visible = true;
+
+addlowestlinks()
+lowestTransform.visible = true;
+
 
 
 parentTransform = new THREE.Object3D()
@@ -679,7 +707,7 @@ for (i = 0; i < link_order.length; i++) {
         k_values[k][7],
         k_values[k][8],
         color_code,
-        .5,
+        1,
         highestTransform
       )
     }
@@ -687,6 +715,128 @@ for (i = 0; i < link_order.length; i++) {
 }
 
 
+function addhighlinks() {  //adds links for selected values
+
+highTransform = new THREE.Object3D()
+group.add(highTransform) 
+
+for (i = 0; i < link_order.length; i++) {
+
+    if (high.includes(i)) {
+
+      var k = link_order[i];
+      var color_code = 0xFF5733;
+
+       invisibleSpaghetti(
+        k,
+        k_values[k][1],
+        k_values[k][2],
+        k_values[k][3],
+        k_values[k][4],
+        k_values[k][5],
+        k_values[k][6],
+        k_values[k][7],
+        k_values[k][8],
+        color_code,
+        .7,
+        highTransform
+      )
+    }
+  }
+}
+
+
+function addmediumlinks() {  //adds links for selected values
+
+mediumTransform = new THREE.Object3D()
+group.add(mediumTransform) 
+
+for (i = 0; i < link_order.length; i++) {
+
+    if (medium.includes(i)) {
+
+      var k = link_order[i];
+      var color_code = 0xFF5733;
+
+       invisibleSpaghetti(
+        k,
+        k_values[k][1],
+        k_values[k][2],
+        k_values[k][3],
+        k_values[k][4],
+        k_values[k][5],
+        k_values[k][6],
+        k_values[k][7],
+        k_values[k][8],
+        color_code,
+        .5,
+        mediumTransform
+      )
+    }
+  }
+}
+
+
+function addlowlinks() {  //adds links for selected values
+
+lowTransform = new THREE.Object3D()
+group.add(lowTransform) 
+
+for (i = 0; i < link_order.length; i++) {
+
+    if (low.includes(i)) {
+
+      var k = link_order[i];
+      var color_code = 0xFF5733;
+
+       invisibleSpaghetti(
+        k,
+        k_values[k][1],
+        k_values[k][2],
+        k_values[k][3],
+        k_values[k][4],
+        k_values[k][5],
+        k_values[k][6],
+        k_values[k][7],
+        k_values[k][8],
+        color_code,
+        .3,
+        lowTransform
+      )
+    }
+  }
+}
+
+
+function addlowestlinks() {  //adds links for selected values
+
+lowestTransform = new THREE.Object3D()
+group.add(lowestTransform) 
+
+for (i = 0; i < link_order.length; i++) {
+
+    if (lowest.includes(i)) {
+
+      var k = link_order[i];
+      var color_code = 0xFF5733;
+
+       invisibleSpaghetti(
+        k,
+        k_values[k][1],
+        k_values[k][2],
+        k_values[k][3],
+        k_values[k][4],
+        k_values[k][5],
+        k_values[k][6],
+        k_values[k][7],
+        k_values[k][8],
+        color_code,
+        .2,
+        lowestTransform
+      )
+    }
+  }
+}
 
 
 
