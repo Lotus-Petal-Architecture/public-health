@@ -54,19 +54,32 @@ var r = 100,
   var k_values = [] // list of all k values generated for corresponding module chart lines
   var active_links = [] //index values of all active links
 
-  var country_links = [] //index values of genre links
+  var highest = [] //index values of growth links, growth rate greater 1000%
+  var high = [] //index values of growth % links, growth rate greater than or equal to 500% and less than 1000%
+  var medium = [] //index values of growth % links, growth rate greater than or equal to 250% and less than 500%
+  var low = [] //index values of growth % links, growth rate greater than or equal to 100% and less than 250%
+  var lowest = [] //index values of growth % links, growth rate less than 100%
+
+
   var country_names = ["US","Italy","Spain","China","Germany","France","Iran","United Kingdom","Switzerland","Turkey","Belgium","Netherlands","Austria","South Korea","Canada","Portugal","Brazil","Israel","Norway","Australia","Sweden","Czechia","Ireland","Denmark","Malaysia","Chile","Russia","Poland","Romania","Ecuador","Luxembourg","Philippines","Japan","Pakistan","Thailand","Saudi Arabia","Indonesia","Finland","India","South Africa","Greece","Panama","Iceland","Dominican Republic","Mexico","Peru","Argentina","Singapore","Colombia","Serbia","Croatia","Slovenia","Qatar","Estonia","Algeria","Diamond Princess","Egypt","Iraq","United Arab Emirates","New Zealand","Ukraine","Morocco","Bahrain","Lithuania","Armenia","Hungary","Lebanon","Bosnia and Herzegovina","Bulgaria","Latvia","Tunisia","Andorra","Slovakia","Moldova","Costa Rica","Kazakhstan","Uruguay","North Macedonia","Taiwan*","Azerbaijan","Kuwait","Jordan","Cyprus","Burkina Faso","Reunion","Albania","San Marino","Vietnam","Cameroon","Oman","Cuba","Cote d'Ivoire","Senegal","Afghanistan","Uzbekistan","Faroe Islands","Malta","Ghana","Belarus","Mauritius","Sri Lanka","Honduras","Channel Islands","Nigeria","Venezuela","Brunei","Martinique","West Bank and Gaza","Guadeloupe","Kosovo","Georgia","Cambodia","Montenegro","Bolivia","Kyrgyzstan","Congo (Kinshasa)","Mayotte","Trinidad and Tobago","Rwanda","Gibraltar","Liechtenstein","Paraguay","Isle of Man","Kenya","Madagascar","Aruba","Monaco","Bangladesh","Uganda","French Guiana","Guatemala","French Polynesia","Jamaica","Zambia","Barbados","Togo","El Salvador","Bermuda","Djibouti","Mali","Niger","Ethiopia","Guinea","Congo (Brazzaville)","Tanzania","Maldives","New Caledonia","Gabon","Eritrea","St Martin","Haiti","Burma","Bahamas","Cayman Islands","Saint Lucia","Equatorial Guinea","Guyana","Mongolia","Dominica","Namibia","Curacao","Greenland","Seychelles","Syria","Libya","Benin","Eswatini","Suriname","Grenada","Laos","Zimbabwe","Mozambique","Guinea-Bissau","Saint Kitts and Nevis","Angola","Antigua and Barbuda","Chad","Sudan","Cabo Verde","Saint Barthelemy","Holy See","Mauritania","Sint Maarten","Fiji","Nepal","Nicaragua","Somalia","Montserrat","Turks and Caicos Islands","Bhutan","Gambia","Botswana","Central African Republic","Liberia","Belize","British Virgin Islands","Anguilla","MS Zaandam","Burundi","Papua New Guinea","Saint Vincent and the Grenadines","Timor-Leste","Sierra Leone"] 
   //list of countries, ranked in order of number of cases
+  
   var total_cases = [188172,105792,95923,82279,71808,52128,44605,25150,16605,13531,12775,12595,10180,9786,8527,7443,5717,5358,4641,4559,4435,3308,3235,2860,2766,2738,2337,2311,2245,2240,2178,2084,1953,1938,1651,1563,1528,1418,1397,1353,1314,1181,1135,1109,1094,1065,1054,926,906,900,867,802,781,745,716,712,710,694,664,647,645,617,567,537,532,492,470,420,399,398,394,376,363,353,347,343,338,329,322,298,289,274,262,261,247,243,236,212,193,192,186,179,175,174,172,169,169,161,152,143,143,141,141,135,135,129,128,119,114,112,110,109,109,107,107,98,94,87,75,69,68,65,60,59,57,55,52,51,44,43,38,36,36,35,34,34,32,32,30,28,27,26,22,19,19,18,16,16,15,15,15,15,14,14,13,12,12,12,12,11,11,10,10,10,10,9,9,9,9,9,8,8,8,8,7,7,7,7,6,6,6,6,6,5,5,5,5,5,5,4,4,4,3,3,3,3,2,2,2,1,1,1,1] 
   //total confirmed cases
+  
   var views = [] //popularity of youtube videos. uses same index ranking as link_order
   var song_titles = []
   var video_thmbs = []
   var xmlhttp = new XMLHttpRequest()
 
-  //These song IDs are periodically queried from the Lotus YouTube genre playlists.  
 
-  var growthtrend = [638.25,97.45,278.04,1.20,223.27,264.99,116.42,401.20,152.55,1919.55,353.82,246.87,261.76,11.22,567.74,481.48,459.94,652.53,119.12,325.68,151.56,232.46,312.10,115.69,133.81,409.87,663.73,331.16,511.72,342.69,225.07,578.83,93.94,165.48,301.70,298.72,239.56,171.13,323.33,463.75,147.92,490.50,139.96,890.18,438.92,234.91,567.09,114.35,362.24,426.32,320.87,109.40,62.37,143.46,415.11,0.00,141.50,224.30,333.99,1144.23,1272.34,542.71,85.90,546.99,232.50,377.67,151.34,351.61,144.79,220.97,556.67,327.27,103.93,341.25,196.58,547.17,207.27,287.06,110.46,462.26,64.20,222.35,211.90,307.81,448.89,219.74,63.89,125.53,614.81,269.23,785.71,1178.57,272.34,625.00,300.00,83.70,131.51,747.37,100.00,921.43,85.71,487.50,340.63,513.64,92.86,55.42,300.00,147.92,115.09,null,124.49,105.66,678.57,463.16,664.29,326.09,1242.86,77.55,341.18,590.00,83.78,261.11,5900.00,742.86,1800.00,1000.00,372.73,104.00,4300.00,138.89,123.53,140.00,125.00,1650.00,466.67,112.50,966.67,1500.00,2900.00,null,2600.00,188.89,1000.00,533.33,216.67,38.46,300.00,300.00,1400.00,275.00,650.00,null,250.00,366.67,550.00,100.00,71.43,20.00,null,266.67,266.67,400.00,42.86,null,null,350.00,800.00,125.00,null,null,166.67,null,null,null,250.00,600.00,600.00,250.00,100.00,100.00,500.00,200.00,500.00,400.00,400.00,150.00,400.00,400.00,null,100.00,300.00,null,0.00,0.00,null,null,null,null,null,0.00,0.00,null,null]
+  var growthtrendover1000 = ["Isle of Man", "Uganda", "Djibouti", "Niger", "Turke", "Madagascar", "Zambia", "Bermuda", "Eritrea", "Ukraine", "Mayotte", "Cote d'Ivoire", "New Zealand", "Aruba","Guinea"]
+  var growthtrend500to1000 = ["El Salvador","Mauritius","Dominican Republic","Eswatini","Cuba","Ghana","Kenya","Montenegro","Kyrgyzstan","Russia","Israel","Haiti","US","Afghanistan","Cameroon","Antigua and Barbuda","Chad","Gibraltar","Philippines","Canada","Argentina","Tunisia","Saint Lucia","Kazakhstan","Lithuania","Morocco","Congo (Brazzaville)","Nigeria","Romania","Holy See","Sint Maarten"]
+  //covers values less than or equal to 500% and less than 1000%
+  var growthtrend250to500 = ["Panama","Honduras","Portugal","Barbados","South Africa","Bolivia","Azerbaijan","Brazil","Reunion","Mexico","Serbia","Algeria","Chile","United Kingdom","Greenland","Fiji","Nepal","Somalia","Montserrat","Hungary","Monaco","Cayman Islands","Colombia","Belgium","Bosnia and Herzegovina","Benin","Ecuador","Moldova","Rwanda","Channel Islands","United Arab Emirates","Poland","Andorra","Congo (Kinshasa)","Australia","India","Croatia","Ireland","Burkina Faso","Thailand","Uzbekistan","Martinique","New Caledonia","Gabon","Gambia","Saudi Arabia","North Macedonia","Spain","St Martin","Senegal","Oman","Namibia","Curacao","France","Austria","Paraguay","Bahamas","Angola","Sudan"]
+  var growthtrend100to250 =["Netherlands","Indonesia","Peru","Armenia","Czechia","Luxembourg","Iraq","Germany","Jordan","Latvia","Albania","Tanzania","Cyprus","Uruguay","Mauritania","Costa Rica","Ethiopia","Finland","Zimbabwe","Pakistan","Switzerland","Sweden","Lebanon","Nicaragua","Greece","West Bank and Gaza","Bulgaria","Estonia","Egypt","French Polynesia","Iceland","French Guiana","Malaysia","Malta","Vietnam","Jamaica","Suriname","Georgia","Guatemala","Norway","Iran","Denmark","Guadeloupe","Singapore","Togo","Taiwan","Slovenia","Cambodia","Bangladesh","Slovakia","Belarus","Equatorial Guinea","Cabo Verde","Saint Barthelemy","Bhutan"]
+  var growthtrend0to100 = ["Italy","Japan","Venezuela","Bahrain","Sri Lanka","Liechtenstein","Faroe Islands","Trinidad and Tobago","Guyana","Kuwait","San Marino","Qatar","Brunei","Seychelles","Maldives","Mongolia","Korea, South","China","Central African Republic","Liberia","Papua New Guinea","Saint Vincent and the Grenadines"]
+  var growthrates = [638.25,97.45,278.04,1.20,223.27,264.99,116.42,401.20,152.55,1919.55,353.82,246.87,261.76,11.22,567.74,481.48,459.94,652.53,119.12,325.68,151.56,232.46,312.10,115.69,133.81,409.87,663.73,331.16,511.72,342.69,225.07,578.83,93.94,165.48,301.70,298.72,239.56,171.13,323.33,463.75,147.92,490.50,139.96,890.18,438.92,234.91,567.09,114.35,362.24,426.32,320.87,109.40,62.37,143.46,415.11,0.00,141.50,224.30,333.99,1144.23,1272.34,542.71,85.90,546.99,232.50,377.67,151.34,351.61,144.79,220.97,556.67,327.27,103.93,341.25,196.58,547.17,207.27,287.06,110.46,462.26,64.20,222.35,211.90,307.81,448.89,219.74,63.89,125.53,614.81,269.23,785.71,1178.57,272.34,625.00,300.00,83.70,131.51,747.37,100.00,921.43,85.71,487.50,340.63,513.64,92.86,55.42,300.00,147.92,115.09,null,124.49,105.66,678.57,463.16,664.29,326.09,1242.86,77.55,341.18,590.00,83.78,261.11,5900.00,742.86,1800.00,1000.00,372.73,104.00,4300.00,138.89,123.53,140.00,125.00,1650.00,466.67,112.50,966.67,1500.00,2900.00,null,2600.00,188.89,1000.00,533.33,216.67,38.46,300.00,300.00,1400.00,275.00,650.00,null,250.00,366.67,550.00,100.00,71.43,20.00,null,266.67,266.67,400.00,42.86,null,null,350.00,800.00,125.00,null,null,166.67,null,null,null,250.00,600.00,600.00,250.00,100.00,100.00,500.00,200.00,500.00,400.00,400.00,150.00,400.00,400.00,null,100.00,300.00,null,0.00,0.00,null,null,null,null,null,0.00,0.00,null,null]
   //percentage growth in cases over the last 10 days
   // -------------------------------------------- //
 
@@ -460,12 +473,59 @@ function getActiveLinks()  //sorts for a given set of values from the data obtai
       var song_value = x[1].toString();
       var song_index = x[0];
     
-      if (growthtrend.includes(song_value)){
+      if (growthtrendover1000.includes(song_value)){
         
-        country_links.push(song_index);
+        highest.push(song_index);
+      }
+
+      if (growthtrend500to1000.includes(song_value)){
+        
+        high.push(song_index);
       }
     }
 }
+
+/*function getActiveLinks()  //legacy code from the crypto trading app
+{
+
+    if (coin_change_time == "1h") 
+      {
+        var active_array = coin_change_1h;
+      }
+
+    if (coin_change_time == "24h") 
+      {
+        var active_array = coin_change_24h;
+      }
+
+    if (coin_change_time == "1w") 
+      {
+        var active_array = coin_change_1w;
+      }
+
+    var f = active_array.entries();
+
+    for (x of f) {
+      var coin =x;
+      var coin_value = coin[1];
+      var coin_index = coin[0];
+
+      if (volume[coin_index] < volume_adj) 
+      {
+        coin = null;
+      }
+
+      else if (coin_value > 20) {
+        
+        active_links.push(coin_index);
+      }
+
+      else if (coin_value > 5) {
+      coin_index = coin[0]
+      active_links2.push(coin_index);
+      }
+    }
+}*/
 
 
 
@@ -473,15 +533,15 @@ function addLinks() {  // adds links for selected values
 
 document.getElementById("country").style.backgroundColor = "#2387aa"
 
-addcountryLinks()
+addhighestlinks()
 
-countryTransform.visible = true;
+highestTransform.visible = true;
 
 
 parentTransform = new THREE.Object3D()
 group.add(parentTransform)
 
-for (i = 0; i < 300; i++) {  //this value should match entries.length
+for (i = 0; i < 202; i++) {  //this value should match entries.length
 
       var k = link_order[i];
       var color_code = 0xffffff;
@@ -596,14 +656,14 @@ document.getElementById("nowplaying").style.visibility  = "visible";
 
 //showDetails()
 
-function addcountryLinks() {  //adds links for selected values
+function addhighestlinks() {  //adds links for selected values
 
-countryTransform = new THREE.Object3D()
-group.add(countryTransform) 
+highestTransform = new THREE.Object3D()
+group.add(highestTransform) 
 
 for (i = 0; i < link_order.length; i++) {
 
-    if (country_links.includes(i)) {
+    if (highest.includes(i)) {
 
       var k = link_order[i];
       var color_code = 0xFF5733;
@@ -620,11 +680,13 @@ for (i = 0; i < link_order.length; i++) {
         k_values[k][8],
         color_code,
         .5,
-        countryTransform
+        highestTransform
       )
     }
   }
 }
+
+
 
 
 
@@ -638,7 +700,7 @@ function nowPlaying(k) {
 
 function showThumb(k) {
   l = link_order.indexOf(k) 
-  document.getElementById("thumb").innerHTML = "<img src=" + video_thmbs[l] + ">";
+  document.getElementById("thumb").innerHTML = "<b>Percent Growth</b><p>" + growthrates[l] + "%";
 }
 
 function showRank(k) {
@@ -719,7 +781,7 @@ function allVisible() {
 
 function showAll() {
 
-    countryTransform.visible = true;
+    highestTransform.visible = true;
     document.getElementById("country").style.backgroundColor  = "#2387aa";
 
 }
@@ -727,7 +789,7 @@ function showAll() {
 function hideAll() {
 
 
-    countryTransform.visible = false;
+    highestTransform.visible = false;
     document.getElementById("country").style.backgroundColor = "#a5c6d1";
 
 }
@@ -786,7 +848,7 @@ function hideAll() {
   //genre buttons
   
   document.getElementById( "country" ).addEventListener( 'click', function () {
-          toggleLinks(countryTransform,"country");
+          toggleLinks(highestTransform,"country");
         }, false );
 
   document.getElementById( "electronica" ).addEventListener( 'click', function () {
@@ -836,7 +898,7 @@ function hideAll() {
       )
           activeLink.visible = true;
           showPointer();
-          //howThumb(k);
+          showThumb(k);
           showRank(k);
           nowPlaying(k);
       }      
@@ -860,8 +922,8 @@ function hideAll() {
       obj = intersection.object
       k = obj.label
       l = link_order.indexOf(k)   //connects the k value -- position on lotus petal graph -- to ID for link value
-      var URL = "https://www.youtube.com/embed/" + country_names[l] + "?autoplay=1&mute=0"
-      window.open(URL, 'iframe_a')
+      var URL = "https://www.google.com/search?q=" + country_names[l] + "%Coronavirus"
+      window.open(URL, '_blank')
     }
   }
 
