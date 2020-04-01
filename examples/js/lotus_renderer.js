@@ -547,7 +547,11 @@ function getActiveLinks()  //sorts for a given set of values from the data obtai
 
 function addLinks() {  // adds links for selected values
 
-document.getElementById("country").style.backgroundColor = "#2387aa"
+document.getElementById("highest_button").style.backgroundColor = "#2387aa"
+document.getElementById("high_button").style.backgroundColor = "#2387aa"
+document.getElementById("medium_button").style.backgroundColor = "#2387aa"
+document.getElementById("low_button").style.backgroundColor = "#2387aa"
+document.getElementById("lowest_button").style.backgroundColor = "#2387aa"
 
 addhighestlinks()
 highestTransform.visible = true;
@@ -932,7 +936,15 @@ function allVisible() {
 function showAll() {
 
     highestTransform.visible = true;
-    document.getElementById("country").style.backgroundColor  = "#2387aa";
+    highTransform.visible = true;
+    mediumTransform.visible = true;
+    lowTransform.visible = true;
+    lowestTransform.visible = true;
+    document.getElementById("highest_button").style.backgroundColor  = "#2387aa";
+    document.getElementById("high_button").style.backgroundColor  = "#2387aa";
+    document.getElementById("medium_button").style.backgroundColor  = "#2387aa";
+    document.getElementById("low_button").style.backgroundColor  = "#2387aa";
+    document.getElementById("lowest_button").style.backgroundColor  = "#2387aa";
 
 }
 
@@ -940,7 +952,15 @@ function hideAll() {
 
 
     highestTransform.visible = false;
-    document.getElementById("country").style.backgroundColor = "#a5c6d1";
+    highTransform.visible =  false;
+    mediumTransform.visible =  false;
+    lowTransform.visible =  false;
+    lowestTransform.visible =  false;
+    document.getElementById("highest_button").style.backgroundColor = "#a5c6d1";
+        document.getElementById("high_button").style.backgroundColor  = "#a5c6d1";
+    document.getElementById("medium_button").style.backgroundColor  = "#a5c6d1";
+    document.getElementById("low_button").style.backgroundColor  = "#a5c6d1";
+    document.getElementById("lowest_button").style.backgroundColor  = "#a5c6d1";
 
 }
 
@@ -997,13 +1017,26 @@ function hideAll() {
 
   //genre buttons
   
-  document.getElementById( "country" ).addEventListener( 'click', function () {
-          toggleLinks(highestTransform,"country");
+  document.getElementById( "highest_button" ).addEventListener( 'click', function () {
+          toggleLinks(highestTransform,"highest_button");
         }, false );
 
-  document.getElementById( "electronica" ).addEventListener( 'click', function () {
-          toggleLinks(electronicaTransform,"electronica");
+  document.getElementById( "high_button" ).addEventListener( 'click', function () {
+          toggleLinks(highTransform,"high_button");
         }, false );
+
+  document.getElementById( "medium_button" ).addEventListener( 'click', function () {
+          toggleLinks(mediumTransform,"medium_button");
+        }, false );
+
+  document.getElementById( "low_button" ).addEventListener( 'click', function () {
+          toggleLinks(lowTransform,"low_button");
+        }, false );
+
+  document.getElementById( "lowest_button" ).addEventListener( 'click', function () {
+          toggleLinks(lowestTransform,"lowest_button");
+        }, false );
+
 
 
     document.getElementById( "all" ).addEventListener( 'click', function () {
