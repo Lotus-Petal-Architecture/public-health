@@ -470,9 +470,11 @@ function getActiveLinks()  //sorts for a given set of values from the data obtai
 
 function addLinks() {  // adds links for selected values
 
-//document.getElementById("rock").style.backgroundColor = "#2387aa"
+document.getElementById("country").style.backgroundColor = "#2387aa"
 
 addcountryLinks()
+
+countryTransform.visible = true;
 
 
 parentTransform = new THREE.Object3D()
