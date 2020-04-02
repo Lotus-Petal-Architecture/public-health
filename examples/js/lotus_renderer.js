@@ -43,7 +43,7 @@ var r = 100,
 
   var link_order_length = 0
   var controlsVisible = true
-  var allgenresVisible = false
+  var allgenresVisible = true
   var fullyloaded = false
 
 
@@ -547,10 +547,10 @@ function getActiveLinks()  //sorts for a given set of values from the data obtai
 
 function addLinks() {  // adds links for selected values
 
-document.getElementById("highest_button").style.backgroundColor = "#ffa796"
+/*ocument.getElementById("highest_button").style.backgroundColor = "#ffa796"
 document.getElementById("high_button").style.backgroundColor = "#ffa796"
 document.getElementById("medium_button").style.backgroundColor = "#ffa796"
-/*document.getElementById("low_button").style.backgroundColor = "#2387aa"
+document.getElementById("low_button").style.backgroundColor = "#2387aa"
 document.getElementById("lowest_button").style.backgroundColor = "#2387aa"*/
 
 addhighestlinks()
@@ -867,12 +867,64 @@ function toggleLinks(linkobject,id) {
 
   if (linkobject.visible == true) {
     linkobject.visible = false;
-    document.getElementById(id).style.backgroundColor = "#a5c6d1";
+    document.getElementById(id).style.backgroundColor = "#0289b6";
+  }
+  else 
+    {
+      linkobject.visible = true;
+    document.getElementById(id).style.backgroundColor = "#FF5733";
+  }
+}
+
+function toggleLinks2(linkobject,id) {
+
+  if (linkobject.visible == true) {
+    linkobject.visible = false;
+    document.getElementById(id).style.backgroundColor = "#35a1c5";
+  }
+  else 
+    {
+      linkobject.visible = true;
+    document.getElementById(id).style.backgroundColor = "#FF795C";
+  }
+}
+
+function toggleLinks3(linkobject,id) {
+
+  if (linkobject.visible == true) {
+    linkobject.visible = false;
+    document.getElementById(id).style.backgroundColor = "#67b8d3";
   }
   else 
     {
       linkobject.visible = true;
     document.getElementById(id).style.backgroundColor = "#ffa796";
+  }
+}
+
+function toggleLinks4(linkobject,id) {
+
+  if (linkobject.visible == true) {
+    linkobject.visible = false;
+    document.getElementById(id).style.backgroundColor = "#9ad0e2";
+  }
+  else 
+    {
+      linkobject.visible = true;
+    document.getElementById(id).style.backgroundColor = "#FFBCAD";
+  }
+}
+
+function toggleLinks5(linkobject,id) {
+
+  if (linkobject.visible == true) {
+    linkobject.visible = false;
+    document.getElementById(id).style.backgroundColor = "#cce7f0";
+  }
+  else 
+    {
+      linkobject.visible = true;
+    document.getElementById(id).style.backgroundColor = "#FFDDD6";
   }
 }
 
@@ -898,11 +950,11 @@ function showAll() {
     mediumTransform.visible = true;
     lowTransform.visible = true;
     lowestTransform.visible = true;
-    document.getElementById("highest_button").style.backgroundColor  = "#ffa796";
-    document.getElementById("high_button").style.backgroundColor  = "#ffa796";
+    document.getElementById("highest_button").style.backgroundColor  = "#FF5733";
+    document.getElementById("high_button").style.backgroundColor  = "#FF795C";
     document.getElementById("medium_button").style.backgroundColor  = "#ffa796";
-    document.getElementById("low_button").style.backgroundColor  = "#ffa796";
-    document.getElementById("lowest_button").style.backgroundColor  = "#ffa796";
+    document.getElementById("low_button").style.backgroundColor  = "#FFBCAD";
+    document.getElementById("lowest_button").style.backgroundColor  = "#FFDDD6";
     document.getElementById("all").innerHTML = "Hide All"; 
 
 }
@@ -915,11 +967,12 @@ function hideAll() {
     mediumTransform.visible =  false;
     lowTransform.visible =  false;
     lowestTransform.visible =  false;
-    document.getElementById("highest_button").style.backgroundColor = "#a5c6d1";
-    document.getElementById("high_button").style.backgroundColor  = "#a5c6d1";
-    document.getElementById("medium_button").style.backgroundColor  = "#a5c6d1";
-    document.getElementById("low_button").style.backgroundColor  = "#a5c6d1";
-    document.getElementById("lowest_button").style.backgroundColor  = "#a5c6d1";
+    document.getElementById("highest_button").style.backgroundColor = "#0289b6";
+    document.getElementById("high_button").style.backgroundColor  = "#35a1c5";
+    document.getElementById("medium_button").style.backgroundColor  = "#67b8d3";
+    document.getElementById("low_button").style.backgroundColor  = "#9ad0e2";
+    document.getElementById("lowest_button").style.backgroundColor  = "#cce7f0";
+    document.getElementById("all").style.backgroundColor  = "#FF5733";
     document.getElementById("all").innerHTML = "Show All"; 
 
 }
@@ -982,19 +1035,19 @@ function hideAll() {
         }, false );
 
   document.getElementById( "high_button" ).addEventListener( 'click', function () {
-          toggleLinks(highTransform,"high_button");
+          toggleLinks2(highTransform,"high_button");
         }, false );
 
   document.getElementById( "medium_button" ).addEventListener( 'click', function () {
-          toggleLinks(mediumTransform,"medium_button");
+          toggleLinks3(mediumTransform,"medium_button");
         }, false );
 
   document.getElementById( "low_button" ).addEventListener( 'click', function () {
-          toggleLinks(lowTransform,"low_button");
+          toggleLinks4(lowTransform,"low_button");
         }, false );
 
   document.getElementById( "lowest_button" ).addEventListener( 'click', function () {
-          toggleLinks(lowestTransform,"lowest_button");
+          toggleLinks5(lowestTransform,"lowest_button");
         }, false );
 
 
