@@ -43,7 +43,7 @@ var r = 100,
 
   var link_order_length = 0
   var controlsVisible = true
-  var allgenresVisible = true
+  var allgenresVisible = false
   var fullyloaded = false
 
 
@@ -389,8 +389,20 @@ drawPetalRing (8, .55, .1, 0x00769d, 160, 20) //center petals
 
 drawPetalRing (12, 1, .1, 0x0289b6, 240, 20)  //middle petals
 
+group.position.set( 0, -.1, -1);
+group.rotation.set(1,0,0);
+
+/*
+
+BIRDS EYE VIEW VALUES
+group.position.set( 0, 0, -5);
+group.rotation.set(1,0,0);
+
+SIDE ELEVATION VALUES
 group.position.set( 0, -.3, 0);
 group.rotation.set(0,-.3,.0);
+*/
+
 
   //animate and render
 
@@ -563,10 +575,10 @@ addmediumlinks()
 mediumTransform.visible = true;
 
 addlowlinks()
-lowTransform.visible = false;
+lowTransform.visible = true;
 
 addlowestlinks()
-lowestTransform.visible = false;
+lowestTransform.visible = true;
 
 
 
@@ -931,9 +943,9 @@ function toggleLinks5(linkobject,id) {
 function allVisible() {
 
   if (allgenresVisible == true) {
-    allgenresVisible = false;
     document.getElementById("all").style.backgroundColor = "#a5c6d1";
     hideAll();
+    allgenresVisible = false;
   }
   else 
     {
@@ -1049,7 +1061,6 @@ function hideAll() {
   document.getElementById( "lowest_button" ).addEventListener( 'click', function () {
           toggleLinks5(lowestTransform,"lowest_button");
         }, false );
-
 
 
     document.getElementById( "all" ).addEventListener( 'click', function () {
