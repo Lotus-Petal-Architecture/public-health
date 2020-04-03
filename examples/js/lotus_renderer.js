@@ -61,7 +61,7 @@ var r = 100,
   var lowest = [] //index values of growth % links, growth rate less than 100%
 
 
-  var country_names = ["US","Italy","Spain","China","Germany","France","Iran","United Kingdom","Switzerland","Turkey","Belgium","Netherlands","Austria","South Korea","Canada","Portugal","Brazil","Israel","Norway","Australia","Sweden","Czechia","Ireland","Denmark","Malaysia","Chile","Russia","Poland","Romania","Ecuador","Luxembourg","Philippines","Japan","Pakistan","Thailand","Saudi Arabia","Indonesia","Finland","India","South Africa","Greece","Panama","Iceland","Dominican Republic","Mexico","Peru","Argentina","Singapore","Colombia","Serbia","Croatia","Slovenia","Qatar","Estonia","Algeria","Diamond Princess","Egypt","Iraq","United Arab Emirates","New Zealand","Ukraine","Morocco","Bahrain","Lithuania","Armenia","Hungary","Lebanon","Bosnia and Herzegovina","Bulgaria","Latvia","Tunisia","Andorra","Slovakia","Moldova","Costa Rica","Kazakhstan","Uruguay","North Macedonia","Taiwan*","Azerbaijan","Kuwait","Jordan","Cyprus","Burkina Faso","Reunion","Albania","San Marino","Vietnam","Cameroon","Oman","Cuba","Cote d'Ivoire","Senegal","Afghanistan","Uzbekistan","Faroe Islands","Malta","Ghana","Belarus","Mauritius","Sri Lanka","Honduras","Channel Islands","Nigeria","Venezuela","Brunei","Martinique","West Bank and Gaza","Guadeloupe","Kosovo","Georgia","Cambodia","Montenegro","Bolivia","Kyrgyzstan","Congo (Kinshasa)","Mayotte","Trinidad and Tobago","Rwanda","Gibraltar","Liechtenstein","Paraguay","Isle of Man","Kenya","Madagascar","Aruba","Monaco","Bangladesh","Uganda","French Guiana","Guatemala","French Polynesia","Jamaica","Zambia","Barbados","Togo","El Salvador","Bermuda","Djibouti","Mali","Niger","Ethiopia","Guinea","Congo (Brazzaville)","Tanzania","Maldives","New Caledonia","Gabon","Eritrea","St Martin","Haiti","Burma","Bahamas","Cayman Islands","Saint Lucia","Equatorial Guinea","Guyana","Mongolia","Dominica","Namibia","Curacao","Greenland","Seychelles","Syria","Libya","Benin","Eswatini","Suriname","Grenada","Laos","Zimbabwe","Mozambique","Guinea-Bissau","Saint Kitts and Nevis","Angola","Antigua and Barbuda","Chad","Sudan","Cabo Verde","Saint Barthelemy","Holy See","Mauritania","Sint Maarten","Fiji","Nepal","Nicaragua","Somalia","Montserrat","Turks and Caicos Islands","Bhutan","Gambia","Botswana","Central African Republic","Liberia","Belize","British Virgin Islands","Anguilla","MS Zaandam","Burundi","Papua New Guinea","Saint Vincent and the Grenadines","Timor-Leste","Sierra Leone"] 
+  var country_names = ["United States","Italy","Spain","China","Germany","France","Iran","United Kingdom","Switzerland","Turkey","Belgium","Netherlands","Austria","South Korea","Canada","Portugal","Brazil","Israel","Norway","Australia","Sweden","Czechia","Ireland","Denmark","Malaysia","Chile","Russia","Poland","Romania","Ecuador","Luxembourg","Philippines","Japan","Pakistan","Thailand","Saudi Arabia","Indonesia","Finland","India","South Africa","Greece","Panama","Iceland","Dominican Republic","Mexico","Peru","Argentina","Singapore","Colombia","Serbia","Croatia","Slovenia","Qatar","Estonia","Algeria","Diamond Princess","Egypt","Iraq","United Arab Emirates","New Zealand","Ukraine","Morocco","Bahrain","Lithuania","Armenia","Hungary","Lebanon","Bosnia and Herzegovina","Bulgaria","Latvia","Tunisia","Andorra","Slovakia","Moldova","Costa Rica","Kazakhstan","Uruguay","North Macedonia","Taiwan*","Azerbaijan","Kuwait","Jordan","Cyprus","Burkina Faso","Reunion","Albania","San Marino","Vietnam","Cameroon","Oman","Cuba","Cote d'Ivoire","Senegal","Afghanistan","Uzbekistan","Faroe Islands","Malta","Ghana","Belarus","Mauritius","Sri Lanka","Honduras","Channel Islands","Nigeria","Venezuela","Brunei","Martinique","West Bank and Gaza","Guadeloupe","Kosovo","Georgia","Cambodia","Montenegro","Bolivia","Kyrgyzstan","Congo (Kinshasa)","Mayotte","Trinidad and Tobago","Rwanda","Gibraltar","Liechtenstein","Paraguay","Isle of Man","Kenya","Madagascar","Aruba","Monaco","Bangladesh","Uganda","French Guiana","Guatemala","French Polynesia","Jamaica","Zambia","Barbados","Togo","El Salvador","Bermuda","Djibouti","Mali","Niger","Ethiopia","Guinea","Congo (Brazzaville)","Tanzania","Maldives","New Caledonia","Gabon","Eritrea","St Martin","Haiti","Burma","Bahamas","Cayman Islands","Saint Lucia","Equatorial Guinea","Guyana","Mongolia","Dominica","Namibia","Curacao","Greenland","Seychelles","Syria","Libya","Benin","Eswatini","Suriname","Grenada","Laos","Zimbabwe","Mozambique","Guinea-Bissau","Saint Kitts and Nevis","Angola","Antigua and Barbuda","Chad","Sudan","Cabo Verde","Saint Barthelemy","Holy See","Mauritania","Sint Maarten","Fiji","Nepal","Nicaragua","Somalia","Montserrat","Turks and Caicos Islands","Bhutan","Gambia","Botswana","Central African Republic","Liberia","Belize","British Virgin Islands","Anguilla","MS Zaandam","Burundi","Papua New Guinea","Saint Vincent and the Grenadines","Timor-Leste","Sierra Leone"] 
   //list of countries, ranked in order of number of cases
   
   var total_cases = [188172,105792,95923,82279,71808,52128,44605,25150,16605,13531,12775,12595,10180,9786,8527,7443,5717,5358,4641,4559,4435,3308,3235,2860,2766,2738,2337,2311,2245,2240,2178,2084,1953,1938,1651,1563,1528,1418,1397,1353,1314,1181,1135,1109,1094,1065,1054,926,906,900,867,802,781,745,716,712,710,694,664,647,645,617,567,537,532,492,470,420,399,398,394,376,363,353,347,343,338,329,322,298,289,274,262,261,247,243,236,212,193,192,186,179,175,174,172,169,169,161,152,143,143,141,141,135,135,129,128,119,114,112,110,109,109,107,107,98,94,87,75,69,68,65,60,59,57,55,52,51,44,43,38,36,36,35,34,34,32,32,30,28,27,26,22,19,19,18,16,16,15,15,15,15,14,14,13,12,12,12,12,11,11,10,10,10,10,9,9,9,9,9,8,8,8,8,7,7,7,7,6,6,6,6,6,5,5,5,5,5,5,4,4,4,3,3,3,3,2,2,2,1,1,1,1] 
@@ -559,12 +559,6 @@ function getActiveLinks()  //sorts for a given set of values from the data obtai
 
 function addLinks() {  // adds links for selected values
 
-/*ocument.getElementById("highest_button").style.backgroundColor = "#ffa796"
-document.getElementById("high_button").style.backgroundColor = "#ffa796"
-document.getElementById("medium_button").style.backgroundColor = "#ffa796"
-document.getElementById("low_button").style.backgroundColor = "#2387aa"
-document.getElementById("lowest_button").style.backgroundColor = "#2387aa"*/
-
 addhighestlinks()
 highestTransform.visible = true;
 
@@ -647,7 +641,7 @@ showDetails();
 
 
 
-function showDetails()
+function showDetails() //this is only necessary when hide/show info toggle switch is enabled
 
 {
 document.getElementById("thumb").style.visibility  = "visible";
@@ -657,6 +651,13 @@ document.getElementById("nowplaying").style.visibility  = "visible";
 }
 
 //showDetails()
+
+document.getElementById("nowplaying").innerHTML = "<b>Country</b><p>" + "<b>" + country_names[0] + "</b>";
+document.getElementById("thumb").innerHTML = "<b>Percent Growth</b><p>" + growthrates[0] + " %";
+document.getElementById("rank").innerHTML = "<b>Rank</b><p>" + "<b>1</b>";
+document.getElementById("views").innerHTML = "<b>Confirmed Cases</b><p>" + total_cases[0];
+
+
 
 function addhighestlinks() {  //adds links for selected values
 
