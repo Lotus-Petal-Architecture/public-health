@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset=utf-8
+		 Copyright 2020 by Lotus.fm LLC>
+		 <meta charset="utf-8" />
+		<meta property="og:url" content="https://lotus.fm/index.html" />
+		<meta property="og:type" content="article" />
+		<meta property="og:title" content="Lotus.fm" />
+		<meta property="og:description" content="Helping artists get paid." />
+		<meta property="og:image" content="https://lotus.fm/examples/files/FB_preview_3.png" />
+		<meta name="twitter:card" content="summary_large_image">
+		<meta name="twitter:site" content="@lotusrosefm">
+		<meta name="twitter:creator" content="@lotusrosefm">
+		<meta name="twitter:title" content="Lotus.fm">
+		<meta name="twitter:description" content="Helping artists get paid.">
+		<meta name="twitter:image" content="https://lotus.fm/examples/files/FB_preview_3.png">
+		<title>COVID-19 Global Trends</title>
+		<!-- <script src="https://kit.fontawesome.com/2eef814402.js" crossorigin="anonymous"></script> -->
+		<link rel='stylesheet' id='storefront-fonts-css'  href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,300italic,400italic,700,900&#038;subset=latin%2Clatin-ext' type='text/css' media='all' />
+		<style>
+
+			body { margin: 0; background-color: #000; font-family: Helvetica, sans serif;}
+			canvas { width: 100%; height: 100%; }
+
+			a:active {
+    			text-decoration: none;
+    			outline: none;
+    			border:none;
+    			color: #0F426A;
+			}
+
+			@media screen and (min-width: 960px) {
+  			#main {
+   			display: block;
+ 					}
+
+ 			#alternate {
+			display: none;
+			}
+			}
+
+			@media screen and (max-width: 960px) {
+  			#main {
+   			display: none;
+ 					}
+				}
+
+		#alternate {
+			position: absolute;
+			top:0px;
+			left:0px;
+			width: 100%;
+			height: 100%;
+			background-color: #FFF;
+			z-index: 100;
+			padding: 20px;
+			color: #0F426A;;
+		}
+
+		#nav {
+	position: absolute;
+	color: #FFF;
+	top: 4px;
+	left:20px;
+	width: 150px;
+	text-align: left;
+	z-index: 100;
+	font-weight: bold;
+	display:block;
+	margin:0;
+	display:none;
+				}
+
+			#info {
+	position: absolute;
+	color: #FFF;
+	top: 10px;
+	right:5%;
+	width: 880px;
+	text-align: center;
+	z-index: 100;
+	font-weight: bold;
+	display:block;
+	margin-left:auto;
+	margin-right:auto;
+				}
+
+				#genres {
+
+	position: relative;
+	right:2px;
+	text-align:right;
+				}
+
+				#details {
+
+	position: relative;
+	top: 2%;
+	left:20px;
+				}
+
+			#nowplaying {
+	position: relative;
+	color: #FFF;
+	top: 10px;
+	left: 0px;
+	width: 170px;
+	height:60px;
+	text-align: left;
+	float:left;
+	padding: 5px;
+	z-index: 100;
+	font-size: 14px;
+	font-weight: normal;
+	overflow: hidden;
+	font-family: "Source Sans Pro";
+	margin-left:12px;
+	margin-right:28px;
+	padding-bottom: 0;
+			}
+
+			#thumb {
+	position: relative;
+	color: #FFF;
+	top: 10px;
+	left: 0px;
+	width: 120px;
+	height:60px;
+	text-align: left;
+	float:left;
+	background-color: transparent;
+	padding:5px;
+	font-size: 14px;
+	text-align: center;
+	z-index: 100;
+	font-weight: normal;
+	font-family: "Source Sans Pro";
+	margin-right:20px;
+	padding-bottom: 0;
+			}
+
+				#views {
+	position: relative;
+	color: #FFF;
+	top: 10px;
+	left: 0px;
+	width: 200px;
+	height:38px;
+	text-align: left;
+	float:left;
+	background-color: transparent;
+	border-radius: 25px;
+	padding:5px;
+	font-size: 14px;
+	text-align: center;
+	z-index: 100;
+	font-weight: normal;
+	font-family: "Source Sans Pro";
+	margin-right:0px;
+	padding-bottom: 0;
+}
+
+			#rank {
+	position: relative;
+	color: #FFF;
+	top: 10px;
+	left: 0px;
+	width: 200px;
+	height:38px;
+	text-align: left;
+	float:left;
+	background-color: transparent;
+	border-radius: 25px;
+	padding:5px;
+	font-size: 14px;
+	text-align: center;
+	z-index: 100;
+	font-weight: normal;
+	font-family: "Source Sans Pro";
+	margin-right:20px;
+	padding-bottom: 0;
+}
+			}
+
+			#share {
+	position: relative;
+	color: #FFF;
+	top: 10px;
+	left: 0px;
+	width: 2px;
+	height:38px;
+	text-align: left;
+	float:left;
+	background-color: transparent;
+	padding:5px;
+	font-size: 12px;
+	text-align: center;
+	z-index: 100;
+	font-weight: bold;
+	display:none;
+
+			}
+
+			button {
+
+				border-radius: 16px;
+				padding:0px 12px;
+				font-weight: bold;
+				color: #0F426A;
+				font-size: 14px;
+				height: 32px;
+				margin:0 4px;
+				background-color: #a5c6d1;
+				font-family: "Source Sans Pro";
+				border:0;
+				text-decoration: none;
+    			outline: none;
+    			border:none;
+    			cursor: pointer;
+			}
+
+			button:hover {
+    			color: #CC2D6F;
+			}
+
+			/*button:active {
+    			background-color: #CC2D6F;
+    			color:#FFF;
+			}*/
+
+			button:visited {
+    			text-decoration: none;
+    			outline: none;
+    			border:none;
+			}
+
+			.icon {
+				background-color: transparent;
+				border-radius: 0;
+				width:30px;
+				padding:0px;
+				margin:2px 0px;
+			}
+
+</style>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script type="text/javascript">
+
+	if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+ 		window.location.replace("https://web.lotus.fm/data-visualization/");
+	}
+
+</script>
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-118988458-3"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-118988458-3');
+</script>
+	</head>
+	<body>
+		<div id ="alternate"> This content is not yet available for mobile devices.
+			<!--<br><br><a href="https://web.lotus.fm" target="self" onclick="openURL()">Proceed to mobile-friendly site</a>.-->
+		<script>
+			function openURL() {
+ 			 window.open("https://web.lotus.fm", "_self");
+			}
+		</script></div>
+			<noscript><div id ="alternate" style="display: block;"> Javascript not enabled! Please enable Javascript on your browser to view interactive content.
+			<br><br><a href="https://web.lotus.fm" target="self">Proceed to main Lotus.fm site</a>.</div>
+		<div id="main" style="display: none;"></noscript>
+			<div id="main">
+		<div id="nav"><button class="icon" id="reload" style="background-image: url('examples/files/lotus_icon.png'); margin-left:0px; margin-right:3px;" alt="Reload Chart" title="Reload Chart"></button>
+		
+		<button class="icon" id="about" style="background-image: url('examples/files/info_icon.png');" alt="About this Visualization" title="About this Visualization"></a></button>
+		
+		<button class="icon" id="toggleControls" style="background-image: url('examples/files/minimize_icon.png');" alt="Show/Hide Controls" title="Show/Hide Controls"></button></div>
+		
+		<div id="info">
+			<!--<strong>Genres: </strong>-->
+			<div id="genres" style="text-align: center; padding:0px 10px; margin-top:10px;">
+			Growth Rates &nbsp;
+			<button id="highest_button" style="background-color:#FF5733;">Over 1000 %</button>
+			<button id="high_button" style="background-color:#FF795C;">500 to 1000 %</button>
+			<button id="medium_button" style="background-color:#ffa796;">250 to 500 %</button>
+			<button id="low_button" style="background-color:#FFBCAD;">100 to 250 %</button>
+			<button id="lowest_button" style="background-color:#FFDDD6;">Under 100 %</button>
+			<button id="all">Hide All</button>
+		</div>
+			<!--<button id="top8" style="background-color: #A002DC; border:0;">Top 8</button>-->
+			<!--<button id="top100" style="background-color: #87ceeb; border:0;">Top 100</button>-->
+			<!-- alt background-color: #86bed1; rock color ##7c2954; folk color #7a716d; button blues:#00769d  #0289b6  " -->
+				<div style="width:840px; float:left; text-align:left; 
+				background-color: transparent; 
+				border:0; margin-top: 10px;">
+				<div id="message" style="width:100%; float:left; text-align:left; 
+				border-radius: 8px;
+				padding:18px;
+				font-weight: normal;
+				color: #0F426A;
+				font-size: 14px;
+				margin:0;
+				background-color: #a5c6d1;
+				border:0;">
+				<span style="font-size: 15px;font-family:Source Sans Pro; font-weight: 900;">Global COVID-19 Trends:</span>  
+				This chart shows 10-day infection growth rates and total confirmed cases per country. <i>Updated 3/31/2020.</i>
+				<p style="text-align:right; font-size:14px; text-transform: uppercase; margin:0; margin-bottom:6px; margin-top:12px; padding:0;">
+					<button id="suggest" style="background-color: transparent; margin:0; margin-right:10px; padding: 0; "><a href="https://www.who.int/" style="background-color:#0B1D06; color:#a5c6d1; border-radius:4px; padding:10px 12px; height:36px; border:1px solid #0B1D06; letter-spacing:1px; box-shadow: 2px 2px 3px grey; text-align:right; font-size:14px; font-family:Arial; text-transform: uppercase; text-decoration:none; font-weight: normal;">
+					Learn More</a></button> 
+					<button id="enter" style="background-color: transparent; margin:0; padding: 0; "><a href="https://github.com/CSSEGISandData/COVID-19/tree/master/csse_covid_19_data/csse_covid_19_time_series" style="border-color:#0B1D06; border-radius:4px; border: solid 1px; padding:10px 12px; text-decoration:none; color:#0F426A; height:36px; text-align:right; font-size:14px; font-family:Arial; text-transform: uppercase;">View Data</a></button></p>
+				</div>
+				<div id="details" style="width:100%;">
+				<div id="nowplaying"></div>
+				<div id="thumb"></div>
+				<div id="rank"></div>
+				<div id="views"></div>
+		       	<div id="share"></div>
+		       	</div>
+		        </div>
+		</div>
+		<script src="build/three.js"></script>
+		<script src="examples/js/controls/OrbitControls.js"></script>
+		<script src="examples/js/libs/stats.min.js"></script>
+		<script src="examples/js/lotus_renderer.js"></script>
+	</div>
+	<div style="width: 100%;  position: absolute; top: 92%; left:0%; padding: 10px; "> <div style="width: 96%; max-width:1600px; margin: auto; color:#fff; font-family:Source Sans Pro;"><b>How to read the Lotus Chart: </b>The chart lines that are <b>tallest and closest to the center</b> have the highest values. The inner petal ring shows higher values than the outer ring. Rotate the chart by grabbing its top or bottom edges. Use the mouse wheel to zoom in or out.</div></div>
+	</body>
+</html>
