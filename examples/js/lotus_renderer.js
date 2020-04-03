@@ -43,7 +43,7 @@ var r = 100,
 
   var link_order_length = 0
   var controlsVisible = true
-  var allgenresVisible = false
+  var allgenresVisible = true
   var fullyloaded = false
 
 
@@ -1031,12 +1031,12 @@ function hideAll() {
   ev.stopPropagatio*/
 
   document.getElementById( "suggest" ).addEventListener( 'click', function () {
-          window.open("https://www.who.int/", "_self")
+          window.open("https://www.who.int/", "_new")
         }, false );
 
   document.getElementById( "enter" ).addEventListener( 'click', function () {
 
-          window.open("https://github.com/CSSEGISandData/COVID-19/tree/master/csse_covid_19_data/csse_covid_19_time_series", "_self")
+          window.open("https://github.com/CSSEGISandData/COVID-19/tree/master/csse_covid_19_data/csse_covid_19_time_series", "_new")
         }, false );
 
 
