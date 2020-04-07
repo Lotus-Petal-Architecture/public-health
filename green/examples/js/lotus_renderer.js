@@ -57,15 +57,12 @@ var r = 100,
   var highest = [] //index values of growth links, growth rate greater 1000%
   var high = [] //index values of growth % links, growth rate greater than or equal to 500% and less than 1000%
   var medium = [] //index values of growth % links, growth rate greater than or equal to 250% and less than 500%
-  var low = [] //index values of growth % links, growth rate greater than or equal to 100% and less than 250%
-  var lowest = [] //index values of growth % links, growth rate less than 100%
+  /*var low = [] //index values of growth % links, growth rate greater than or equal to 100% and less than 250%
+  var lowest = [] //index values of growth % links, growth rate less than 100%*/
 
 
-  var country_names = ["US","Italy","Spain","China","Germany","France","Iran","United Kingdom","Switzerland","Turkey","Belgium","Netherlands","Austria","South Korea","Canada","Portugal","Brazil","Israel","Norway","Australia","Sweden","Czechia","Ireland","Denmark","Malaysia","Chile","Russia","Poland","Romania","Ecuador","Luxembourg","Philippines","Japan","Pakistan","Thailand","Saudi Arabia","Indonesia","Finland","India","South Africa","Greece","Panama","Iceland","Dominican Republic","Mexico","Peru","Argentina","Singapore","Colombia","Serbia","Croatia","Slovenia","Qatar","Estonia","Algeria","Diamond Princess","Egypt","Iraq","United Arab Emirates","New Zealand","Ukraine","Morocco","Bahrain","Lithuania","Armenia","Hungary","Lebanon","Bosnia and Herzegovina","Bulgaria","Latvia","Tunisia","Andorra","Slovakia","Moldova","Costa Rica","Kazakhstan","Uruguay","North Macedonia","Taiwan*","Azerbaijan","Kuwait","Jordan","Cyprus","Burkina Faso","Reunion","Albania","San Marino","Vietnam","Cameroon","Oman","Cuba","Cote d'Ivoire","Senegal","Afghanistan","Uzbekistan","Faroe Islands","Malta","Ghana","Belarus","Mauritius","Sri Lanka","Honduras","Channel Islands","Nigeria","Venezuela","Brunei","Martinique","West Bank and Gaza","Guadeloupe","Kosovo","Georgia","Cambodia","Montenegro","Bolivia","Kyrgyzstan","Congo (Kinshasa)","Mayotte","Trinidad and Tobago","Rwanda","Gibraltar","Liechtenstein","Paraguay","Isle of Man","Kenya","Madagascar","Aruba","Monaco","Bangladesh","Uganda","French Guiana","Guatemala","French Polynesia","Jamaica","Zambia","Barbados","Togo","El Salvador","Bermuda","Djibouti","Mali","Niger","Ethiopia","Guinea","Congo (Brazzaville)","Tanzania","Maldives","New Caledonia","Gabon","Eritrea","St Martin","Haiti","Burma","Bahamas","Cayman Islands","Saint Lucia","Equatorial Guinea","Guyana","Mongolia","Dominica","Namibia","Curacao","Greenland","Seychelles","Syria","Libya","Benin","Eswatini","Suriname","Grenada","Laos","Zimbabwe","Mozambique","Guinea-Bissau","Saint Kitts and Nevis","Angola","Antigua and Barbuda","Chad","Sudan","Cabo Verde","Saint Barthelemy","Holy See","Mauritania","Sint Maarten","Fiji","Nepal","Nicaragua","Somalia","Montserrat","Turks and Caicos Islands","Bhutan","Gambia","Botswana","Central African Republic","Liberia","Belize","British Virgin Islands","Anguilla","MS Zaandam","Burundi","Papua New Guinea","Saint Vincent and the Grenadines","Timor-Leste","Sierra Leone"] 
-  //list of countries, ranked in order of number of cases
-  
-  var total_cases = [188172,105792,95923,82279,71808,52128,44605,25150,16605,13531,12775,12595,10180,9786,8527,7443,5717,5358,4641,4559,4435,3308,3235,2860,2766,2738,2337,2311,2245,2240,2178,2084,1953,1938,1651,1563,1528,1418,1397,1353,1314,1181,1135,1109,1094,1065,1054,926,906,900,867,802,781,745,716,712,710,694,664,647,645,617,567,537,532,492,470,420,399,398,394,376,363,353,347,343,338,329,322,298,289,274,262,261,247,243,236,212,193,192,186,179,175,174,172,169,169,161,152,143,143,141,141,135,135,129,128,119,114,112,110,109,109,107,107,98,94,87,75,69,68,65,60,59,57,55,52,51,44,43,38,36,36,35,34,34,32,32,30,28,27,26,22,19,19,18,16,16,15,15,15,15,14,14,13,12,12,12,12,11,11,10,10,10,10,9,9,9,9,9,8,8,8,8,7,7,7,7,6,6,6,6,6,5,5,5,5,5,5,4,4,4,3,3,3,3,2,2,2,1,1,1,1] 
-  //total confirmed cases
+  var county_names = ["New York, New York", "Westchester, New York", "Nassau, New York", "Suffolk, New York", "Cook, Illinois", "Wayne, Michigan", "Bergen, New Jersey", "Unassigned, New Jersey", "Los Angeles, California", "Rockland, New York", "Orleans, Louisiana", "Miami-Dade, Florida", "Essex, New Jersey", "Hudson, New Jersey", "King, Washington", "Fairfield, Connecticut", "Oakland, Michigan", "Jefferson, Louisiana", "Union, New Jersey", "Philadelphia, Pennsylvania", "Orange, New York", "Passaic, New Jersey", "Middlesex, Massachusetts", "Suffolk, Massachusetts", "Middlesex, New Jersey", "Monmouth, New Jersey", "Ocean, New Jersey", "Broward, Florida", "Macomb, Michigan", "Marion, Indiana", "Snohomish, Washington", "Morris, New Jersey", "Clark, Nevada", "Essex, Massachusetts", "Harris, Texas", "Maricopa, Arizona", "Norfolk, Massachusetts", "Milwaukee, Wisconsin", "Santa Clara, California", "San Diego, California", "Dallas, Texas", "New Haven, Connecticut", "Fulton, Georgia", "Montgomery, Pennsylvania", "Palm Beach, Florida", "Worcester, Massachusetts", "Dutchess, New York", "Cuyahoga, Ohio", "District of Columbia, District of Columbia", "Plymouth, Massachusetts", "Erie, New York", "St. Louis, Missouri", "Orange, California", "Davidson, Tennessee", "Hartford, Connecticut", "Hampden, Massachusetts", "Denver, Colorado", "Somerset, New Jersey", "Shelby, Tennessee", "Lake, Illinois", "Orange, Florida", "Mecklenburg, North Carolina", "Lehigh, Pennsylvania", "Pierce, Washington", "Montgomery, Maryland", "Prince George's, Maryland", "Dougherty, Georgia", "Delaware, Pennsylvania", "Salt Lake, Utah", "Bristol, Massachusetts", "Unassigned, Georgia", "Franklin, Ohio", "Unassigned, Washington", "DuPage, Illinois", "San Francisco, California", "Riverside, California", "San Mateo, California", "Mercer, New Jersey", "Luzerne, Pennsylvania", "Washtenaw, Michigan", "Allegheny, Pennsylvania", "Northampton, Pennsylvania", "Monroe, New York", "Hillsborough, Florida", "Will, Illinois", "Bucks, Pennsylvania", "DeKalb, Georgia", "Alameda, California", "Arapahoe, Colorado", "St. Tammany, Louisiana", "Baltimore, Maryland", "Genesee, Michigan", "Providence, Rhode Island", "Unassigned, Illinois", "Camden, New Jersey", "Monroe, Pennsylvania", "Sacramento, California", "East Baton Rouge, Louisiana", "Jefferson, Colorado", "Tarrant, Texas", "Cobb, Georgia", "Caddo, Louisiana", "Fairfax, Virginia", "Burlington, New Jersey", "Jefferson, Alabama", "Blaine, Idaho", "Travis, Texas", "El Paso, Colorado", "Weld, Colorado", "Gwinnett, Georgia", "Duval, Florida", "Onondaga, New York", "Pinellas, Florida", ", Puerto Rico", "Eagle, Colorado", "Barnstable, Massachusetts", "Baltimore City, Maryland", "Contra Costa, California", "Ada, Idaho", "San Bernardino, California", "Lee, Florida", "St. John the Baptist, Louisiana", "Sumner, Tennessee", "Pima, Arizona", "New Castle, Delaware", "Lafayette, Louisiana", "Wake, North Carolina", "Denton, Texas", "Albany, New York", "Ulster, New York", "Adams, Colorado", "Bexar, Texas", "Putnam, New York", "Dane, Wisconsin", "Anne Arundel, Maryland", "Charleston, South Carolina", "Navajo, Arizona", "Lake, Indiana", "Hennepin, Minnesota", "Berkshire, Massachusetts", "Yakima, Washington", "St. Louis City, Missouri", "Honolulu, Hawaii", "Oklahoma, Oklahoma", "Lucas, Ohio", "Lancaster, Pennsylvania", "Jefferson, Kentucky", "Washington, Oregon", "Collin, Texas", "Chester, Pennsylvania", "Richland, South Carolina", "Ascension, Louisiana", "Cumberland, Maine", "Summit, Utah", "Williamson, Tennessee", "Fort Bend, Texas", "Hamilton, Indiana", "Mahoning, Ohio", "Unassigned, Connecticut", "Unassigned, Michigan", "Unassigned, Massachusetts", "St. Charles, Louisiana", "Sussex, New Jersey", "Collier, Florida", "Hamilton, Ohio", "Bernalillo, New Mexico", "Osceola, Florida", "Berks, Pennsylvania", "Chittenden, Vermont", "St. Bernard, Louisiana", "Clayton, Georgia", "Spokane, Washington", "Out of TN, Tennessee", "Lafourche, Louisiana", "Washoe, Nevada", "Gloucester, New Jersey", "Whatcom, Washington", "San Joaquin, California", "Marion, Oregon", "Ventura, California", "Kane, Illinois", "Coconino, Arizona", "Tulsa, Oklahoma", "Multnomah, Oregon", "Greenville, South Carolina", "Kern, California", "Litchfield, Connecticut", "Johnson, Kansas", "Douglas, Colorado", "Rockingham, New Hampshire", "Sullivan, New York", "Howard, Maryland", "Summit, Ohio", "Seminole, Florida", "Hillsborough, New Hampshire", "Durham, North Carolina", "Bartow, Georgia", "Skagit, Washington", "Ingham, Michigan", "Utah, Utah", "Warren, New Jersey", "Hunterdon, New Jersey", "Unassigned, Rhode Island", "Unassigned, Colorado", "Carroll, Georgia", "Saratoga, New York", "Waukesha, Wisconsin", "Santa Barbara, California", "Hinds, Mississippi", "Kansas City, Missouri", "Hendricks, Indiana", "Wyandotte, Kansas", "Clark, Washington", "Johnson, Indiana", "Kent, Michigan", "Kershaw, South Carolina", "Benton, Washington", "Arlington, Virginia", "Boulder, Colorado", "Beaufort, South Carolina", "Prince William, Virginia", "Pulaski, Arkansas", "Cleveland, Oklahoma", "Galveston, Texas", "Montgomery, Texas", "Loudoun, Virginia", "Carroll, Maryland", "Virginia Beach, Virginia", "Rutherford, Tennessee", "Polk, Florida", "Volusia, Florida", "Henry, Georgia", "Larimer, Colorado", "Sarasota, Florida", "Douglas, Nebraska", "Brazoria, Texas", "Davis, Utah", "Madison, Alabama", "Livingston, Michigan", "York, Pennsylvania", "St. Johns, Florida", "Calcasieu, Louisiana", "Lackawanna, Pennsylvania", "Island, Washington", "Marin, California", "Linn, Iowa", "Sussex, Delaware", "Lubbock, Texas", "Fayette, Kentucky", "St. James, Louisiana", "Lee, Georgia", "Ouachita, Louisiana", "Hampshire, Massachusetts", "Escambia, Florida", "Unassigned, Kentucky", "Henrico, Virginia", "DeSoto, Mississippi", "Alachua, Florida", "Schenectady, New York", "Westmoreland, Pennsylvania", "Shelby, Alabama", "St. Charles, Missouri", "Manatee, Florida", "Cherokee, Georgia", "James City, Virginia", "Mobile, Alabama", "Jackson, Missouri", ", Grand Princess", "McHenry, Illinois", "Terrebonne, Louisiana", "Polk, Iowa", "Lee, Alabama", "Knox, Tennessee", "Placer, California", "Sonoma, California", "Bossier, Louisiana", "Monroe, Michigan", "Lorain, Ohio", "Kitsap, Washington", "Fresno, California", "Niagara, New York", "San Luis Obispo, California", "Gallatin, Montana", "Middlesex, Connecticut", "Charles, Maryland", "Saginaw, Michigan", "York, Maine", "Franklin, Massachusetts", "Chesterfield, Virginia", "Lake, Florida", "Guilford, North Carolina", "Tompkins, New York", "Gunnison, Colorado", "Sedgwick, Kansas", "El Paso, Texas", ", Guam", "Johnson, Iowa", "Pike, Pennsylvania", "Tulare, California", "Iberville, Louisiana", "Rapides, Louisiana", "Kenosha, Wisconsin", "Chambers, Alabama", "Forsyth, North Carolina", "Tolland, Connecticut", "Hall, Georgia", "Canyon, Idaho", "Medina, Ohio", "Dauphin, Pennsylvania", "Hidalgo, Texas", "Iberia, Louisiana", "Lexington, South Carolina", "Pinal, Arizona", "Pasco, Florida", "Floyd, Georgia", "Madison, New York", "Olmsted, Minnesota", "Richmond City, Virginia", "Plaquemines, Louisiana", "Jackson, Mississippi", "Butler, Pennsylvania", "Sumter, South Carolina", "Grant, Washington", "Out of MI, Michigan", "Anchorage, Alaska", "York, South Carolina", "St. Joseph, Indiana", "Acadia, Louisiana", "Atlantic, New Jersey", "San Juan, New Mexico", "Stark, Ohio", "Trumbull, Ohio", "Brazos, Texas", "Douglas, Georgia", "Ramsey, Minnesota", "Oneida, New York", "Wilson, Tennessee", "Williamson, Texas", "Decatur, Indiana", "Clay, Florida", "St. Martin, Louisiana", "Jackson, Michigan", "Harrison, Mississippi", "Boone, Missouri", "Wasatch, Utah", "Sumter, Florida", "St. Landry, Louisiana", "Minnehaha, South Dakota", "Madison, Indiana", "Rensselaer, New York", "Hamilton, Tennessee", "St. Clair, Michigan", "Sandoval, New Mexico", "Miami, Ohio", "Clackamas, Oregon", "Madison, Mississippi", "Lake, Ohio", "Beaver, Pennsylvania", "Webb, Texas", "Cleburne, Arkansas", "Rankin, Mississippi", "Portage, Ohio", "Rockdale, Georgia", "Schuylkill, Pennsylvania", "Brevard, Florida", "Anderson, South Carolina", "Solano, California", "Delaware, Ohio", "St. Lucie, Florida", "Forsyth, Georgia", "Union, North Carolina", "Spartanburg, South Carolina", "Montgomery, Alabama", "Sumter, Georgia", "Kent, Rhode Island", "Chatham, Georgia", "Fayette, Georgia", "Kankakee, Illinois", "Allen, Indiana", "Cabarrus, North Carolina", "Weber, Utah", "Thurston, Washington", "Santa Cruz, California", "Clarke, Georgia", "St. Clair, Illinois", "Washington, Louisiana", "Montgomery, Ohio", "Broome, New York", "Alexandria, Virginia", "Clark, Indiana", "Tangipahoa, Louisiana", "Cameron, Texas", "Kent, Delaware", "Okaloosa, Florida", "Frederick, Maryland", "Dakota, Minnesota", "Greene, Missouri", "Lebanon, Pennsylvania", "Unassigned, Tennessee"]
+  var total_cases = [57159,12351,12024,10154,6111,6096,4866,4808,4566,4289,3476,3364,3067,2835,2787,2716,2540,2495,2487,2430,2397,2216,2202,2183,2125,1743,1685,1598,1560,1429,1376,1298,1279,1238,1106,1049,1045,1023,1019,966,921,891,882,875,858,825,809,780,757,745,734,712,711,685,679,661,643,641,640,,608,602,601,584,571,566,563,560,542,541,517,507,503,501,500,497,493,486,484,484,477,476,466,464,463,455,450,448,443,441,435,427,422,418,415,406,397,390,389,385,383,381,377,372,367,351,351,351,340,329,329,323,322,318,316,314,314,313,307,307,304,304,290,283,280,279,276,275,273,267,263,260,254,252,252,249,247,245,244,242,240,240,239,237,237,233,232,228,228,227,226,224,222,222,222,221,221,220,220,218,215,213,210,210,203,203,202,201,201,199,196,195,194,187,185,184,183,182,180,178,177,176,175,175,175,174,173,173,172,171,170,168,166,165,163,163,159,154,153,152,150,149,148,146,144,143,141,141,139,139,139,138,137,137,136,136,136,136,135,132,131,131,130,130,130,130,130,129,128,127,126,125,125,124,124,124,123,122,121,121,121,119,119,119,119,118,118,117,117,116,116,115,114,114,113,113,112,111,110,110,110,109,105,104,104,104,103,103,103,102,102,100,99,98,97,95,95,95,95,95,94,94,93,93,91,90,90,89,89,89,88,88,87,86,85,85,84,83,83,81,81,81,81,80,80,79,79,79,79,79,79,78,78,77,77,77,77,76,76,75,75,75,75,75,74,73,73,72,72,72,72,72,72,72,71,71,71,71,71,70,69,69,69,69,69,69,68,68,68,67,67,67,66,66,66,66,65,65,65,65,64,64,64,63,63,62,62,61,61,60,60,60,60,59,59,59,58,58,58,58,58,58,58,57,57,57,57,57,56,56,55,55,55,54,54,54,54,54,54,54]//total confirmed cases
   
   var views = [] //popularity of youtube videos. uses same index ranking as link_order
   var song_titles = []
@@ -73,14 +70,12 @@ var r = 100,
   var xmlhttp = new XMLHttpRequest()
 
 
-  var growthtrendover1000 = ["Isle of Man", "Uganda", "Djibouti", "Niger", "Turke", "Madagascar", "Zambia", "Bermuda", "Eritrea", "Ukraine", "Mayotte", "Cote d'Ivoire", "New Zealand", "Aruba","Guinea"]
-  var growthtrend500to1000 = ["El Salvador","Mauritius","Dominican Republic","Eswatini","Cuba","Ghana","Kenya","Montenegro","Kyrgyzstan","Russia","Israel","Haiti","US","Afghanistan","Cameroon","Antigua and Barbuda","Chad","Gibraltar","Philippines","Canada","Argentina","Tunisia","Saint Lucia","Kazakhstan","Lithuania","Morocco","Congo (Brazzaville)","Nigeria","Romania","Holy See","Sint Maarten"]
-  //covers values less than or equal to 500% and less than 1000%
-  var growthtrend250to500 = ["Panama","Honduras","Portugal","Barbados","South Africa","Bolivia","Azerbaijan","Brazil","Reunion","Mexico","Serbia","Algeria","Chile","United Kingdom","Greenland","Fiji","Nepal","Somalia","Montserrat","Hungary","Monaco","Cayman Islands","Colombia","Belgium","Bosnia and Herzegovina","Benin","Ecuador","Moldova","Rwanda","Channel Islands","United Arab Emirates","Poland","Andorra","Congo (Kinshasa)","Australia","India","Croatia","Ireland","Burkina Faso","Thailand","Uzbekistan","Martinique","New Caledonia","Gabon","Gambia","Saudi Arabia","North Macedonia","Spain","St Martin","Senegal","Oman","Namibia","Curacao","France","Austria","Paraguay","Bahamas","Angola","Sudan"]
-  var growthtrend100to250 =["Netherlands","Indonesia","Peru","Armenia","Czechia","Luxembourg","Iraq","Germany","Jordan","Latvia","Albania","Tanzania","Cyprus","Uruguay","Mauritania","Costa Rica","Ethiopia","Finland","Zimbabwe","Pakistan","Switzerland","Sweden","Lebanon","Nicaragua","Greece","West Bank and Gaza","Bulgaria","Estonia","Egypt","French Polynesia","Iceland","French Guiana","Malaysia","Malta","Vietnam","Jamaica","Suriname","Georgia","Guatemala","Norway","Iran","Denmark","Guadeloupe","Singapore","Togo","Taiwan","Slovenia","Cambodia","Bangladesh","Slovakia","Belarus","Equatorial Guinea","Cabo Verde","Saint Barthelemy","Bhutan"]
-  var growthtrend0to100 = ["Italy","Japan","Venezuela","Bahrain","Sri Lanka","Liechtenstein","Faroe Islands","Trinidad and Tobago","Guyana","Kuwait","San Marino","Qatar","Brunei","Seychelles","Maldives","Mongolia","Korea, South","China","Central African Republic","Liberia","Papua New Guinea","Saint Vincent and the Grenadines"]
-  var growthrates = [638.25,97.45,278.04,1.20,223.27,264.99,116.42,401.20,152.55,1919.55,353.82,246.87,261.76,11.22,567.74,481.48,459.94,652.53,119.12,325.68,151.56,232.46,312.10,115.69,133.81,409.87,663.73,331.16,511.72,342.69,225.07,578.83,93.94,165.48,301.70,298.72,239.56,171.13,323.33,463.75,147.92,490.50,139.96,890.18,438.92,234.91,567.09,114.35,362.24,426.32,320.87,109.40,62.37,143.46,415.11,0.00,141.50,224.30,333.99,1144.23,1272.34,542.71,85.90,546.99,232.50,377.67,151.34,351.61,144.79,220.97,556.67,327.27,103.93,341.25,196.58,547.17,207.27,287.06,110.46,462.26,64.20,222.35,211.90,307.81,448.89,219.74,63.89,125.53,614.81,269.23,785.71,1178.57,272.34,625.00,300.00,83.70,131.51,747.37,100.00,921.43,85.71,487.50,340.63,513.64,92.86,55.42,300.00,147.92,115.09,null,124.49,105.66,678.57,463.16,664.29,326.09,1242.86,77.55,341.18,590.00,83.78,261.11,5900.00,742.86,1800.00,1000.00,372.73,104.00,4300.00,138.89,123.53,140.00,125.00,1650.00,466.67,112.50,966.67,1500.00,2900.00,null,2600.00,188.89,1000.00,533.33,216.67,38.46,300.00,300.00,1400.00,275.00,650.00,null,250.00,366.67,550.00,100.00,71.43,20.00,null,266.67,266.67,400.00,42.86,null,null,350.00,800.00,125.00,null,null,166.67,null,null,null,250.00,600.00,600.00,250.00,100.00,100.00,500.00,200.00,500.00,400.00,400.00,150.00,400.00,400.00,null,100.00,300.00,null,0.00,0.00,null,null,null,null,null,0.00,0.00,null,null]
-  //percentage growth in cases over the last 10 days
+  var growthtrendover1000 = ["St. Martin, Louisiana", "Chesapeake, Virginia", "Porter, Indiana", "St. Lawrence, New York", "Benton, Arkansas", "Hidalgo, Texas", "Iberia, Louisiana", "Crittenden, Arkansas", "Acadia, Louisiana", "Northampton, North Carolina", "Carbon, Pennsylvania", "Vanderburgh, Indiana", "Twin Falls, Idaho", "Scott, Iowa", "Sumter, Georgia", "Unassigned, Colorado", "Darke, Ohio", "Hampden, Massachusetts", "Shelby, Indiana", "Hillsdale, Michigan", "Johnson, Missouri", "Carroll, Maryland", "Jackson, Indiana", "Salem, New Jersey", "Early, Georgia", "Rock Island, Illinois", "Calcasieu, Louisiana", "St. Mary, Louisiana", "Lancaster, Pennsylvania", "Luzerne, Pennsylvania", "Lafayette, Louisiana", "White, Arkansas", "St. Landry, Louisiana", "Madison, Indiana", "Lawrence, Indiana", "Lapeer, Michigan", "Granville, North Carolina", "Harrisonburg, Virginia", "Beaver, Pennsylvania", "Lehigh, Pennsylvania", "Barrow, Georgia", "Otsego, New York", "Pike, Pennsylvania", "Lafayette, Missouri", "Adams, Washington", "Dauphin, Pennsylvania", "Linn, Iowa", "Madison, New York", "Washington, Louisiana", "Nassau, Florida", "Camden, Missouri", "Charles, Maryland", "Trumbull, Ohio", "Lebanon, Pennsylvania", "Cumberland, New Jersey", "Mono, California", "Bay, Florida", "Lucas, Ohio", "Houston, Georgia", "Licking, Ohio", "Morgan, Indiana", "Mobile, Alabama", "Davidson, North Carolina", "Colquitt, Georgia", "Allen, Louisiana", "Christian, Illinois", "Genesee, New York", "Pickens, South Carolina", "Madison, Tennessee", "Tom Green, Texas", "Bristol, Massachusetts", "Terrell, Georgia", "Assumption, Louisiana", "Ouachita, Louisiana", "Will, Illinois", "Webb, Texas", "Ada, Idaho", "Chambers, Alabama", "Portage, Ohio", "Fairfield, Ohio", "Teton, Wyoming", "Marion, Alabama", "Merced, California", "Walton, Georgia", "DeKalb, Illinois", "Muskogee, Oklahoma", "Canyon, Idaho", "Eaton, Michigan", "Madison, Illinois", "Jennings, Indiana", "McKinley, New Mexico", "Cass, North Dakota", "Benton, Washington", "Spartanburg, South Carolina", "Broomfield, Colorado", "Tift, Georgia", "St. Mary's, Maryland", "Tuscola, Michigan", "Columbia, Pennsylvania", "Cape May, New Jersey", "Tulsa, Oklahoma", "Kankakee, Illinois", "Lake, Indiana", "Charlotte, Florida", "Mitchell, Georgia", "Hampshire, Massachusetts", "Northampton, Pennsylvania", "St. Charles, Louisiana", "Oswego, New York", "Washington, Oklahoma", "Montrose, Colorado", "Pierce, Georgia", "Marion, Tennessee", "Chippewa, Wisconsin", "St. John the Baptist, Louisiana", "Tangipahoa, Louisiana", "Minnehaha, South Dakota", "Frederick, Maryland", "Windham, Connecticut", "Washington, Maryland", "Monroe, Florida", "Monroe, Indiana", "Kalamazoo, Michigan", "Kern, California", "St. Charles, Missouri", "Albemarle, Virginia", "Dawson, Georgia", "Kauai, Hawaii", "Putnam, Indiana", "Jessamine, Kentucky", "Tate, Mississippi", "Madison, Ohio", "Klamath, Oregon", "Gregg, Texas", "Mason, Washington", "St. James, Louisiana", "Champaign, Illinois", "Boone, Indiana", "Schuylkill, Pennsylvania", "Berks, Pennsylvania", "Butler, Pennsylvania", "Dearborn, Indiana", "Genesee, Michigan", "Out of MI, Michigan", "Avoyelles, Louisiana", "Newport News, Virginia", "Sedgwick, Kansas", "Hudson, New Jersey", "Orange, Florida", "Atlantic, New Jersey", "Santa Rosa, Florida", "Dorchester, South Carolina", "Morgan, Alabama", "Autauga, Alabama", "Houston, Alabama", "Turner, Georgia", "Montgomery, Indiana", "Queen Anne's, Maryland", "Montcalm, Michigan", "Davie, North Carolina", "Josephine, Oregon", "Franklin, Tennessee", "Hanover, Virginia", "Jefferson, Missouri", "Sussex, New Jersey", "Decatur, Indiana", "Yavapai, Arizona", "Chemung, New York", "Plymouth, Massachusetts", "Lafourche, Louisiana", "Utah, Utah", "Jackson, Michigan", "Middlesex, Connecticut", "Worcester, Massachusetts", "Escambia, Florida", "Saginaw, Michigan", "Clark, Indiana", "Blount, Tennessee", "Henderson, North Carolina", "Aiken, South Carolina", "Juneau, Alaska", "Cedar, Iowa", "Perry, Mississippi", "Cibola, New Mexico", "Schoharie, New York", "Armstrong, Pennsylvania", "Grundy, Tennessee", "Chambers, Texas", "Jackson, West Virginia"]  
+  var growthtrend500to1000 = ["Hendricks, Indiana", "Clark, Washington", "Essex, Massachusetts", "Adams, Colorado", "St. Louis City, Missouri", "Anne Arundel, Maryland", "St. Bernard, Louisiana", "San Juan, New Mexico", "Passaic, New Jersey", "Baltimore, Maryland", "Wilson, Tennessee", "Ingham, Michigan", "Union, New Jersey", "New Haven, Connecticut", "Westmoreland, Pennsylvania", "St. Lucie, Florida", "Miami-Dade, Florida", "Warren, New Jersey", "San Bernardino, California", "Rutherford, Tennessee", "Blaine, Idaho", "Lubbock, Texas", "Coconino, Arizona", "Polk, Florida", "Philadelphia, Pennsylvania", "Gloucester, New Jersey", "Henry, Georgia", "Yakima, Washington", "Washtenaw, Michigan", "Lee, Florida", "Sandoval, New Mexico", "Caddo, Louisiana", "Niagara, New York", "Plaquemines, Louisiana", "Sumter, South Carolina", "Ocean, New Jersey", "Suffolk, Massachusetts", "Livingston, Michigan", "Clayton, Georgia", "Rockdale, Georgia", "Essex, New Jersey", "Prince George's, Maryland", "Franklin, Massachusetts", "Chesterfield, Virginia", "Marion, Indiana", "Monroe, Pennsylvania", "Hamilton, Indiana", "Burlington, New Jersey", "Riverside, California", "Hillsborough, New Hampshire", "Jefferson, Louisiana", "El Paso, Texas", "Palm Beach, Florida", "Kent, Rhode Island", "Hamilton, Tennessee", "St. Tammany, Louisiana", "Mercer, New Jersey", "Sumner, Tennessee", "Chatham, Georgia", "Allen, Indiana", "Harris, Texas", "St. Clair, Michigan", "Allegheny, Pennsylvania", ", Puerto Rico", "Norfolk, Massachusetts", "Rapides, Louisiana", "Fairfax, Virginia", "Providence, Rhode Island", "Henrico, Virginia", "Camden, New Jersey", "Lackawanna, Pennsylvania", "Bossier, Louisiana", "Monroe, Michigan", "Litchfield, Connecticut", "Mahoning, Ohio", "Barnstable, Massachusetts", "Fayette, Kentucky", "Osceola, Florida", "Santa Barbara, California", "Hartford, Connecticut", "Middlesex, New Jersey", "Navajo, Arizona", "Baltimore City, Maryland", "Arapahoe, Colorado", "Johnson, Indiana", "Virginia Beach, Virginia", "Ulster, New York", "Jackson, Mississippi", "Forsyth, Georgia", "Unassigned, New Jersey", "Jackson, Missouri", "Kane, Illinois", "Gwinnett, Georgia", "Sullivan, New York", "McHenry, Illinois", "Terrebonne, Louisiana", "Middlesex, Massachusetts", "Fresno, California", "Galveston, Texas", "Loudoun, Virginia", "Denton, Texas", "St. Louis, Missouri", "Oneida, New York", "Seminole, Florida", "Fairfield, Connecticut", "Pinellas, Florida", "Jefferson, Colorado", "Multnomah, Oregon", "Floyd, Georgia", "Wayne, Michigan", "Volusia, Florida", "Bergen, New Jersey", "Macomb, Michigan", "Jefferson, Kentucky", "Richmond City, Virginia", "Clay, Florida", "Los Angeles, California", "Brevard, Florida", "Charleston, South Carolina", "Sumter, Florida", "York, Pennsylvania", "East Baton Rouge, Louisiana", "Franklin, Ohio", "Spokane, Washington", "Pima, Arizona", "Polk, Iowa", "York, South Carolina", "Kansas City, Missouri", "Weld, Colorado", "Montgomery, Alabama", "Knox, Tennessee", "Dutchess, New York", "Bucks, Pennsylvania", "Manatee, Florida", "Berkshire, Massachusetts", "Duval, Florida", "Douglas, Georgia", "Delaware, Pennsylvania", "Erie, New York", "Rockland, New York", "Morris, New Jersey", "Unassigned, Rhode Island", "Lake, Florida", "Somerset, New Jersey", "Unassigned, Georgia", "Kenosha, Wisconsin", "Wyandotte, Kansas", "Dougherty, Georgia", "Ascension, Louisiana", "Monmouth, New Jersey", "Clark, Nevada"]  //covers values greater than or equal to 500% and less than 1000%
+  var growthtrend0to500 = ["Beaufort, South Carolina", "Oakland, Michigan", "Hunterdon, New Jersey", "Cleveland, Oklahoma", "Lake, Ohio", "Gallatin, Montana", "Cabarrus, North Carolina", "Iberville, Louisiana", "Oklahoma, Oklahoma", "Madison, Alabama", "Lee, Georgia", "Forsyth, North Carolina", "Prince William, Virginia", "Montgomery, Texas", "Chester, Pennsylvania", "Hall, Georgia", "Marion, Oregon", "York, Maine", "Delaware, Ohio", "Stark, Ohio", "Howard, Maryland", "Montgomery, Pennsylvania", "Carroll, Georgia", "Guilford, North Carolina", "Lake, Illinois", "Dallas, Texas", "Tompkins, New York", "St. Johns, Florida", "Suffolk, New York", "Tarrant, Texas", "District of Columbia, District of Columbia", "Onondaga, New York", "Hamilton, Ohio", "Montgomery, Maryland", "Kitsap, Washington", "Maricopa, Arizona", "Medina, Ohio", "Orleans, Louisiana", "Broward, Florida", "Pasco, Florida", "Cook, Illinois", "Hillsborough, Florida", "Sussex, Delaware", "Williamson, Texas", "Ventura, California", "Collin, Texas", "Richland, South Carolina", "Chittenden, Vermont", "Collier, Florida", "El Paso, Colorado", "Rankin, Mississippi", "DuPage, Illinois", "Placer, California", "Fayette, Georgia", "Orange, New York", "Fort Bend, Texas", "Fulton, Georgia", "Johnson, Kansas", "Sarasota, Florida", "DeKalb, Georgia", "Tulare, California", "Island, Washington", "Shelby, Tennessee", "Bernalillo, New Mexico", "Orange, California", "Cuyahoga, Ohio", "Madison, Mississippi", "Wasatch, Utah", "Summit, Ohio", "Waukesha, Wisconsin", "Brazos, Texas", "Hinds, Mississippi", "Rockingham, New Hampshire", "Unassigned, Washington", "Greenville, South Carolina", "Sacramento, California", "Cobb, Georgia", "Brazoria, Texas", "Kent, Michigan", "Monroe, New York", "Salt Lake, Utah", "Denver, Colorado", "Anchorage, Alaska", "San Diego, California", "Mecklenburg, North Carolina", "Olmsted, Minnesota", "Milwaukee, Wisconsin", "Nassau, New York", "Washoe, Nevada", "Wake, North Carolina", "Tolland, Connecticut", "Pierce, Washington", "Lexington, South Carolina", "Honolulu, Hawaii", "Travis, Texas", "Shelby, Alabama", "St. Joseph, Indiana", "Davis, Utah", "New Castle, Delaware", "Clackamas, Oregon", "Anderson, South Carolina", "Jefferson, Alabama", "DeSoto, Mississippi", "Lee, Alabama", "Whatcom, Washington", "Arlington, Virginia", "Cherokee, Georgia", "Bexar, Texas", ", Grand Princess", "Larimer, Colorado", "Contra Costa, California", "Douglas, Colorado", "San Joaquin, California", "Dane, Wisconsin", "Pinal, Arizona", "Miami, Ohio", "Williamson, Tennessee", "Boone, Missouri", "Eagle, Colorado", "Skagit, Washington", "Boulder, Colorado", "Union, North Carolina", "Alameda, California", "Sonoma, California", "San Francisco, California", "Grant, Washington", "Douglas, Nebraska", "Westchester, New York", "Lorain, Ohio", "Putnam, New York", "Gunnison, Colorado", "San Mateo, California", "Washington, Oregon", "Cumberland, Maine", "Alachua, Florida", "Solano, California", "Harrison, Mississippi", "James City, Virginia", "Ramsey, Minnesota", "Santa Clara, California", "Davidson, Tennessee", "Summit, Utah", "Saratoga, New York", ", Guam", "Marin, California", "Unassigned, Massachusetts", "Schenectady, New York", "Unassigned, Kentucky", "King, Washington", "Hennepin, Minnesota", "Kershaw, South Carolina", "Johnson, Iowa", "Snohomish, Washington", "Durham, North Carolina", "San Luis Obispo, California", "Bartow, Georgia", "Pulaski, Arkansas", "Rensselaer, New York", "Cleburne, Arkansas", "Out of TN, Tennessee", "Albany, New York", "New York, New York"]  
+  //var growthtrend100to250 =["Netherlands","Indonesia","Peru","Armenia","Czechia","Luxembourg","Iraq","Germany","Jordan","Latvia","Albania","Tanzania","Cyprus","Uruguay","Mauritania","Costa Rica","Ethiopia","Finland","Zimbabwe","Pakistan","Switzerland","Sweden","Lebanon","Nicaragua","Greece","West Bank and Gaza","Bulgaria","Estonia","Egypt","French Polynesia","Iceland","French Guiana","Malaysia","Malta","Vietnam","Jamaica","Suriname","Georgia","Guatemala","Norway","Iran","Denmark","Guadeloupe","Singapore","Togo","Taiwan","Slovenia","Cambodia","Bangladesh","Slovakia","Belarus","Equatorial Guinea","Cabo Verde","Saint Barthelemy","Bhutan"]
+  //var growthtrend0to100 = ["Italy","Japan","Venezuela","Bahrain","Sri Lanka","Liechtenstein","Faroe Islands","Trinidad and Tobago","Guyana","Kuwait","San Marino","Qatar","Brunei","Seychelles","Maldives","Mongolia","Korea, South","China","Central African Republic","Liberia","Papua New Guinea","Saint Vincent and the Grenadines"]
+  var growthrates = [73.93, 217.42, 319.10, 440.11, 411.81, 595.89, 594.15, 645.43, 589.73, 539.20, 414.96, 895.27, 796.78, 1111.54, 138.21, 607.29, 493.46, 751.54, 910.98, 864.29, 381.33, 925.93, 624.34, 832.91, 667.15, 505.21, 836.11, 413.83, 593.33, 787.58, 124.10, 536.27, 503.30, 949.15, 725.37, 427.14, 710.08, 320.99, 171.73, 327.43, 444.97, 901.12, 379.35, 450.31, 749.50, 1030.14, 552.42, 367.07, 436.88, 1064.06, 543.86, 612.00, 367.76, 170.75, 671.59, 2654.17, 334.46, 528.43, 374.07, 447.75, 1104.00, 323.24, 2062.96, 313.77, 428.97, 793.65, 522.22, 545.24, 336.29, 1567.74, 525.93, 570.67, 347.32, 385.44, 226.97, 764.91, 201.86, 734.48, 2204.76, 854.00, 720.69, 1312.12, 337.74, 408.79, 1525.00, 552.17, 376.60, 228.15, 660.34, 736.54, 916.67, 1141.18, 703.85, null, 696.08, 782.22, 343.18, 570.69, 600.00, 439.44, 343.02, 842.50, 708.70, 773.81, 285.71, 875.00, 308.14, 392.75, 558.00, 631.11, 546.00, 436.67, 606.67, 710.26, 241.30, 685.00, 663.41, 256.98, 1515.79, 880.65, 850.00, 1280.95, 732.35, 566.67, 292.96, 2200.00, 316.67, 618.42, 82.88, 651.43, 940.00, 268.12, 207.32, 250.00, 937.50, 586.11, 665.63, 1335.29, 134.95, 548.65, 860.00, 939.13, 308.62, 478.05, 1692.31, 2220.00, 590.91, 200.00, 404.44, 465.00, 397.78, 516.67, 200.00, 170.73, 245.31, 380.43, 780.00, 685.71, null, null, 150.59, 1300.00, 1066.67, 395.12, 434.21, 369.77, 673.08, 1156.25, 397.50, 931.58, 828.57, 568.97, 96.84, 1056.25, 318.18, 863.16, 279.17, 252.94, 456.25, 405.71, 633.33, 872.22, 1358.33, 600.00, 346.15, 1230.77, 686.36, 377.78, 256.25, 347.37, 630.43, 453.33, 358.33, 608.70, 757.89, 123.94, 108.11, 240.00, 913.33, 1053.85, 893.33, 492.00, 534.78, 2780.00, 450.00, 166.04, 354.84, 672.22, 348.39, 561.90, 961.54, 522.73, 953.85, 655.56, 338.71, 134.48, 1411.11, 275.00, 238.46, 495.45, 469.57, 103.13, 490.91, 622.22, 465.22, 622.22, 2480.00, 652.94, 876.92, 869.23, 594.44, 861.54, 264.71, 376.92, 217.95, 339.29, 293.55, 476.19, 830.77, 572.22, 440.91, 2280.00, 693.33, 376.00, 151.06, 1866.67, 408.70, 875.00, 673.33, 1188.89, 475.00, 1528.57, 1325.00, 1030.00, 145.65, 700.00, 282.76, 197.30, 150.00, 900.00, 303.70, 1212.50, 550.00, 271.43, 181.08, 1616.67, 635.71, 267.86, 628.57, 628.57, 566.67, 280.77, 553.33, 385.00, 227.59, 691.67, 691.67, 216.67, 427.78, 623.08, 840.00, 121.43, 481.25, 1037.50, 1700.00, 1025.00, 456.25, 790.00, 790.00, 528.57, 450.00, 443.75, 207.14, 1114.29, 750.00, 162.50, 124.32, 1975.00, 376.47, 478.57, 710.00, 523.08, 1500.00, 471.43, 315.79, 464.29, 1480.00, 426.67, 1875.00, 3850.00, 3800.00, 310.53, 250.00, 413.33, 600.00, 1825.00, 322.22, 590.91, 837.50, 650.00, 1150.00, 837.50, 226.09, 1133.33, 329.41, 563.64, 300.00, 3500.00, 1100.00, 928.57, 453.85, 1700.00, 350.00, 545.45, 173.08, 610.00, 914.29, 407.14, 1066.67, 590.00, 6800.00, 1050.00, 187.50, 245.00, 360.00, 580.00, 2166.67, 1260.00, 2133.33, 103.03, 737.50, 725.00, 842.86, 247.37, 288.24, 364.29, 490.91, 2066.67, 1525.00, 100.00, 392.31, 1500.00, 800.00, 1160.00, 588.89, 287.50, 190.48, 454.55, 900.00, 650.00, 233.33, 1400.00, 555.56, 2850.00, 742.86, 728.57, 383.33, 1350.00, 728.57, 480.00, 544.44, 427.27, 159.09, 256.25, 714.29, 1800.00, 470.00, 522.22, 600.00, 1000.00, 1275.00, 816.67, 440.00, 285.71, 1250.00, 157.14, 184.21, 1700.00, 42.11]
   // -------------------------------------------- //
 
 
@@ -389,8 +384,8 @@ drawPetalRing (8, .55, .1, 0x00769d, 160, 20) //center petals
 
 drawPetalRing (12, 1, .1, 0x0289b6, 240, 20)  //middle petals
 
-group.position.set( 0, -.1, -1);
-group.rotation.set(1,0,0);
+group.position.set( 0, -.28, -1);
+group.rotation.set(.3,0,.0);
 
 /*
 
@@ -478,7 +473,7 @@ assignLinks();
 
 function getActiveLinks()  //sorts for a given set of values from the data obtained above
 {
-    var f = country_names.entries(); 
+    var f = county_names.entries(); 
 
     for (x of f) {
       var song_value = x[1].toString();
@@ -494,12 +489,12 @@ function getActiveLinks()  //sorts for a given set of values from the data obtai
         high.push(song_index);
       }
 
-      if (growthtrend250to500.includes(song_value)){
+      if (growthtrend0to500.includes(song_value)){
         
         medium.push(song_index);
       }
 
-      if (growthtrend100to250.includes(song_value)){
+      /*if (growthtrend100to250.includes(song_value)){
         
         low.push(song_index);
       }
@@ -507,7 +502,7 @@ function getActiveLinks()  //sorts for a given set of values from the data obtai
       if (growthtrend0to100.includes(song_value)){
         
         lowest.push(song_index);
-      }
+      }*/
 
 
     }
@@ -559,12 +554,6 @@ function getActiveLinks()  //sorts for a given set of values from the data obtai
 
 function addLinks() {  // adds links for selected values
 
-/*ocument.getElementById("highest_button").style.backgroundColor = "#ffa796"
-document.getElementById("high_button").style.backgroundColor = "#ffa796"
-document.getElementById("medium_button").style.backgroundColor = "#ffa796"
-document.getElementById("low_button").style.backgroundColor = "#2387aa"
-document.getElementById("lowest_button").style.backgroundColor = "#2387aa"*/
-
 addhighestlinks()
 highestTransform.visible = true;
 
@@ -574,18 +563,18 @@ highTransform.visible = true;
 addmediumlinks()
 mediumTransform.visible = true;
 
-addlowlinks()
-lowTransform.visible = false;
+/*addlowlinks()
+lowTransform.visible = true;
 
 addlowestlinks()
-lowestTransform.visible = false;
+lowestTransform.visible = true;*/
 
 
 
 parentTransform = new THREE.Object3D()
 group.add(parentTransform)
 
-for (i = 0; i < 202; i++) {  //this value should match entries.length
+for (i = 0; i < 380; i++) {  //this value should match entries.length
 
       var k = link_order[i];
       var color_code = 0xffffff;
@@ -647,7 +636,7 @@ showDetails();
 
 
 
-function showDetails()
+function showDetails() //this is only necessary when hide/show info toggle switch is enabled
 
 {
 document.getElementById("thumb").style.visibility  = "visible";
@@ -657,6 +646,13 @@ document.getElementById("nowplaying").style.visibility  = "visible";
 }
 
 //showDetails()
+
+document.getElementById("nowplaying").innerHTML = "<b>Location</b><p>" + "<b>" + county_names[0] + "</b>";
+document.getElementById("thumb").innerHTML = "<b>Percent Growth</b><p>" + growthrates[0] + " %";
+document.getElementById("rank").innerHTML = "<b>Rank</b><p>" + "<b>1</b>";
+document.getElementById("views").innerHTML = "<b>Confirmed Cases</b><p>" + total_cases[0];
+
+
 
 function addhighestlinks() {  //adds links for selected values
 
@@ -668,7 +664,7 @@ for (i = 0; i < link_order.length; i++) {
     if (highest.includes(i)) {
 
       var k = link_order[i];
-      var color_code = 0xFF5733;
+      var color_code = 0xFFFF00;
 
        invisibleSpaghetti(
         k,
@@ -699,7 +695,7 @@ for (i = 0; i < link_order.length; i++) {
     if (high.includes(i)) {
 
       var k = link_order[i];
-      var color_code = 0xFF5733;
+      var color_code = 0x0c4d42;
 
        invisibleSpaghetti(
         k,
@@ -712,7 +708,7 @@ for (i = 0; i < link_order.length; i++) {
         k_values[k][7],
         k_values[k][8],
         color_code,
-        .7,
+        1,
         highTransform
       )
     }
@@ -730,7 +726,7 @@ for (i = 0; i < link_order.length; i++) {
     if (medium.includes(i)) {
 
       var k = link_order[i];
-      var color_code = 0xFF5733;
+      var color_code = 0x70a39b;
 
        invisibleSpaghetti(
         k,
@@ -743,7 +739,7 @@ for (i = 0; i < link_order.length; i++) {
         k_values[k][7],
         k_values[k][8],
         color_code,
-        .5,
+        .4,
         mediumTransform
       )
     }
@@ -751,7 +747,7 @@ for (i = 0; i < link_order.length; i++) {
 }
 
 
-function addlowlinks() {  //adds links for selected values
+/*function addlowlinks() {  //adds links for selected values
 
 lowTransform = new THREE.Object3D()
 group.add(lowTransform) 
@@ -811,6 +807,7 @@ for (i = 0; i < link_order.length; i++) {
     }
   }
 }
+*/
 
 
 
@@ -819,7 +816,7 @@ for (i = 0; i < link_order.length; i++) {
 function nowPlaying(k) {
   l = link_order.indexOf(k)
   var song_title= song_titles[l]; 
-  document.getElementById("nowplaying").innerHTML = "<b>Country</b><p>" + country_names[l];
+  document.getElementById("nowplaying").innerHTML = "<b>Location</b><p>" + county_names[l];
 }
 
 function showThumb(k) {
@@ -884,7 +881,7 @@ function toggleLinks(linkobject,id) {
   else 
     {
       linkobject.visible = true;
-    document.getElementById(id).style.backgroundColor = "#FF5733";
+    document.getElementById(id).style.backgroundColor = "#FFFF00";
   }
 }
 
@@ -897,7 +894,7 @@ function toggleLinks2(linkobject,id) {
   else 
     {
       linkobject.visible = true;
-    document.getElementById(id).style.backgroundColor = "#FF795C";
+    document.getElementById(id).style.backgroundColor = "#408579";
   }
 }
 
@@ -910,11 +907,11 @@ function toggleLinks3(linkobject,id) {
   else 
     {
       linkobject.visible = true;
-    document.getElementById(id).style.backgroundColor = "#ffa796";
+    document.getElementById(id).style.backgroundColor = "#70a39b";
   }
 }
 
-function toggleLinks4(linkobject,id) {
+/*function toggleLinks4(linkobject,id) {
 
   if (linkobject.visible == true) {
     linkobject.visible = false;
@@ -938,14 +935,14 @@ function toggleLinks5(linkobject,id) {
       linkobject.visible = true;
     document.getElementById(id).style.backgroundColor = "#FFDDD6";
   }
-}
+}*/
 
 function allVisible() {
 
   if (allgenresVisible == true) {
-    allgenresVisible = false;
     document.getElementById("all").style.backgroundColor = "#a5c6d1";
     hideAll();
+    allgenresVisible = false;
   }
   else 
     {
@@ -960,13 +957,13 @@ function showAll() {
     highestTransform.visible = true;
     highTransform.visible = true;
     mediumTransform.visible = true;
-    lowTransform.visible = true;
-    lowestTransform.visible = true;
-    document.getElementById("highest_button").style.backgroundColor  = "#FF5733";
-    document.getElementById("high_button").style.backgroundColor  = "#FF795C";
-    document.getElementById("medium_button").style.backgroundColor  = "#ffa796";
-    document.getElementById("low_button").style.backgroundColor  = "#FFBCAD";
-    document.getElementById("lowest_button").style.backgroundColor  = "#FFDDD6";
+    //lowTransform.visible = true;
+    //lowestTransform.visible = true;
+    document.getElementById("highest_button").style.backgroundColor  = "#FFFF00";
+    document.getElementById("high_button").style.backgroundColor  = "#408579";
+    document.getElementById("medium_button").style.backgroundColor  = "#70a39b";
+    //document.getElementById("low_button").style.backgroundColor  = "#FFBCAD";
+    //document.getElementById("lowest_button").style.backgroundColor  = "#FFDDD6";
     document.getElementById("all").innerHTML = "Hide All"; 
 
 }
@@ -977,14 +974,14 @@ function hideAll() {
     highestTransform.visible = false;
     highTransform.visible =  false;
     mediumTransform.visible =  false;
-    lowTransform.visible =  false;
-    lowestTransform.visible =  false;
+    //lowTransform.visible =  false;
+    //lowestTransform.visible =  false;
     document.getElementById("highest_button").style.backgroundColor = "#0289b6";
     document.getElementById("high_button").style.backgroundColor  = "#35a1c5";
     document.getElementById("medium_button").style.backgroundColor  = "#67b8d3";
-    document.getElementById("low_button").style.backgroundColor  = "#9ad0e2";
-    document.getElementById("lowest_button").style.backgroundColor  = "#cce7f0";
-    document.getElementById("all").style.backgroundColor  = "#FF5733";
+    //document.getElementById("low_button").style.backgroundColor  = "#9ad0e2";
+    //document.getElementById("lowest_button").style.backgroundColor  = "#cce7f0";
+    document.getElementById("all").style.backgroundColor  = "#cce7f0";
     document.getElementById("all").innerHTML = "Show All"; 
 
 }
@@ -1031,12 +1028,12 @@ function hideAll() {
   ev.stopPropagatio*/
 
   document.getElementById( "suggest" ).addEventListener( 'click', function () {
-          window.open("https://www.who.int/", "_self")
+          window.open("https://www.who.int/", "_new")
         }, false );
 
   document.getElementById( "enter" ).addEventListener( 'click', function () {
 
-          window.open("https://github.com/CSSEGISandData/COVID-19/tree/master/csse_covid_19_data/csse_covid_19_time_series", "_self")
+          window.open("https://github.com/CSSEGISandData/COVID-19/tree/master/csse_covid_19_data/csse_covid_19_time_series", "_new")
         }, false );
 
 
@@ -1054,14 +1051,13 @@ function hideAll() {
           toggleLinks3(mediumTransform,"medium_button");
         }, false );
 
-  document.getElementById( "low_button" ).addEventListener( 'click', function () {
+  /*document.getElementById( "low_button" ).addEventListener( 'click', function () {
           toggleLinks4(lowTransform,"low_button");
         }, false );
 
   document.getElementById( "lowest_button" ).addEventListener( 'click', function () {
           toggleLinks5(lowestTransform,"lowest_button");
-        }, false );
-
+        }, false );*/
 
 
     document.getElementById( "all" ).addEventListener( 'click', function () {
@@ -1130,7 +1126,7 @@ function hideAll() {
       obj = intersection.object
       k = obj.label
       l = link_order.indexOf(k)   //connects the k value -- position on lotus petal graph -- to ID for link value
-      var URL = "https://www.google.com/search?q=" + country_names[l] + "%Coronavirus"
+      var URL = "https://www.google.com/search?q=" + county_names[l] + "%Coronavirus"
       window.open(URL, '_blank')
     }
   }
