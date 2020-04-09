@@ -31,7 +31,7 @@ $results = getAPI($url);
 $json_results = array();
 $json_results[] = json_decode($results,true); // decode API JSON to PHP array
 $items = array(); 
-$items = $json_results[0]["items"];  // save items to items array
+$items = $json_results[0]["results"];  // save items to items array
 
 $json_return = json_encode($items);  // encode PHP array as JSON
 

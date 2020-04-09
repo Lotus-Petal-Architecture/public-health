@@ -570,7 +570,7 @@ lowestTransform.visible = true;*/
   //xmlhttp.addEventListener("load", getActiveLinks);
   //xmlhttp.addEventListener("load", addLinks);
 
-  xmlhttp.open("GET", "../live/covid_list.php", true);
+  xmlhttp.open("GET", "covid_list.php", true);
   xmlhttp.responseType = 'json';
   xmlhttp.send(); 
 
