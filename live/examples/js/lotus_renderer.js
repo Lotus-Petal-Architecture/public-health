@@ -576,26 +576,29 @@ lowestTransform.visible = true;*/
 
   xmlhttp.onreadystatechange = function() {
   if (this.readyState == 4 && this.status == 200) {
+
     var entries = this.response;
     console.log(entries.length);
     county_names.length = 0;
     console.log (entries);
     if(entries.length > 0) {
-    for (var i = 0; i < entries.length; i++) {
-    // current actual number of songs being ranked
-      /*var song = entries[i];
-      var song_name = song.id;
-      var popularity = song.statistics.viewCount;
-      var song_title = song.snippet.title;
-  //console.log(popularity);
-  //console.log(song_title);
-      views.push([popularity]);
-      song_names.push([song_name]);
-      song_titles.push([song_title]);
-      video_thmbs[video_thmbs.length] = song.snippet.thumbnails.default.url;
-  //console.log (video_thmbs)
-  //video_titles[video_titles.length] = song.snippet.title;*/
-     }
+        for (var i = 0; i < entries.length; i++) {
+  
+	    var county = entries[i];
+            var county_name = county.Admin2;
+            county_names.push([county_name]);
+
+      	    //var popularity = song.statistics.viewCount;
+            //var song_title = song.snippet.title;
+            //views.push([popularity]);
+            //song_titles.push([song_title]);
+            //video_thmbs[video_thmbs.length] = song.snippet.thumbnails.default.url;
+            //video_titles[video_titles.length] = song.snippet.title;
+
+        }
+
+     console.log(county_names);
+
      fullyloaded = true;
      }
   }
