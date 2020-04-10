@@ -482,6 +482,68 @@ group.rotation.set(0,-.3,.0);
   assignLinks()
 
   console.log (link_order)
+    }
+
+  //COMMENTS 4.10.2020 
+  //As you can see the current getActiveLinks function is simplified from the crypto trading version of getActiveLinks copied below. My advice would be to still use the array structure that I set up, 
+  //but create a a sort function that assigns the different unique FIPS ids to the three separate **growthtrend-** arrays below -- whose contents are currently hard-coded from values computed from the Excel spreadsheet.
+  //Since we are using the full list of counties -- 2649 values at present -- this may actually consume some computational resources to process client-side. We won't know until we write the function. 
+  //In that case, we would need to move all the growth_percent_calc operations server-side, and spit out the results in a separate query.
+
+  //The formula I am proposing to compute a growth percentage for each unique FIPS id is very simple:  {pseudocode follows}
+
+
+  /*
+    FUNCTION growth_percent_calc {
+      
+        (NEWEST_DATE_CASES minus OLDEST_DATE_CASES) 
+
+        divided by
+
+        (OLDEST_DATE_CASES)
+
+        }
+
+        It is possible to divide by zero using this methodology, which is usually not a good idea! You will want to check for this condition and if OLDEST_DATE_CASES == zero,
+        automatically assign the value of null or (represented by the string "N/A") to that FIPS.
+
+        Be sure not to accidentally confuse decimal values with percentages. Many of these numbers will be whole numbers and the range of growth trend values
+        may easily vary by two orders of magnitude or more.
+
+        The above is the highest priority, as we can use it to generate a live beta version.
+
+        The code from the altcoin trading app is copied as a comment below. If you have time this may prove helpful as a model for assigning the growth_percent filter values.  Even if you can only get as far
+        as populating the three **growthtrend-** arrays, that alone would be super helpful.
+
+
+        ******************
+
+
+        Further testing requirements:
+
+        (We need to formally addres the following.)
+
+        DUPE CHECK :::
+
+        Create a simple function which logs to the console any FIPS value which appears more than one time in the query results
+
+        VALUE CHECK :::
+
+        What are these FIPS codes representing? In the JHU data, FIPS codes are assigned to states and territories (i.e. Purerto Rico) as well as U.S. counties. 
+        Can we confirm that state and territory codes are no longer present in the query results
+
+        UNASSIGNED VALUES :::
+
+        What does the label "Unassigned" mean in the JHU numbering scheme, and how do we want to handle these?
+
+        Ex. {"FIPS":null,"Country_Region":"US","Province_State":"Louisiana","Admin2":"Unassigned","Combined_Key":"Unassigned,Louisiana,US","Last_Update":"2020-04-09 23:02:37","Confirmed":"51","Deaths":"2","New_Confirmed":"2","New_Deaths":"0","Prev_New_Confirmed":"0","Prev_New_Deaths":"0"}
+
+        My suggestion is for now we treat each Unassigned as a Faux County (Ex. "Unassigned - Louisiana") and generate new FIPS identifier for them which cannot be confused with actual FIPS codes -- probably by incrementing a numerical 
+        string and concatenating with the prefix "U-". This is also a step that can be Left for Later, or left out entirely, depending on how we show the states on the chart. It really depends on the total numbers and growth trends 
+        for unassigned, something I don't yet have a handle on.
+
+        */
+
 
   function getActiveLinks () {
     //sorts for a given set of values from the data obtained above
@@ -514,6 +576,44 @@ group.rotation.set(0,-.3,.0);
       }*/
     }
   }
+
+
+//COMMENTS 4.10.2020 
+//EXAMPLE CODE
+/*function getActiveLinks()  //legacy code from the crypto trading app
+{
+    if (coin_change_time == "1h") 
+      {
+        var active_array = coin_change_1h;
+      }
+    if (coin_change_time == "24h") 
+      {
+        var active_array = coin_change_24h;
+      }
+    if (coin_change_time == "1w") 
+      {
+        var active_array = coin_change_1w;
+      }
+    var f = active_array.entries();
+    for (x of f) {
+      var coin =x;
+      var coin_value = coin[1];
+      var coin_index = coin[0];
+      if (volume[coin_index] < volume_adj) 
+      {
+        coin = null;
+      }
+      else if (coin_value > 20) {
+        
+        active_links.push(coin_index);
+      }
+      else if (coin_value > 5) {
+      coin_index = coin[0]
+      active_links2.push(coin_index);
+      }
+    }
+}*/
+
 
   function addLinks () {
     // adds links for selected values
