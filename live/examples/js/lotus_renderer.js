@@ -84,6 +84,9 @@ var growthtrend500to1000 = []
 //var growthtrend100to250 =["Netherlands","Indonesia","Peru","Armenia","Czechia","Luxembourg","Iraq","Germany","Jordan","Latvia","Albania","Tanzania","Cyprus","Uruguay","Mauritania","Costa Rica","Ethiopia","Finland","Zimbabwe","Pakistan","Switzerland","Sweden","Lebanon","Nicaragua","Greece","West Bank and Gaza","Bulgaria","Estonia","Egypt","French Polynesia","Iceland","French Guiana","Malaysia","Malta","Vietnam","Jamaica","Suriname","Georgia","Guatemala","Norway","Iran","Denmark","Guadeloupe","Singapore","Togo","Taiwan","Slovenia","Cambodia","Bangladesh","Slovakia","Belarus","Equatorial Guinea","Cabo Verde","Saint Barthelemy","Bhutan"]
 //var growthtrend0to100 = ["Italy","Japan","Venezuela","Bahrain","Sri Lanka","Liechtenstein","Faroe Islands","Trinidad and Tobago","Guyana","Kuwait","San Marino","Qatar","Brunei","Seychelles","Maldives","Mongolia","Korea, South","China","Central African Republic","Liberia","Papua New Guinea","Saint Vincent and the Grenadines"]
 var growthcalc = []
+var growthcalc_today = []
+var growthcalc_tenday = []
+
 var growthrates = []
 // -------------------------------------------- //
 
@@ -584,7 +587,8 @@ Array.prototype.distinct = function(item){
 };
 
 function growth_percent_calc(confirmed,old_confirmed) {
-        var growth_calc = (confirmed - old_confirmed)  / old_confirmed; 
+        var growth_calc = ((confirmed - old_confirmed)  / old_confirmed) * 100; 
+
 	return growth_calc;
 }
 
@@ -623,7 +627,7 @@ function growth_percent_calc(confirmed,old_confirmed) {
                 county_names.push([county_name]);
 		total_cases.push([county_confirmed]);	    
 		total_deaths.push([county_deaths]);
-	        growthcalc.push({ 'fips': fips, 'today': county_confirmed });
+	        growthcalc_today.push({ 'fips': fips, 'today': county_confirmed });
 	    } 	    	    
 	
  
@@ -634,12 +638,33 @@ function growth_percent_calc(confirmed,old_confirmed) {
 
 	for (var i = 0; i < entries.length; i++) {
 	    var county = entries[i];
-	    var x = 0;
 	    var county_confirmed = county.Confirmed;
+	    var fips = county.FIPS;
 
 	    if(county.Last_Update == dates[1]) {
-                growthcalc.push({ 'fips': fips, 'old': county_confirmed }); 
+                growthcalc_tenday.push({ 'fips': fips, 'old': county_confirmed }); 
             }
+	}
+
+	const mergeById = (a1, a2) =>
+    	    a1.map(itm => ({
+        	...a2.find((item) => (item.fips === itm.fips) && item),
+        	...itm
+    	}));
+
+	growth_calc = mergeById(growthcalc_today, growthcalc_tenday);
+	console.log(growth_calc);
+
+	for (var i = 0; i < growth_calc.length; i++) {
+	    var county = growth_calc[i];
+	    var today = county.today;
+	    var old = county.old;
+
+	    var county_growthratecalc = growth_percent_calc(today,old);
+	    var county_growthrate = county_growthratecalc.toFixed(2);
+
+	    growthrates.push([county_growthrate]);;   
+
 	}
 
 
