@@ -68,6 +68,11 @@ var medium = [] //index values of growth % links, growth rate greater than or eq
 
 var county_names = []
 var total_cases = [] //total confirmed cases
+var total_deaths = [] //total deaths
+
+var old_cases = [] 
+var old_deaths = []
+
 
 var views = [] //popularity of youtube videos. uses same index ranking as link_order
 var song_titles = []
@@ -78,6 +83,7 @@ var growthtrendover1000 = []
 var growthtrend500to1000 = []
 //var growthtrend100to250 =["Netherlands","Indonesia","Peru","Armenia","Czechia","Luxembourg","Iraq","Germany","Jordan","Latvia","Albania","Tanzania","Cyprus","Uruguay","Mauritania","Costa Rica","Ethiopia","Finland","Zimbabwe","Pakistan","Switzerland","Sweden","Lebanon","Nicaragua","Greece","West Bank and Gaza","Bulgaria","Estonia","Egypt","French Polynesia","Iceland","French Guiana","Malaysia","Malta","Vietnam","Jamaica","Suriname","Georgia","Guatemala","Norway","Iran","Denmark","Guadeloupe","Singapore","Togo","Taiwan","Slovenia","Cambodia","Bangladesh","Slovakia","Belarus","Equatorial Guinea","Cabo Verde","Saint Barthelemy","Bhutan"]
 //var growthtrend0to100 = ["Italy","Japan","Venezuela","Bahrain","Sri Lanka","Liechtenstein","Faroe Islands","Trinidad and Tobago","Guyana","Kuwait","San Marino","Qatar","Brunei","Seychelles","Maldives","Mongolia","Korea, South","China","Central African Republic","Liberia","Papua New Guinea","Saint Vincent and the Grenadines"]
+var growthcalc = []
 var growthrates = []
 // -------------------------------------------- //
 
@@ -564,6 +570,26 @@ lowestTransform.visible = true;*/
     addLinks()
   }
 
+Array.prototype.distinct = function(item){
+  var results = [];
+    for (var i = 0, l = this.length; i < l; i++)
+        if (!item){
+            if (results.indexOf(this[i]) === -1)
+                results.push(this[i]);
+            } else {
+            if (results.indexOf(this[i][item]) === -1)
+                results.push(this[i][item]);
+        }
+    return results;
+};
+
+function growth_percent_calc(confirmed,old_confirmed) {
+        var growth_calc = (confirmed - old_confirmed)  / old_confirmed; 
+	return growth_calc;
+}
+
+
+
   function getData() //processes JSON data and returns arrays for 5 main variables
   {
   var xmlhttp = new XMLHttpRequest();
@@ -582,22 +608,41 @@ lowestTransform.visible = true;*/
     county_names.length = 0;
     console.log (entries);
     if(entries.length > 0) {
+	var dates = entries.distinct('Last_Update');
+	console.log(dates);
+
         for (var i = 0; i < entries.length; i++) {
-  
 	    var county = entries[i];
-            var county_name = county.Admin2;
-            county_names.push([county_name]);
+	    var county_name = county.Admin2+' County, '+county.Province_State+', '+county.Country_Region;
+	    var county_confirmed = county.Confirmed;
+	    var county_deaths = county.Deaths;
+	    var old_confirmed = county.Confirmed;
+	    var fips = county.FIPS;
 
-      	    //var popularity = song.statistics.viewCount;
-            //var song_title = song.snippet.title;
-            //views.push([popularity]);
-            //song_titles.push([song_title]);
-            //video_thmbs[video_thmbs.length] = song.snippet.thumbnails.default.url;
-            //video_titles[video_titles.length] = song.snippet.title;
-
+	    if(county.Last_Update == dates[0]) {
+                county_names.push([county_name]);
+		total_cases.push([county_confirmed]);	    
+		total_deaths.push([county_deaths]);
+	        growthcalc.push({ 'fips': fips, 'today': county_confirmed });
+	    } 	    	    
+	
+ 
+	    //var growth_rate = growth_percent_calc(county_confirmed,old_confirmed);
+	    //growthrates.push([growth_rate]);
+	
         }
 
-     console.log(county_names);
+	for (var i = 0; i < entries.length; i++) {
+	    var county = entries[i];
+	    var x = 0;
+	    var county_confirmed = county.Confirmed;
+
+	    if(county.Last_Update == dates[1]) {
+                growthcalc.push({ 'fips': fips, 'old': county_confirmed }); 
+            }
+	}
+
+
 
      fullyloaded = true;
      }

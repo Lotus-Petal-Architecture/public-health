@@ -25,11 +25,14 @@ function getAPI($u) {
 
 // YouTube v3 API statistics call
 
-$url = "http://covid19.yesexactly.com/coronavirus_api.php?action=get_states&country=US";    
+//$url = "http://covid19.yesexactly.com/coronavirus_api.php?action=get_allcities&country=US";    
+$url = "http://covid19.yesexactly.com/coronavirus_api.php?action=get_allcitiesten&country=US";
+
 
 $results = getAPI($url);
 $json_results = array();
 $json_results[] = json_decode($results,true); // decode API JSON to PHP array
+
 $items = array(); 
 $items = $json_results[0]["results"];  // save items to items array
 
@@ -39,8 +42,6 @@ $json_return = json_encode($items);  // encode PHP array as JSON
 //print_r($json_results[0]);
 
 print_r($json_return);
-
-
 
 
 ?>
