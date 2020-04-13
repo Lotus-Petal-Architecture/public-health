@@ -679,6 +679,14 @@ getData();
 
   function showDetails () {
     //this is only necessary when hide/show info toggle switch is enabled
+     document.getElementById('nowplaying').innerHTML =
+    '<b>Location</b><p>' + '<b>' + county_names[0] + '</b>'
+    document.getElementById('thumb').innerHTML =
+    '<b>Percent Growth</b><p>' + growthrates[0] + ' %'
+    document.getElementById('rank').innerHTML = '<b>Rank</b><p>' + '<b>1</b>'
+    document.getElementById('views').innerHTML =
+    '<b>Confirmed Cases</b><p>' + total_cases[0]  
+
 
     document.getElementById('thumb').style.visibility = 'visible'
     document.getElementById('views').style.visibility = 'visible'
@@ -687,15 +695,7 @@ getData();
   }
 
   geometricLinks()
-  showDetails()
-
-  document.getElementById('nowplaying').innerHTML =
-    '<b>Location</b><p>' + '<b>' + county_names[0] + '</b>'
-  document.getElementById('thumb').innerHTML =
-    '<b>Percent Growth</b><p>' + growthrates[0] + ' %'
-  document.getElementById('rank').innerHTML = '<b>Rank</b><p>' + '<b>1</b>'
-  document.getElementById('views').innerHTML =
-    '<b>Confirmed Cases</b><p>' + total_cases[0]
+  //showDetails()
 
   function addhighestlinks () {
     //adds links for selected values
