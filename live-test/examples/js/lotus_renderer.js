@@ -81,6 +81,7 @@ var xmlhttp = new XMLHttpRequest()
 
 var growthtrendover1000 = []
 var growthtrend500to1000 = []
+var growthtrend0to500 = []
 //var growthtrend100to250 =["Netherlands","Indonesia","Peru","Armenia","Czechia","Luxembourg","Iraq","Germany","Jordan","Latvia","Albania","Tanzania","Cyprus","Uruguay","Mauritania","Costa Rica","Ethiopia","Finland","Zimbabwe","Pakistan","Switzerland","Sweden","Lebanon","Nicaragua","Greece","West Bank and Gaza","Bulgaria","Estonia","Egypt","French Polynesia","Iceland","French Guiana","Malaysia","Malta","Vietnam","Jamaica","Suriname","Georgia","Guatemala","Norway","Iran","Denmark","Guadeloupe","Singapore","Togo","Taiwan","Slovenia","Cambodia","Bangladesh","Slovakia","Belarus","Equatorial Guinea","Cabo Verde","Saint Barthelemy","Bhutan"]
 //var growthtrend0to100 = ["Italy","Japan","Venezuela","Bahrain","Sri Lanka","Liechtenstein","Faroe Islands","Trinidad and Tobago","Guyana","Kuwait","San Marino","Qatar","Brunei","Seychelles","Maldives","Mongolia","Korea, South","China","Central African Republic","Liberia","Papua New Guinea","Saint Vincent and the Grenadines"]
 var growthcalc = []
@@ -494,21 +495,21 @@ group.rotation.set(0,-.3,.0);
 
   function getActiveLinks () {
     //sorts for a given set of values from the data obtained above
-    var f = county_names.entries()
+    var f = growthrates.entries()
 
     for (x of f) {
-      var song_value = x[1].toString()
+      var song_value = x[1].fips
       var song_index = x[0]
 
-      if (growthtrendover1000.includes(song_value)) {
+      if (growthtrendover1000.indexOf(song_value) > -1) {
         highest.push(song_index)
       }
 
-      if (growthtrend500to1000.includes(song_value)) {
+      if (growthtrend500to1000.indexOf(song_value) > -1) {
         high.push(song_index)
       }
 
-      if (growthtrend0to500.includes(song_value)) {
+      if (growthtrend0to500.indexOf(song_value) > -1) {
         medium.push(song_index)
       }
 
@@ -522,6 +523,7 @@ group.rotation.set(0,-.3,.0);
         lowest.push(song_index);
       }*/
     }
+    showDetails();
   }
 
   function addLinks () {
@@ -587,14 +589,14 @@ Array.prototype.distinct = function(item){
 };
 
 function growth_percent_calc(confirmed,old_confirmed) {
-        var growth_calc = ((confirmed - old_confirmed)  / old_confirmed) * 100; 
+        var growth_calc = ((confirmed - old_confirmed)  / old_confirmed) * 1000; 
 
 	return growth_calc;
 }
 
 
 
-  function getData() //processes JSON data and returns arrays for 5 main variables
+  function getData(callback) //processes JSON data and returns arrays for 5 main variables
   {
   var xmlhttp = new XMLHttpRequest();
   //xmlhttp.addEventListener("load", getActiveLinks);
@@ -653,36 +655,49 @@ function growth_percent_calc(confirmed,old_confirmed) {
     	}));
 
 	growth_calc = mergeById(growthcalc_today, growthcalc_tenday);
-	console.log(growth_calc);
+	//console.log(growth_calc);
 
 	for (var i = 0; i < growth_calc.length; i++) {
 	    var county = growth_calc[i];
 	    var today = county.today;
 	    var old = county.old;
-
+	    var fips = county.fips;
 	    var county_growthratecalc = growth_percent_calc(today,old);
 	    var county_growthrate = county_growthratecalc.toFixed(2);
 
-	    growthrates.push([county_growthrate]);;   
+	    growthrates.push({ 'fips': fips, 'growthrate': county_growthrate });
 
 	}
 
+	for (var i = 0; i < growthrates.length; i++) {
+	    var county = growthrates[i];
+	    if(county.growthrate > 1000) {
+	  	growthtrendover1000.push(county.fips);   
+	    }
+	    else if(county.growthrate <= 1000 && county.growthrate >= 500) {
+                growthtrend500to1000.push(county.fips);  
+            }
+	    else if(county.growthrate < 500) {
+                growthtrend0to500.push(county.fips);
+            }
+	}
 
-
+     callback();
      fullyloaded = true;
      }
   }
   }
 }
 
-getData();
+getData(geometricLinks);
 
   function showDetails () {
+    var gr = growthrates[0];
     //this is only necessary when hide/show info toggle switch is enabled
      document.getElementById('nowplaying').innerHTML =
     '<b>Location</b><p>' + '<b>' + county_names[0] + '</b>'
     document.getElementById('thumb').innerHTML =
-    '<b>Percent Growth</b><p>' + growthrates[0] + ' %'
+    '<b>Percent Growth</b><p>' + gr.growthrate + ' %'
     document.getElementById('rank').innerHTML = '<b>Rank</b><p>' + '<b>1</b>'
     document.getElementById('views').innerHTML =
     '<b>Confirmed Cases</b><p>' + total_cases[0]  
@@ -694,7 +709,7 @@ getData();
     document.getElementById('nowplaying').style.visibility = 'visible'
   }
 
-  geometricLinks()
+  //geometricLinks()
   //showDetails()
 
   function addhighestlinks () {
@@ -795,8 +810,9 @@ getData();
 
   function showThumb (k) {
     l = link_order.indexOf(k)
+    var gr = growthrates[l];
     document.getElementById('thumb').innerHTML =
-      '<b>Percent Growth</b><p>' + growthrates[l] + ' %'
+      '<b>Percent Growth</b><p>' + gr.growthrate + ' %'
   }
 
   function showRank (k) {
