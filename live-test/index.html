@@ -1,6 +1,14 @@
 <!DOCTYPE html>
 <html>
 	<head>
+		<!-- All Content Copyright 2020 by Lotus.fm LLC. Source code made be found at https://github.com/Lotus-Petal-Architecture/public-health, based on the template available at https://github.com/tessgadwa/lotus-trends.
+
+		You are free to share this visualization. We request attribution.
+
+		We have licensed our core visualization engine as open source (MIT), in the hope that this type of trends visualization may assist leaders in planning our nation's recovery and even save lives. For a full discussion of pending design patent rights and planned future enhancements to the codebase, contact the creators at https://lotus.fm.
+
+		 -->
+
 		<meta charset=utf-8
 		 Copyright 2020 by Lotus.fm LLC>
 		 <meta charset="utf-8" />
@@ -15,7 +23,7 @@
 		<meta name="twitter:title" content="COVID-19 Trends Visualization">
 		<meta name="twitter:description" content="See where the Coronarirus is hitting hardest.">
 		<meta name="twitter:image" content="https://dev.lotus.fm/green/examples/files/greenflower.png">
-		<title>COVID-19 Global Trends</title>
+		<title>COVID-19 USA Growth Trends by County</title>
 		<!-- <script src="https://kit.fontawesome.com/2eef814402.js" crossorigin="anonymous"></script> -->
 		<link rel='stylesheet' id='storefront-fonts-css'  href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,300italic,400italic,700,900&#038;subset=latin%2Clatin-ext' type='text/css' media='all' />
 		<style>
@@ -285,9 +293,9 @@
 			<!--<strong>Genres: </strong>-->
 			<div id="genres" style="text-align: right; padding:0px 10px; margin-top:10px;">
 			Growth Rates &nbsp;
-			<button id="highest_button" style="background-color:#FFFF00;">Over 1000 %</button>
-			<button id="high_button" style="background-color:#408579;">500 to 1000 %</button>
-			<button id="medium_button" style="background-color:#70a39b;">0 to 500 %</button>
+			<button id="highest_button" style="background-color:#FFFF00;">Over 100 %</button>
+			<button id="high_button" style="background-color:#408579;">50 to 100 %</button>
+			<button id="medium_button" style="background-color:#87ceeb;">0 to 50 %</button>
 			<!--<button id="low_button" style="background-color:#FFBCAD;">100 to 250 %</button>
 			<button id="lowest_button" style="background-color:#FFDDD6;">Under 100 %</button>-->
 			<button id="all">Hide All</button>
@@ -307,8 +315,8 @@
 				margin:0;
 				background-color: #a5c6d1;
 				border:0;">
-				<span style="font-size: 15px;font-family:Source Sans Pro; font-weight: 900;">USA COVID-19 Trends:</span>  
-				Growth in new cases over 10 days for the 380 US counties with the most confirmed cases. <i>Updated 4/13/2020.</i>
+				<span style="font-size: 15px;font-family:Source Sans Pro; font-weight: 900;">USA Coronavirus Trends:</span>  
+				Growth in new cases over 10 days for the 380 US counties with the most confirmed cases. <span id="updated" style="font-style: italic;"></span>
 				<p style="text-align:right; font-size:14px; text-transform: uppercase; margin:0; margin-bottom:6px; margin-top:12px; padding:0;">
 					<button id="suggest" style="background-color: transparent; margin:0; margin-right:10px; padding: 0; "><a href="https://www.who.int/" style="background-color:#0B1D06; color:#a5c6d1; border-radius:4px; padding:10px 12px; height:36px; border:1px solid #0B1D06; letter-spacing:1px; box-shadow: 2px 2px 3px grey; text-align:right; font-size:14px; font-family:Arial; text-transform: uppercase; text-decoration:none; font-weight: normal;">
 					Learn More</a></button> 

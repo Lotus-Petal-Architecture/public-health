@@ -1,4 +1,6 @@
-//Copyright 2020 by Lotus.fm LLC
+//Copyright 2020 by Lotus.fm LLC. Source code made be found at https://github.com/Lotus-Petal-Architecture/public-health, based on the template available at https://github.com/tessgadwa/lotus-trends.
+// For a full discussion of current pending design patent rights and planned future enhancements to the codebase, contact the creators at https://lotus.fm.
+//You are free to share this visualization. We request attribution.
 
 var camera,
   scene,
@@ -65,6 +67,8 @@ var high = [] //index values of growth % links, growth rate greater than or equa
 var medium = [] //index values of growth % links, growth rate greater than or equal to 250% and less than 500%
 /*var low = [] //index values of growth % links, growth rate greater than or equal to 100% and less than 250%
   var lowest = [] //index values of growth % links, growth rate less than 100%*/
+
+var last_updated;
 
 var county_names = []
 var total_cases = [] //total confirmed cases
@@ -509,7 +513,7 @@ group.rotation.set(0,-.3,.0);
         high.push(song_index)
       }
 
-      if (growthtrend0to500.indexOf(song_value) > -1) {
+      /*if (growthtrend0to500.indexOf(song_value) > -1) {
         medium.push(song_index)
       }
 
@@ -535,10 +539,10 @@ group.rotation.set(0,-.3,.0);
     addhighlinks()
     highTransform.visible = true
 
-    addmediumlinks()
+    /*addmediumlinks()
     mediumTransform.visible = true
 
-    /*addlowlinks()
+    addlowlinks()
 lowTransform.visible = true;
 
 addlowestlinks()
@@ -589,12 +593,18 @@ Array.prototype.distinct = function(item){
 };
 
 function growth_percent_calc(confirmed,old_confirmed) {
-        var growth_calc = ((confirmed - old_confirmed)  / old_confirmed) * 1000; 
+        var growth_calc = ((confirmed - old_confirmed)  / old_confirmed) * 100; 
 
 	return growth_calc;
 }
 
-
+function getFormattedDate(date) {
+    let year = date.getFullYear();
+    let month = (1 + date.getMonth()).toString().padStart(2, '0');
+    let day = date.getDate().toString().padStart(2, '0');
+  
+    return month + '/' + day + '/' + year;
+}
 
   function getData(callback) //processes JSON data and returns arrays for 5 main variables
   {
@@ -615,7 +625,7 @@ function growth_percent_calc(confirmed,old_confirmed) {
     console.log (entries);
     if(entries.length > 0) {
 	var dates = entries.distinct('Last_Update');
-	console.log(dates);
+	last_updated = dates[0];
 
         for (var i = 0; i < entries.length; i++) {
 	    var county = entries[i];
@@ -671,13 +681,13 @@ function growth_percent_calc(confirmed,old_confirmed) {
 
 	for (var i = 0; i < growthrates.length; i++) {
 	    var county = growthrates[i];
-	    if(county.growthrate > 1000) {
+	    if(county.growthrate > 100) {
 	  	growthtrendover1000.push(county.fips);   
 	    }
-	    else if(county.growthrate <= 1000 && county.growthrate >= 500) {
+	    else if(county.growthrate <= 100 && county.growthrate >= 50) {
                 growthtrend500to1000.push(county.fips);  
             }
-	    else if(county.growthrate < 500) {
+	    else if(county.growthrate < 50) {
                 growthtrend0to500.push(county.fips);
             }
 	}
@@ -702,6 +712,8 @@ getData(geometricLinks);
     document.getElementById('views').innerHTML =
     '<b>Confirmed Cases</b><p>' + total_cases[0]  
 
+    document.getElementById('updated').innerHTML =
+    '<br />Updated: ' + last_updated
 
     document.getElementById('thumb').style.visibility = 'visible'
     document.getElementById('views').style.visibility = 'visible'
