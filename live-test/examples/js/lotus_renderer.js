@@ -899,7 +899,7 @@ getData(geometricLinks);
       document.getElementById(id).style.backgroundColor = '#67b8d3'
     } else {
       linkobject.visible = true
-      document.getElementById(id).style.backgroundColor = '#70a39b'
+      document.getElementById(id).style.backgroundColor = '#67b8d3'
     }
   }
 
@@ -949,7 +949,7 @@ function toggleLinks5(linkobject,id) {
     //lowestTransform.visible = true;
     document.getElementById('highest_button').style.backgroundColor = '#FFFF00'
     document.getElementById('high_button').style.backgroundColor = '#408579'
-    document.getElementById('medium_button').style.backgroundColor = '#70a39b'
+    document.getElementById('medium_button').style.backgroundColor = '#0289b6'
     //document.getElementById("low_button").style.backgroundColor  = "#FFBCAD";
     //document.getElementById("lowest_button").style.backgroundColor  = "#FFDDD6";
     document.getElementById('all').innerHTML = 'Hide All'
@@ -963,7 +963,7 @@ function toggleLinks5(linkobject,id) {
     //lowestTransform.visible =  false;
     document.getElementById('highest_button').style.backgroundColor = '#0289b6'
     document.getElementById('high_button').style.backgroundColor = '#35a1c5'
-    document.getElementById('medium_button').style.backgroundColor = '#67b8d3'
+    document.getElementById('medium_button').style.backgroundColor = '#87ceeb'
     //document.getElementById("low_button").style.backgroundColor  = "#9ad0e2";
     //document.getElementById("lowest_button").style.backgroundColor  = "#cce7f0";
     document.getElementById('all').style.backgroundColor = '#cce7f0'
