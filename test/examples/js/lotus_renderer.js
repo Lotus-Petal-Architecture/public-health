@@ -65,8 +65,6 @@ var active_links = [] //index values of all active links
 var highest = [] //index values of growth links, growth rate greater 1000%
 var high = [] //index values of growth % links, growth rate greater than or equal to 500% and less than 1000%
 var medium = [] //index values of growth % links, growth rate greater than or equal to 250% and less than 500%
-/*var low = [] //index values of growth % links, growth rate greater than or equal to 100% and less than 250%
-  var lowest = [] //index values of growth % links, growth rate less than 100%*/
 
 var last_updated;
 
@@ -86,8 +84,7 @@ var xmlhttp = new XMLHttpRequest()
 var growthtrendover1000 = []
 var growthtrend500to1000 = []
 var growthtrend0to500 = []
-//var growthtrend100to250 =["Netherlands","Indonesia","Peru","Armenia","Czechia","Luxembourg","Iraq","Germany","Jordan","Latvia","Albania","Tanzania","Cyprus","Uruguay","Mauritania","Costa Rica","Ethiopia","Finland","Zimbabwe","Pakistan","Switzerland","Sweden","Lebanon","Nicaragua","Greece","West Bank and Gaza","Bulgaria","Estonia","Egypt","French Polynesia","Iceland","French Guiana","Malaysia","Malta","Vietnam","Jamaica","Suriname","Georgia","Guatemala","Norway","Iran","Denmark","Guadeloupe","Singapore","Togo","Taiwan","Slovenia","Cambodia","Bangladesh","Slovakia","Belarus","Equatorial Guinea","Cabo Verde","Saint Barthelemy","Bhutan"]
-//var growthtrend0to100 = ["Italy","Japan","Venezuela","Bahrain","Sri Lanka","Liechtenstein","Faroe Islands","Trinidad and Tobago","Guyana","Kuwait","San Marino","Qatar","Brunei","Seychelles","Maldives","Mongolia","Korea, South","China","Central African Republic","Liberia","Papua New Guinea","Saint Vincent and the Grenadines"]
+
 var growthcalc = []
 var growthcalc_today = []
 var growthcalc_tenday = []
@@ -253,8 +250,8 @@ function init () {
     group.add(curveObject)
   }
 
-  //Invisible Spaghetti - add TubeGeometry objects that sheath chart lines representing active geometric links.
-  function invisibleSpaghetti (
+  //Invisible Tube - add TubeGeometry objects that sheath chart lines representing active geometric links.
+  function invisibleTube (
     k,
     x,
     y,
@@ -513,19 +510,6 @@ group.rotation.set(0,-.3,.0);
         high.push(song_index)
       }
 
-      /*if (growthtrend0to500.indexOf(song_value) > -1) {
-        medium.push(song_index)
-      }
-
-      /*if (growthtrend100to250.includes(song_value)){
-        
-        low.push(song_index);
-      }
-
-      if (growthtrend0to100.includes(song_value)){
-        
-        lowest.push(song_index);
-      }*/
     }
     showDetails();
   }
@@ -539,15 +523,6 @@ group.rotation.set(0,-.3,.0);
     addhighlinks()
     highTransform.visible = true
 
-    /*addmediumlinks()
-    mediumTransform.visible = true
-
-    addlowlinks()
-lowTransform.visible = true;
-
-addlowestlinks()
-lowestTransform.visible = true;*/
-
     parentTransform = new THREE.Object3D()
     group.add(parentTransform)
 
@@ -557,7 +532,7 @@ lowestTransform.visible = true;*/
       var k = link_order[i]
       var color_code = 0xffffff
 
-      invisibleSpaghetti(
+      invisibleTube(
         k,
         k_values[k][1],
         k_values[k][2],
@@ -646,7 +621,6 @@ function getFormattedDate(date) {
 		total_deaths.push([county_deaths]);
 	        growthcalc_today.push({ 'fips': fips, 'today': county_confirmed });
 	    } 	    	    
-	
  
 	    //var growth_rate = growth_percent_calc(county_confirmed,old_confirmed);
 	    //growthrates.push([growth_rate]);
@@ -739,7 +713,7 @@ getData(geometricLinks);
         var k = link_order[i]
         var color_code = 0xffff00
 
-        invisibleSpaghetti(
+        invisibleTube(
           k,
           k_values[k][1],
           k_values[k][2],
@@ -768,7 +742,7 @@ getData(geometricLinks);
         var k = link_order[i]
         var color_code = 0x108503
 
-        invisibleSpaghetti(
+        invisibleTube(
           k,
           k_values[k][1],
           k_values[k][2],
@@ -797,7 +771,7 @@ getData(geometricLinks);
         var k = link_order[i]
         var color_code = 0x70a39b
 
-        invisibleSpaghetti(
+        invisibleTube(
           k,
           k_values[k][1],
           k_values[k][2],
@@ -907,31 +881,6 @@ getData(geometricLinks);
     }
   }
 
-  /*function toggleLinks4(linkobject,id) {
-
-  if (linkobject.visible == true) {
-    linkobject.visible = false;
-    document.getElementById(id).style.backgroundColor = "#9ad0e2";
-  }
-  else 
-    {
-      linkobject.visible = true;
-    document.getElementById(id).style.backgroundColor = "#FFBCAD";
-  }
-}
-
-function toggleLinks5(linkobject,id) {
-
-  if (linkobject.visible == true) {
-    linkobject.visible = false;
-    document.getElementById(id).style.backgroundColor = "#cce7f0";
-  }
-  else 
-    {
-      linkobject.visible = true;
-    document.getElementById(id).style.backgroundColor = "#FFDDD6";
-  }
-}*/
 
   function allVisible () {
     if (allgenresVisible == true) {
@@ -949,13 +898,9 @@ function toggleLinks5(linkobject,id) {
     highestTransform.visible = true
     highTransform.visible = true
     mediumTransform.visible = true
-    //lowTransform.visible = true;
-    //lowestTransform.visible = true;
     document.getElementById('highest_button').style.backgroundColor = '#FFFF00'
     document.getElementById('high_button').style.backgroundColor = '#108503'
     document.getElementById('medium_button').style.backgroundColor = '#0289b6'
-    //document.getElementById("low_button").style.backgroundColor  = "#FFBCAD";
-    //document.getElementById("lowest_button").style.backgroundColor  = "#FFDDD6";
     document.getElementById('all').innerHTML = 'Hide All'
   }
 
@@ -963,13 +908,9 @@ function toggleLinks5(linkobject,id) {
     highestTransform.visible = false
     highTransform.visible = false
     mediumTransform.visible = false
-    //lowTransform.visible =  false;
-    //lowestTransform.visible =  false;
     document.getElementById('highest_button').style.backgroundColor = '#0289b6'
     document.getElementById('high_button').style.backgroundColor = '#108503'
     document.getElementById('medium_button').style.backgroundColor = '#87ceeb'
-    //document.getElementById("low_button").style.backgroundColor  = "#9ad0e2";
-    //document.getElementById("lowest_button").style.backgroundColor  = "#cce7f0";
     document.getElementById('all').style.backgroundColor = '#cce7f0'
     document.getElementById('all').innerHTML = 'Show All'
   }
@@ -996,7 +937,6 @@ function toggleLinks5(linkobject,id) {
     'click',
     function () {
       window.open('https://lotus.fm', '_self')
-      //document.write(video_thmbs);
     },
     false
   )
@@ -1067,14 +1007,6 @@ function toggleLinks5(linkobject,id) {
     false
   )
 
-  /*document.getElementById( "low_button" ).addEventListener( 'click', function () {
-          toggleLinks4(lowTransform,"low_button");
-        }, false );
-
-  document.getElementById( "lowest_button" ).addEventListener( 'click', function () {
-          toggleLinks5(lowestTransform,"lowest_button");
-        }, false );*/
-
   document.getElementById('all').addEventListener(
     'click',
     function () {
@@ -1098,7 +1030,7 @@ function toggleLinks5(linkobject,id) {
           obj = intersection.object
         k = obj.label
         var color_code = 0xcc2d6f
-        invisibleSpaghetti(
+        invisibleTube(
           k,
           k_values[k][1],
           k_values[k][2],
