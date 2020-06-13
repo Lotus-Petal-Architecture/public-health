@@ -81,9 +81,9 @@ var song_titles = []
 var video_thmbs = []
 var xmlhttp = new XMLHttpRequest()
 
-var growthtrendover1000 = []
-var growthtrend500to1000 = []
-var growthtrend0to500 = []
+var growthtrendhighest = []
+var growthtrendhigh = []
+var growthtrendlow = []
 
 var growthcalc = []
 var growthcalc_today = []
@@ -499,15 +499,15 @@ group.rotation.set(0,-.3,.0);
     var f = growthrates.entries()
 
     for (x of f) {
-      var song_value = x[1].fips
-      var song_index = x[0]
+      var x_value = x[1].fips
+      var x_index = x[0]
 
-      if (growthtrendover1000.indexOf(song_value) > -1) {
-        highest.push(song_index)
+      if (growthtrendhighest.indexOf(x_value) > -1) {
+        highest.push(x_index)
       }
 
-      if (growthtrend500to1000.indexOf(song_value) > -1) {
-        high.push(song_index)
+      if (growthtrendhigh.indexOf(x_value) > -1) {
+        high.push(x_index)
       }
 
     }
@@ -660,13 +660,13 @@ function getFormattedDate(date) {
 	for (var i = 0; i < growthrates.length; i++) {
 	    var county = growthrates[i];
 	    if(county.growthrate > 100) {
-	  	growthtrendover1000.push(county.fips);   
+	  	growthtrendhighest.push(county.fips);   
 	    }
 	    else if(county.growthrate <= 100 && county.growthrate >= 50) {
-                growthtrend500to1000.push(county.fips);  
+                growthtrendhigh.push(county.fips);  
             }
 	    else if(county.growthrate < 50 && county.growthrate >= 0) {
-                growthtrend0to500.push(county.fips);
+                growthtrendlow.push(county.fips);
             }
 	}
 
