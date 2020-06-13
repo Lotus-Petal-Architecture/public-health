@@ -1,4 +1,6 @@
-//Copyright 2020 by Lotus.fm LLC
+//Copyright 2020 by Lotus.fm LLC. Source code made be found at https://github.com/Lotus-Petal-Architecture/public-health, based on the template available at https://github.com/tessgadwa/lotus-trends.
+// For a full discussion of current pending design patent rights and planned future enhancements to the codebase, contact the creators at https://lotus.fm.
+//You are free to share this visualization. We request attribution.
 
 var camera,
   scene,
@@ -511,7 +513,7 @@ group.rotation.set(0,-.3,.0);
         high.push(song_index)
       }
 
-      if (growthtrend0to500.indexOf(song_value) > -1) {
+      /*if (growthtrend0to500.indexOf(song_value) > -1) {
         medium.push(song_index)
       }
 
@@ -537,10 +539,10 @@ group.rotation.set(0,-.3,.0);
     addhighlinks()
     highTransform.visible = true
 
-    addmediumlinks()
+    /*addmediumlinks()
     mediumTransform.visible = true
 
-    /*addlowlinks()
+    addlowlinks()
 lowTransform.visible = true;
 
 addlowestlinks()
@@ -592,6 +594,11 @@ Array.prototype.distinct = function(item){
 
 function growth_percent_calc(confirmed,old_confirmed) {
         var growth_calc = ((confirmed - old_confirmed)  / old_confirmed) * 100; 
+	growth_calc = growth_calc.toFixed(2);
+
+	if ( growth_calc <= 0 || isNaN(growth_calc)) growth_calc = 'Unavailable';	
+
+
 
 	return growth_calc;
 }
@@ -670,8 +677,7 @@ function getFormattedDate(date) {
 	    var today = county.today;
 	    var old = county.old;
 	    var fips = county.fips;
-	    var county_growthratecalc = growth_percent_calc(today,old);
-	    var county_growthrate = county_growthratecalc.toFixed(2);
+	    var county_growthrate = growth_percent_calc(today,old);
 
 	    growthrates.push({ 'fips': fips, 'growthrate': county_growthrate });
 
@@ -685,7 +691,7 @@ function getFormattedDate(date) {
 	    else if(county.growthrate <= 100 && county.growthrate >= 50) {
                 growthtrend500to1000.push(county.fips);  
             }
-	    else if(county.growthrate < 50) {
+	    else if(county.growthrate < 50 && county.growthrate >= 0) {
                 growthtrend0to500.push(county.fips);
             }
 	}
@@ -760,7 +766,7 @@ getData(geometricLinks);
     for (i = 0; i < link_order.length; i++) {
       if (high.includes(i)) {
         var k = link_order[i]
-        var color_code = 0x0c4d42
+        var color_code = 0x108503
 
         invisibleSpaghetti(
           k,
@@ -887,7 +893,7 @@ getData(geometricLinks);
       document.getElementById(id).style.backgroundColor = '#35a1c5'
     } else {
       linkobject.visible = true
-      document.getElementById(id).style.backgroundColor = '#408579'
+      document.getElementById(id).style.backgroundColor = '#32dcfe'
     }
   }
 
@@ -897,7 +903,7 @@ getData(geometricLinks);
       document.getElementById(id).style.backgroundColor = '#67b8d3'
     } else {
       linkobject.visible = true
-      document.getElementById(id).style.backgroundColor = '#70a39b'
+      document.getElementById(id).style.backgroundColor = '#67b8d3'
     }
   }
 
@@ -946,8 +952,8 @@ function toggleLinks5(linkobject,id) {
     //lowTransform.visible = true;
     //lowestTransform.visible = true;
     document.getElementById('highest_button').style.backgroundColor = '#FFFF00'
-    document.getElementById('high_button').style.backgroundColor = '#408579'
-    document.getElementById('medium_button').style.backgroundColor = '#70a39b'
+    document.getElementById('high_button').style.backgroundColor = '#108503'
+    document.getElementById('medium_button').style.backgroundColor = '#0289b6'
     //document.getElementById("low_button").style.backgroundColor  = "#FFBCAD";
     //document.getElementById("lowest_button").style.backgroundColor  = "#FFDDD6";
     document.getElementById('all').innerHTML = 'Hide All'
@@ -960,8 +966,8 @@ function toggleLinks5(linkobject,id) {
     //lowTransform.visible =  false;
     //lowestTransform.visible =  false;
     document.getElementById('highest_button').style.backgroundColor = '#0289b6'
-    document.getElementById('high_button').style.backgroundColor = '#35a1c5'
-    document.getElementById('medium_button').style.backgroundColor = '#67b8d3'
+    document.getElementById('high_button').style.backgroundColor = '#108503'
+    document.getElementById('medium_button').style.backgroundColor = '#87ceeb'
     //document.getElementById("low_button").style.backgroundColor  = "#9ad0e2";
     //document.getElementById("lowest_button").style.backgroundColor  = "#cce7f0";
     document.getElementById('all').style.backgroundColor = '#cce7f0'
