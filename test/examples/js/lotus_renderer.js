@@ -740,7 +740,7 @@ getData(geometricLinks);
     for (i = 0; i < link_order.length; i++) {
       if (high.includes(i)) {
         var k = link_order[i]
-        var color_code = 0x108503
+        var color_code = 0xFF5733
 
         invisibleTube(
           k,
@@ -753,7 +753,7 @@ getData(geometricLinks);
           k_values[k][7],
           k_values[k][8],
           color_code,
-          1,
+          .8,
           highTransform
         )
       }
