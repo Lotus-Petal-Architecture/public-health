@@ -659,13 +659,13 @@ function getFormattedDate(date) {
 
 	for (var i = 0; i < growthrates.length; i++) {
 	    var county = growthrates[i];
-	    if(county.growthrate > 100) {
+	    if(county.growthrate > 50) {
 	  	growthtrendhighest.push(county.fips);   
 	    }
-	    else if(county.growthrate <= 100 && county.growthrate >= 50) {
+	    else if(county.growthrate <= 50 && county.growthrate >= 10) {
                 growthtrendhigh.push(county.fips);  
             }
-	    else if(county.growthrate < 50 && county.growthrate >= 0) {
+	    else if(county.growthrate < 10 && county.growthrate >= 0) {
                 growthtrendlow.push(county.fips);
             }
 	}
